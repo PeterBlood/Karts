@@ -1,0 +1,16 @@
+--   ___ _         _ ___ ___             
+--  | _ (_)_ _____| |_  ) __|___ _ _ ___ 
+--  |  _/ \ \ / -_) |/ / (__/ _ \ '_/ -_)
+--  |_| |_/_\_\___|_/___\___\___/_| \___|
+--
+--  Made By Player1
+--  pixel2core.player1.xyz
+--
+--  This model was made with Pixel2Core and must adhere with the license provided bellow.
+--
+--  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. 
+--  To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or 
+--  send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+--
+--  This Credits notice must remain in the model if redistributed in any medium.
+--
