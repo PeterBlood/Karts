@@ -2,26 +2,26 @@ local vehicleSet = script:GetCustomProperty("VehicleSet"):WaitForObject()
 
 local suspension = script:GetCustomProperty("Suspension"):WaitForObject()
 
-local tieRod = script:GetCustomProperty("TieRod"):WaitForObject()
-local tieTarget = script:GetCustomProperty("TieTarget"):WaitForObject()
+-- local tieRod = script:GetCustomProperty("TieRod"):WaitForObject()
+-- local tieTarget = script:GetCustomProperty("TieTarget"):WaitForObject()
 
-local dragLink = script:GetCustomProperty("DragLink"):WaitForObject()
-local dragTarget = script:GetCustomProperty("DragTarget"):WaitForObject()
+-- local dragLink = script:GetCustomProperty("DragLink"):WaitForObject()
+-- local dragTarget = script:GetCustomProperty("DragTarget"):WaitForObject()
 
-local damperTop = script:GetCustomProperty("DamperTop"):WaitForObject()
-local damperBottom = script:GetCustomProperty("DamperBottom"):WaitForObject()
+-- local damperTop = script:GetCustomProperty("DamperTop"):WaitForObject()
+-- local damperBottom = script:GetCustomProperty("DamperBottom"):WaitForObject()
 
-local damperTop2 = script:GetCustomProperty("DamperTop2"):WaitForObject()
-local damperBottom2 = script:GetCustomProperty("DamperBottom2"):WaitForObject()
+-- local damperTop2 = script:GetCustomProperty("DamperTop2"):WaitForObject()
+-- local damperBottom2 = script:GetCustomProperty("DamperBottom2"):WaitForObject()
 
-local shockAbsorberTopA = script:GetCustomProperty("ShockAbosorberTopA"):WaitForObject()
-local shockAbsorberBottomA = script:GetCustomProperty("ShockAbsorberBottomA"):WaitForObject()
+-- local shockAbsorberTopA = script:GetCustomProperty("ShockAbosorberTopA"):WaitForObject()
+-- local shockAbsorberBottomA = script:GetCustomProperty("ShockAbsorberBottomA"):WaitForObject()
 
-local shockAbsorberTopB = script:GetCustomProperty("ShockAbsorberTopB"):WaitForObject()
-local shockAbsorberBottomB = script:GetCustomProperty("ShockAbsorberBottomB"):WaitForObject()
+-- local shockAbsorberTopB = script:GetCustomProperty("ShockAbsorberTopB"):WaitForObject()
+-- local shockAbsorberBottomB = script:GetCustomProperty("ShockAbsorberBottomB"):WaitForObject()
 
 local steeringArm = script:GetCustomProperty("SteeringArm"):WaitForObject()
-local steeringTarget = script:GetCustomProperty("SteeringTarget"):WaitForObject()
+-- local steeringTarget = script:GetCustomProperty("SteeringTarget"):WaitForObject()
 
 local wheel = suspension:FindDescendantsByName("Wheel")
 local steeringJoint = suspension:FindDescendantsByName("SteeringJoint")
@@ -79,22 +79,22 @@ local driver = nil
 
 function Initialize()
 
-	tieRod:LookAtContinuous(tieTarget, false)
-	dragLink:LookAtContinuous(dragTarget, false)
+	-- tieRod:LookAtContinuous(tieTarget, false)
+	-- dragLink:LookAtContinuous(dragTarget, false)
 	
-	damperTop:LookAtContinuous(damperBottom, false)
-	damperBottom:LookAtContinuous(damperTop, false)
+	-- damperTop:LookAtContinuous(damperBottom, false)
+	-- damperBottom:LookAtContinuous(damperTop, false)
 	
-	damperTop2:LookAtContinuous(damperBottom2, false)
-	damperBottom2:LookAtContinuous(damperTop2, false)
+	-- damperTop2:LookAtContinuous(damperBottom2, false)
+	-- damperBottom2:LookAtContinuous(damperTop2, false)
 	
-	shockAbsorberTopA:LookAtContinuous(shockAbsorberBottomA, false)
-	shockAbsorberBottomA:LookAtContinuous(shockAbsorberTopA, false)
+	-- shockAbsorberTopA:LookAtContinuous(shockAbsorberBottomA, false)
+	-- shockAbsorberBottomA:LookAtContinuous(shockAbsorberTopA, false)
 	
-	shockAbsorberTopB:LookAtContinuous(shockAbsorberBottomB, false)
-	shockAbsorberBottomB:LookAtContinuous(shockAbsorberTopB, false)
+	-- shockAbsorberTopB:LookAtContinuous(shockAbsorberBottomB, false)
+	-- shockAbsorberBottomB:LookAtContinuous(shockAbsorberTopB, false)
 	
-	steeringArm:LookAtContinuous(steeringTarget, false)
+	-- steeringArm:LookAtContinuous(steeringTarget, false)
 	
 	turnTask = Task.Spawn(TurnSignalsTask, 0)
 	turnTask.repeatCount = -1
@@ -315,35 +315,35 @@ function Tick(dt)
 	
 	xMovement = driver:GetVelocity().size/100 * 2
 	
-	rumbleSFX.pitch = driver:GetVelocity().size/2
+	-- rumbleSFX.pitch = driver:GetVelocity().size/2
 	
 	currentRotation = steeringJoint[1]:GetRotation().z
 	
-	if xMovement > 10 and driver.isGrounded and not dirtState and enableFX then
+	-- if xMovement > 10 and driver.isGrounded and not dirtState and enableFX then
 	
-		for _, d in ipairs(dirtVFX) do
+	-- 	for _, d in ipairs(dirtVFX) do
 		
-			d:Play()
+	-- 		d:Play()
 			
-		end
+	-- 	end
 		
-		rumbleSFX:Play()
+	-- 	rumbleSFX:Play()
 		
-		dirtState = true
+	-- 	dirtState = true
 	
-	elseif xMovement < 10 or not driver.isGrounded then
+	-- elseif xMovement < 10 or not driver.isGrounded then
 	
-		for _, d in ipairs(dirtVFX) do
+	-- 	for _, d in ipairs(dirtVFX) do
 		
-			d:Stop()
+	-- 		d:Stop()
 			
-		end
+	-- 	end
 		
-		rumbleSFX:Stop()
+	-- 	rumbleSFX:Stop()
 	
-		dirtState = false
+	-- 	dirtState = false
 		
-	end
+	-- end
 	
 	if difference.size > driver:GetVelocity().size then
 	
@@ -369,8 +369,16 @@ function Tick(dt)
 	
 	for _, w in ipairs(wheel) do
 	
-		w:RotateTo(w:GetRotation() + Rotation.New(xMovement, 0 , 0), 0.15, true)
+		w:RotateTo(w:GetRotation() + Rotation.New(xMovement, 0 , 0), 0.05, true)
 		
+	end
+	if zRotation > 0 then
+	
+		steeringArm:RotateTo(Rotation.New(-30, 45 , 180), 0.15, true)
+	elseif zRotation < 0 then
+		steeringArm:RotateTo(Rotation.New(30, 45 , 180), 0.15, true)
+	elseif zRotation == 0 then
+		steeringArm:RotateTo(Rotation.New(0, 45 , 180), 0.15, true)
 	end
 
 end

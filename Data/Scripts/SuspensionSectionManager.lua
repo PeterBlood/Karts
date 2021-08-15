@@ -1,10 +1,10 @@
 local movingSuspension = script:GetCustomProperty("MovingSuspension"):WaitForObject()
 
-local controlArm = script:GetCustomProperty("ControlArm"):WaitForObject()
-local controlArmUpper = script:GetCustomProperty("ControlArmUpper"):WaitForObject()
+-- local controlArm = script:GetCustomProperty("ControlArm"):WaitForObject()
+-- local controlArmUpper = script:GetCustomProperty("ControlArmUpper"):WaitForObject()
 
-local controlArmTarget = script:GetCustomProperty("ControlArmTarget"):WaitForObject()
-local controlArmUpperTarget = script:GetCustomProperty("ControlArmUpperTarget"):WaitForObject()
+-- local controlArmTarget = script:GetCustomProperty("ControlArmTarget"):WaitForObject()
+-- local controlArmUpperTarget = script:GetCustomProperty("ControlArmUpperTarget"):WaitForObject()
 
 local highestMarker01 = script:GetCustomProperty("HighestMarker01"):WaitForObject()
 local highestMarker02 = script:GetCustomProperty("HighestMarker02"):WaitForObject()
@@ -31,8 +31,8 @@ local nullCount = 0
 
 function Initialize()
 
-	controlArm:LookAtContinuous(controlArmTarget, false)
-	controlArmUpper:LookAtContinuous(controlArmUpperTarget, false)
+	-- controlArm:LookAtContinuous(controlArmTarget, false)
+	-- controlArmUpper:LookAtContinuous(controlArmUpperTarget, false)
 		
 	trailVFX:Stop()
 	trailState = false

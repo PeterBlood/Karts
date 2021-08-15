@@ -21,10 +21,10 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local VEHICLE = script:FindAncestorByType('Vehicle')
-if not VEHICLE:IsA('Vehicle') then
-    error(script.name .. " should be part of Vehicle object hierarchy.")
-end
+--local VEHICLE = script:FindAncestorByType('Vehicle')
+--if not VEHICLE:IsA('Vehicle') then
+--     error(script.name .. " should be part of Vehicle object hierarchy.")
+-- end
 
 -- User exposed external properties
 local COLLISION_BOXES = script:GetCustomProperty("CollisionBoxes"):WaitForObject()
@@ -44,19 +44,19 @@ local boxDamageTimes = {}
 local lastDamageTime = time()
 
 function Tick(deltaTime)
-    if not Object.IsValid(VEHICLE) then return end
-    if not VEHICLE.driver then return end
+    -- if not Object.IsValid(VEHICLE) then return end
+    -- if not VEHICLE.driver then return end
 
-    if LOCAL_PLAYER ~= VEHICLE.driver then
-        if (LOCAL_PLAYER:GetWorldPosition() - VEHICLE:GetWorldPosition()).size > MAX_RENDER_DISTANCE then
-            return
-        end
-    end
+    -- if LOCAL_PLAYER ~= VEHICLE.driver then
+    --     if (LOCAL_PLAYER:GetWorldPosition() - VEHICLE:GetWorldPosition()).size > MAX_RENDER_DISTANCE then
+    --         return
+    --     end
+    -- end
     
     -- Wait for a while before car can do more damage effect
     if time() - lastDamageTime < DAMAGE_COOLDOWN then return end
 
-    local speed = VEHICLE:GetVelocity().size
+    local speed = LOCAL_PLAYER:GetVelocity().size
 
     -- Only consider showing damage effect 
     -- if the vehicle moved past the speed threshold
@@ -74,24 +74,24 @@ function Tick(deltaTime)
     Task.Wait(deltaTime)
 end
 
-function CheckDamage()
-    for _, box in ipairs(COLLISION_BOXES:GetChildren()) do
-        local ray1Start, ray1End, ray2Start, ray2End = GetBoxPoints(box)
-        local result1 = World.Raycast(ray1Start, ray1End, {ignorePlayers = true})
-        local result2 = World.Raycast(ray2Start, ray2End, {ignorePlayers = true})
+-- function CheckDamage()
+--     for _, box in ipairs(COLLISION_BOXES:GetChildren()) do
+--         local ray1Start, ray1End, ray2Start, ray2End = GetBoxPoints(box)
+--         local result1 = World.Raycast(ray1Start, ray1End, {ignorePlayers = true})
+--         local result2 = World.Raycast(ray2Start, ray2End, {ignorePlayers = true})
         
-        if result1 and result2 and result1.other ~= VEHICLE and result2.other ~= VEHICLE then
-            SpawnDamageEffect(box:GetWorldPosition())
-            break
-        elseif result1 and result1.other ~= VEHICLE then
-            SpawnDamageEffect(result1:GetImpactPosition())
-            break
-        elseif result2 and result2.other ~= VEHICLE then
-            SpawnDamageEffect(result2:GetImpactPosition())
-            break
-        end
-    end
-end
+--         if result1 and result2 and result1.other ~= VEHICLE and result2.other ~= VEHICLE then
+--             SpawnDamageEffect(box:GetWorldPosition())
+--             break
+--         elseif result1 and result1.other ~= VEHICLE then
+--             SpawnDamageEffect(result1:GetImpactPosition())
+--             break
+--         elseif result2 and result2.other ~= VEHICLE then
+--             SpawnDamageEffect(result2:GetImpactPosition())
+--             break
+--         end
+--     end
+-- end
 
 function DebugRays()
     for _, box in ipairs(COLLISION_BOXES:GetChildren()) do
