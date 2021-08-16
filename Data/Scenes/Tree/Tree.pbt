@@ -35,6 +35,8 @@ Objects {
   ChildIds: 9072739091620502242
   ChildIds: 7153576185685040610
   ChildIds: 15925727378245494180
+  ChildIds: 9497476826664652053
+  ChildIds: 17071054617309919729
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -47,6 +49,98 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17071054617309919729
+  Name: "FireFlower"
+  Transform {
+    Location {
+      X: -7522.76953
+      Y: -10092.8975
+      Z: 227.147278
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Owner"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:Direction"
+      Float: -116.428
+    }
+    Overrides {
+      Name: "cs:Owner:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Direction:isrep"
+      Bool: true
+    }
+  }
+  Lifespan: 5
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "FireFlower"
+  }
+}
+Objects {
+  Id: 9497476826664652053
+  Name: "SuperHorn"
+  Transform {
+    Location {
+      X: -7707.95361
+      Y: -8383.1377
+      Z: 56.0179749
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Lifespan: 3
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "SuperHorn"
   }
 }
 Objects {
@@ -16202,7 +16296,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceoff"
