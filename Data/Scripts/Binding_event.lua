@@ -35,6 +35,7 @@ end
 
 function Menu(Player,value)
 	local vehicle=Player.occupiedVehicle
+	print(value)
 	if value then
 		if Object.IsValid(vehicle) then
 			vehicle:RemoveDriver()

@@ -97,7 +97,7 @@ function Tick(dt)
 		
 	end
 	local player = Game.GetLocalPlayer()
-	-- engineSFX.pitch = driver:GetVelocity().size / 3
+	engineSFX.pitch = driver:GetVelocity().size / 3
 	-- SetIK(player)
 	
 	targetRotation = driver:GetWorldRotation()

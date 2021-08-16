@@ -7,6 +7,9 @@ local Camera = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
 local propLocalTop = script:GetCustomProperty("LocalTop"):WaitForObject()
 local TutorialWindow = script:GetCustomProperty("Tutorial"):WaitForObject()
 
+local MenuPortal = script:GetCustomProperty("GamePortal"):WaitForObject()
+local propMinimapUIMy = script:GetCustomProperty("MinimapUIMy"):WaitForObject()
+
 
 
 local PlayButt = script:GetCustomProperty("PlayButt"):WaitForObject()
@@ -22,9 +25,9 @@ function PlayClick()
 	UI.SetCursorVisible(false)
 	UI.SetCursorLockedToViewport(true)
 	UI.SetCanCursorInteractWithUI(false)
-	Menu.visibility=2
-	Camera.followPlayer=player
-	Camera.rotationMode=RotationMode.LOOK_ANGLE
+	Menu.visibility= 3
+	MenuPortal.visibility= 3
+	propMinimapUIMy.visibility = 0
 	Events.BroadcastToServer("Menu",player,false)
 end
 

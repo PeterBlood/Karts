@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17800836727399575060
-  Name: "Japanese Temple Floor 01 - Bridge 01 End"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_jpn_tem_floor_bridge_end_001_ref"
-  }
-}
-Assets {
   Id: 17751393423790263587
   Name: "Frame Outlined 001"
   PlatformAssetType: 9
@@ -80,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13485956709490126250
+  Name: "BG Flat 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_27"
+  }
+}
+Assets {
   Id: 12699664304947085854
   Name: "Military Ability Mortar"
   PlatformAssetType: 9
@@ -95,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_015"
+  }
+}
+Assets {
+  Id: 12055838100548602759
+  Name: "BG Highlighted 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_027"
   }
 }
 Assets {
@@ -152,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7017836308789028587
-  Name: "Bark Redwood 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_redwood_001_uv"
-  }
-}
-Assets {
   Id: 6292881694050517332
   Name: "Center Circle 001 Outline"
   PlatformAssetType: 9
@@ -176,15 +176,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Military_Ability_Red_013"
-  }
-}
-Assets {
-  Id: 4223171803652223393
-  Name: "Frame Outlined Thick 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameFlat_022"
   }
 }
 Assets {
@@ -242,30 +233,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2840079558614103575
-  Name: "BG Highlighted 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_022"
-  }
-}
-Assets {
   Id: 2199368816434386994
   Name: "UI Basic Shape Square"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_Square"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
   }
 }
 Assets {

@@ -55,6 +55,7 @@ Objects {
   }
   ParentId: 6938031885031256617
   ChildIds: 7756249285349190125
+  ChildIds: 10962083806799146922
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -72,6 +73,79 @@ Objects {
     SubobjectId: 12896763651701262109
     InstanceId: 14122700515233997026
     TemplateId: 7826251976767064807
+  }
+}
+Objects {
+  Id: 10962083806799146922
+  Name: "ImageAnimator"
+  Transform {
+    Location {
+      X: 0.00136346917
+      Y: -0.0781131
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 10
+    }
+  }
+  ParentId: 11908963087072308822
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:GamePortalImage"
+      ObjectReference {
+        SelfId: 7756249285349190125
+      }
+    }
+    Overrides {
+      Name: "cs:Frames"
+      Int: 5
+    }
+    Overrides {
+      Name: "cs:FrameInterval"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:GameId1"
+      String: "aa5acf/karts-menu"
+    }
+    Overrides {
+      Name: "cs:GameId2"
+      String: "aa5acf/karts-menu"
+    }
+    Overrides {
+      Name: "cs:GameId3"
+      String: "aa5acf/karts-menu"
+    }
+    Overrides {
+      Name: "cs:GameId4"
+      String: "aa5acf/karts-menu"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3786257098054059942
+    }
+  }
+  InstanceHistory {
+    SelfId: 10962083806799146922
+    SubobjectId: 5736325875256565837
+    InstanceId: 4098152411849990361
+    TemplateId: 4977818097561193378
   }
 }
 Objects {
@@ -140,19 +214,19 @@ Objects {
     }
     Overrides {
       Name: "bp:Color Offset A"
-      Float: 0.0261588935
+      Float: 0
     }
     Overrides {
       Name: "bp:Color Offset B"
-      Float: 0.170215309
+      Float: 0
     }
     Overrides {
       Name: "bp:Color Offset C"
-      Float: 0.364886165
+      Float: 0
     }
     Overrides {
       Name: "bp:Intensity Color Blend"
-      Float: 0.325952
+      Float: 0
     }
     Overrides {
       Name: "bp:Game ID"
@@ -238,8 +312,6 @@ Objects {
   }
   ParentId: 6938031885031256617
   ChildIds: 9210223697564705420
-  ChildIds: 3410595674273991993
-  ChildIds: 12691521304755010138
   UnregisteredParameters {
     Overrides {
       Name: "cs:IsDevMode"
@@ -284,118 +356,6 @@ Objects {
   InstanceHistory {
     SelfId: 2082056253015429278
     SubobjectId: 818339855365863893
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
-  }
-}
-Objects {
-  Id: 12691521304755010138
-  Name: "ScreenshotCamera"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Pitch: -90
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2082056253015429278
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Camera {
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    IsOrthographic: true
-    RotationMode {
-      Value: "mc:erotationmode:default"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
-    UseAsAudioListener: true
-  }
-  InstanceHistory {
-    SelfId: 12691521304755010138
-    SubobjectId: 12078363382311588625
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
-  }
-}
-Objects {
-  Id: 3410595674273991993
-  Name: "MinimapImageCapture"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2082056253015429278
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Camera"
-      ObjectReference {
-        SelfId: 12691521304755010138
-      }
-    }
-    Overrides {
-      Name: "cs:MinimapSetup"
-      ObjectReference {
-        SelfId: 2082056253015429278
-      }
-    }
-    Overrides {
-      Name: "cs:UIContainer"
-      ObjectReference {
-        SelfId: 1498170726136298273
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 13857787613024960159
-    }
-  }
-  InstanceHistory {
-    SelfId: 3410595674273991993
-    SubobjectId: 4101510771310601330
     InstanceId: 14122700515233997026
     TemplateId: 7826251976767064807
   }
@@ -560,10 +520,10 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Control {
-    Width: 500
-    Height: 500
-    UIX: -305
-    UIY: 290
+    Width: 1991
+    Height: 1991
+    UIX: -985.118286
+    UIY: 540.354614
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

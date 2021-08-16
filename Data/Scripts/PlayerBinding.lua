@@ -8,6 +8,8 @@ local TopControl = script:GetCustomProperty("TopControl"):WaitForObject()
 local propAdvancedKart = script:GetCustomProperty("AdvancedKart")
 local propKillBox = script:GetCustomProperty("KillBox"):WaitForObject()
 local Checkpoints = script:GetCustomProperty("checkpoints"):WaitForObject()
+local MenuPortal = script:GetCustomProperty("GamePortal"):WaitForObject()
+local DOF = script:GetCustomProperty("DepthOfFieldPostProcess"):WaitForObject()
 
 
 
@@ -138,14 +140,6 @@ function OnBindingPressed(Player, binding)
 
 end
 
-function OnPlayerJoined(player)
-    player.bindingPressedEvent:Connect(OnBindingPressed)
-end
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
-
-
-
-
 function OnBeginOverlap(theTrigger, player)
 	    if player and player:IsA("Player") and player.name~=Owner then
 	        local vehicle=player.occupiedVehicle
@@ -217,4 +211,10 @@ function OnBeginOverlap(theTrigger, player)
 		end
 end
 
+
+function OnPlayerJoined(player)
+
+    player.bindingPressedEvent:Connect(OnBindingPressed)
+end
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
 propKillBox.beginOverlapEvent:Connect(OnBeginOverlap)

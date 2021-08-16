@@ -19,6 +19,7 @@ function SetPlayer(player)
 	ROOT.visibility = Visibility.INHERIT
 	
 	CIRCLE_BG.isEnabled = (player == Game.GetLocalPlayer())
+	CIRCLE:SetPlayerProfile(player)
 	
 	-- Set player's initial name letter
 	NAME.text = string.sub(player.name, 1, 1)
