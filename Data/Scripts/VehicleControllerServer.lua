@@ -22,8 +22,17 @@ local defaultSettings = dock:GetCustomProperty("DefaultSettings"):WaitForObject(
 
 local hornSFX = script:GetCustomProperty("Horn")
 
+local propVelocity = script:GetCustomProperty("velocity"):WaitForObject()
+local propMilseconds = script:GetCustomProperty("milseconds"):WaitForObject()
+local propTick = script:GetCustomProperty("tick"):WaitForObject()
+local propZRotationMem = script:GetCustomProperty("zRotationMem"):WaitForObject()
+
+local VeloSize = script:GetCustomProperty("VeloSize")
+local ServerVelo = script:GetCustomProperty("ServerVelo")
+
 local xMovement = 0.0
 local zRotation = 0.0
+local zRotationMem = 0.0
 local movingDirection = 0.0
 
 local goForward = "ability_extra_21"
@@ -32,39 +41,8 @@ local doBrakes = "ability_extra_17"
 local turnLeft = "ability_extra_30"
 local turnRight = "ability_extra_32"
 
-local leave = "ability_extra_33"
-
-local lights = "ability_extra_38"
-
-local signalLeft = "ability_extra_20"
-local signalRight = "ability_extra_22"
-local hazard = "ability_extra_40"
 local horn = "ability_extra_35"
 
-local leftToggle = false
-local rightToggle = false
-local hazardToggle = false
-
-local difference = nil
-
-local pressedBefore = false
-local pressedListener = nil
-local releasedListener = nil
-
-local accumulatedDt = 0
-
-local oldVisiblity = true
-
-local lightToggle = false
-
-local driver = nil
-
-local parkPosition = vehicleSet:GetWorldPosition()
-local parkRotation = vehicleSet:GetWorldRotation()
-
-local movingOn = false
-local totalSeconds = math.floor(0)
-local milseconds = math.floor(0)
 --[[
 
 		Vehicle Controls
@@ -90,15 +68,59 @@ local milseconds = math.floor(0)
 	 	ability_extra_35 = H
 
 		 ability_extra_17 = Space
-	 	
+		 ability_extra_19 = TAB
+		 ability_extra_12 = LShift
+		 ability_extra_23 = R
 ]]
+
+-- local leave = "ability_extra_33"
+
+-- local lights = "ability_extra_38"
+
+-- local signalLeft = "ability_extra_20"
+-- local signalRight = "ability_extra_22"
+-- local hazard = "ability_extra_40"
+
+local leftToggle = false
+local rightToggle = false
+local hazardToggle = false
+
+local difference = nil
+
+local pressedBefore = false
+local pressedListener = nil
+local releasedListener = nil
+
+local accumulatedDt = 0
+
+local oldVisiblity = true
+
+local lightToggle = false
+
+local driver = nil
+
+local parkPosition = vehicleSet:GetWorldPosition()
+local parkRotation = vehicleSet:GetWorldRotation()
+
+local movingOn = false
+local milseconds = math.floor(0)
+
+local Drift = 0
+local outDrift = 0
+
+-- local driversit = 0
+
+-- local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
+-- local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
+-- local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
+-- local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
+-- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
 
 function StartVehicle(vehicleEquipment, player)
 	oldVisiblity = player:GetVisibility()
-	player:SetVisibility(false, true)
-	
+	player.isVisible = true
 	player.movementControlMode = MovementControlMode.NONE
-	
+
 	Task.Wait()
 	
 	player:SetVelocity(Vector3.ZERO)
@@ -202,17 +224,17 @@ function BindingPressed(player, binding)
 	
 	if binding == turnLeft then
 	
-		zRotation = zRotation - 1
+		zRotation = -1
 		pressedBefore = true
 	
 	elseif binding == turnRight then
 	
-		zRotation = zRotation + 1
+		zRotation = 1
 		pressedBefore = true
 		
-	elseif binding == leave and allowExitingVehicle and driver.isGrounded then
+	-- elseif binding == leave and allowExitingVehicle and driver.isGrounded then
 	
-		vehicleSet:Unequip()
+	-- 	vehicleSet:Unequip()
 		
 	elseif binding == horn then
 	
@@ -223,8 +245,8 @@ function BindingPressed(player, binding)
 	
 		movingOn = true
     	milseconds = 0
-    	realtime = 0
-    	totalSeconds = 0
+    	-- realtime = 0
+    	-- totalSeconds = 0
 		movingDirection = 1
 		pressedBefore = true
 	
@@ -233,77 +255,71 @@ function BindingPressed(player, binding)
 		movingDirection = -1
 		pressedBefore = true
 	
-	elseif binding == lights then
+	-- elseif binding == lights then
 		
-		if lightToggle then
+	-- 	if lightToggle then
 		
-			lightToggle = false
+	-- 		lightToggle = false
 			
-		else
+	-- 	else
 		
-			lightToggle = true
+	-- 		lightToggle = true
 			
-		end
+	-- 	end
 		
-		script:SetNetworkedCustomProperty("Lights", lightToggle)
+	-- 	script:SetNetworkedCustomProperty("Lights", lightToggle)
 		
-	elseif binding == signalLeft then
+	-- elseif binding == signalLeft then
 	
-		if not leftToggle then
+	-- 	if not leftToggle then
 	
-			script:SetNetworkedCustomProperty("TurnSignals", 1)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 1)
 			
-			leftToggle = true
+	-- 		leftToggle = true
 			
-		else
+	-- 	else
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 0)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 0)
 			
-			leftToggle = false
+	-- 		leftToggle = false
 			
-		end
+	-- 	end
 		
-	elseif binding == signalRight then
+	-- elseif binding == signalRight then
 	
-		if not rightToggle then
+	-- 	if not rightToggle then
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 2)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 2)
 			
-			rightToggle = true
+	-- 		rightToggle = true
 			
-		else
+	-- 	else
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 0)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 0)
 			
-			rightToggle = false
+	-- 		rightToggle = false
 			
-		end
+	-- 	end
 		
-	elseif binding == hazard then
+	-- elseif binding == hazard then
 	
-		if not hazardToggle then
+	-- 	if not hazardToggle then
 	
-			script:SetNetworkedCustomProperty("TurnSignals", 3)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 3)
 			
-			hazardToggle = true
+	-- 		hazardToggle = true
 			
-		else
+	-- 	else
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 0)
+	-- 		script:SetNetworkedCustomProperty("TurnSignals", 0)
 			
-			hazardToggle = false
+	-- 		hazardToggle = false
 			
-		end	
+	-- 	end	
 			
 	end
 
 end
-  
-local UpdatemilsecondTask = Task.Spawn(function()
-        milseconds = milseconds + 1
-end)
-UpdatemilsecondTask.repeatInterval = 0.01
-UpdatemilsecondTask.repeatCount = -1
 
 function BindingReleased(player, binding)
 
@@ -315,15 +331,15 @@ function BindingReleased(player, binding)
 
 	if binding == turnLeft then
 	
-		zRotation = zRotation + 1
+		zRotation = 0
 		
-		if leftToggle then
+		-- if leftToggle then
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 0)
+		-- 	script:SetNetworkedCustomProperty("TurnSignals", 0)
 			
-			leftToggle = false
+		-- 	leftToggle = false
 			
-		end
+		-- end
 
 	elseif binding == goForward then
 			movingOn = false
@@ -334,19 +350,34 @@ function BindingReleased(player, binding)
 	
 	elseif binding == turnRight then
 	
-		zRotation = zRotation - 1
+		zRotation = 0
 		
-		if rightToggle then
+		-- if rightToggle then
 		
-			script:SetNetworkedCustomProperty("TurnSignals", 0)
+		-- 	script:SetNetworkedCustomProperty("TurnSignals", 0)
 			
-			rightToggle = false
+		-- 	rightToggle = false
 			
-		end
+		-- end
 					
 	end
 
 end
+
+-- T I M E R 
+local UpdatemilsecondTask = Task.Spawn(function()
+	milseconds = milseconds + 1
+end)
+UpdatemilsecondTask.repeatInterval = 0.01
+UpdatemilsecondTask.repeatCount = -1
+------------------------------------------------------
+
+-- function SetIK(driver)
+-- leftHandAnchor:MoveTo(Vector3.New(leftHIK.GetWorldPosition),0.15,true)
+-- leftHandAnchor:RotateTo(Rotation.New(leftHIK.GetWorldRotation),0.15,true)
+-- leftHandAnchor:Activate(driver)
+-- print("IK yo")
+-- end
 
 function Tick(dt)
 
@@ -363,6 +394,10 @@ function Tick(dt)
 		return
 		
 	end
+
+	-- if driversit> 0 then
+	-- SetIK(driver)
+	-- end
 	
 	accumulatedDt = 0
 	
@@ -393,23 +428,39 @@ function Tick(dt)
 		driver:SetWorldRotation(Rotation.New(0, 0, -zRotation * turnRatePerTick * (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
 	
 	end
-	local getvelo = driver:GetVelocity()
-	print(getvelo)
+-- if zRotation > 0 then
+-- 	HIK:RotateTo(Rotation.New(45,0,0),0.15,true)
+-- elseif zRotation < 0 then
+-- 	HIK:RotateTo(Rotation.New(-45,0,0),0.15,true)
+-- elseif zRotation == 0 then
+-- 	HIK:RotateTo(Rotation.New(0,0,0),0.15,true)
+-- end
+--debug ui
+	propVelocity.text = tostring(driver:GetVelocity().size)
+	propMilseconds.text = tostring(milseconds)
+	propTick.text = tostring(dt)
+	propZRotationMem.text = tostring(zRotation)
+------------------------------------------
+
 	if movingDirection > 0 and movingOn == true and driver:GetVelocity().size < topSpeed then
-				if milseconds < 10 then
-				driver:SetVelocity(Vector3.New(milseconds*100* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*100*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+				if milseconds < 30 then
+				driver:SetVelocity(Vector3.New(milseconds*ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				else
-				driver:AddImpulse(Vector3.New(7000* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),7000*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+				driver:AddImpulse(Vector3.New(VeloSize* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				end
-			elseif movingDirection < 0 then
-			driver:AddImpulse(Vector3.New(-5000 * 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),-5000 * 1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0))
-			elseif movingDirection == 0 and driver:GetVelocity().size > 0 then
+	elseif movingDirection < 0 then
+				if milseconds < 30 then
+				driver:SetVelocity(Vector3.New(milseconds*-ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*-ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+				else
+				driver:AddImpulse(Vector3.New(-(VeloSize-1000) * 1.6 *ServerVelo* math.cos(math.rad(driver:GetWorldRotation().z)),-(VeloSize-1000) * 1.6 *ServerVelo* math.sin(math.rad(driver:GetWorldRotation().z)),0))
+				end
+	elseif movingDirection == 0 and driver:GetVelocity().size > 0 then
 			driver:AddImpulse(Vector3.New(100 * 10 * math.cos(math.rad(driver:GetWorldRotation().z)),100 * 10 * math.sin(math.rad(driver:GetWorldRotation().z)),0))
-			elseif movingOn == false then
+	elseif movingOn == false then
 			milseconds = 0
 			--elseif driver:GetVelocity().size > topSpeed then
 			--	driver:SetVelocity().size = topSpeed
-			end
+	end
 
 end
 

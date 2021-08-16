@@ -17,12 +17,17 @@ local recentDriver = nil
 local targetRotation = nil
 local vehicleRotation = nil
 
+-- local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
+-- local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
+-- local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
+-- local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
+-- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
+
 function EnterVehicle(vehicleEquipment, player)
 
 	--print("entering")
 
 	theVehicle:Follow(player, player.maxWalkSpeed * 5)
-	
 	driverThirdPersonCamera.hasFreeControl = true
 	player:SetDefaultCamera(driverThirdPersonCamera, 0.1)
 		
@@ -34,7 +39,6 @@ function EnterVehicle(vehicleEquipment, player)
 	Task.Wait(0.5)
 	
 	engineSFX:Play()
-
 end
 
 function LeaveVehicle(vehicleEquipment, player)
@@ -55,6 +59,22 @@ function LeaveVehicle(vehicleEquipment, player)
 	
 end
 
+--  function SetIK(player)
+--  	if not vehicleSet.owner then
+	
+--  		return
+		
+--  	end
+--  	leftHandAnchor:AttachToPlayer(player, "left_hand")	
+--  	print(leftHIK:GetPosition())
+-- 	 print(leftHIK:GetRotation())
+--  	leftHandAnchor:MoveTo(Vector3.New(leftHIK:GetPosition()),10,true)
+--  	leftHandAnchor:RotateTo(Rotation.New(leftHIK:GetRotation()),10,true)
+--  	leftHandAnchor:Activate(player)
+--  print("IK yo")
+
+--  end
+
 function Resync(player)
 
 	if not vehicleSet.owner then
@@ -67,7 +87,6 @@ function Resync(player)
 	
 	theVehicle:Follow(driver, driver.maxWalkSpeed * 2)
 
-
 end
 
 function Tick(dt)
@@ -77,8 +96,9 @@ function Tick(dt)
 		return
 		
 	end
-	
-	engineSFX.pitch = driver:GetVelocity().size / 3
+	local player = Game.GetLocalPlayer()
+	-- engineSFX.pitch = driver:GetVelocity().size / 3
+	-- SetIK(player)
 	
 	targetRotation = driver:GetWorldRotation()
 	
