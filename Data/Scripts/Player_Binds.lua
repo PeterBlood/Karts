@@ -9,7 +9,7 @@ local TutorialWindow = script:GetCustomProperty("Tutorial"):WaitForObject()
 
 local MenuPortal = script:GetCustomProperty("GamePortal"):WaitForObject()
 local propMinimapUIMy = script:GetCustomProperty("MinimapUIMy"):WaitForObject()
-
+local propPost = script:GetCustomProperty("post"):WaitForObject()
 
 
 local PlayButt = script:GetCustomProperty("PlayButt"):WaitForObject()
@@ -28,6 +28,7 @@ function PlayClick()
 	Menu.visibility= 3
 	MenuPortal.visibility= 3
 	propMinimapUIMy.visibility = 0
+	propPost.visibility = 0
 	Events.BroadcastToServer("Menu",player,false)
 end
 

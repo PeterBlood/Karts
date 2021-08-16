@@ -7,7 +7,7 @@ Assets {
       RootId: 12637584477876243657
       Objects {
         Id: 12637584477876243657
-        Name: "KartSys"
+        Name: "Kart"
         Transform {
           Scale {
             X: 1
@@ -17,6 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 15380668312713142507
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -38,9 +39,7 @@ Assets {
         Name: "Voxel Mk1 SUV Set"
         Transform {
           Location {
-            X: 338.234283
-            Y: 353.925446
-            Z: 38.8702316
+            Z: 38.87
           }
           Rotation {
           }
@@ -54,6 +53,7 @@ Assets {
         ChildIds: 11571360657985054411
         ChildIds: 5771382984097019208
         ChildIds: 17164896749810771429
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -82,6 +82,7 @@ Assets {
           }
         }
         ParentId: 15380668312713142507
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -126,6 +127,7 @@ Assets {
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -144,7 +146,6 @@ Assets {
         Name: "VoxelMk1Plus"
         Transform {
           Location {
-            Y: 330
           }
           Rotation {
           }
@@ -249,7 +250,6 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Trigger {
-          Interactable: true
           InteractionLabel: "Enter Vehicle"
           TeamSettings {
             IsTeamCollisionEnabled: true

@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 4290015243420298285
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
@@ -22,8 +21,6 @@ Objects {
   ChildIds: 12071421444357643245
   ChildIds: 2351561820974907999
   ChildIds: 6006659116537616263
-  ChildIds: 11216708368050348411
-  ChildIds: 2657815348075819695
   ChildIds: 8119063641305623749
   ChildIds: 3334816458376819475
   ChildIds: 13999141717575242851
@@ -8302,10 +8299,6 @@ Objects {
   }
   ParentId: 13132117138379726905
   ChildIds: 15888745900152920286
-  ChildIds: 16028144355465643377
-  ChildIds: 11142989454386085292
-  ChildIds: 3421544291623900828
-  ChildIds: 17723034122587299292
   ChildIds: 10288307054338371320
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8332,8 +8325,8 @@ Objects {
         Id: 15136791066424950142
       }
       Color {
-        R: 0.3
-        B: 0.299999863
+        G: 0.811764777
+        B: 0.78039223
         A: 1
       }
       TeamSettings {
@@ -8493,20 +8486,20 @@ Objects {
       }
       FontSize: 65
       ButtonColor {
-        R: 1
+        G: 0.599999905
         B: 1
         A: 1
       }
       HoveredColor {
-        R: 1
-        G: 0.200000018
+        R: 0.745
+        G: 0.91075
         B: 1
         A: 1
       }
       PressedColor {
         R: 1
-        G: 0.400000036
-        B: 1
+        G: 1
+        B: 0.400000036
         A: 1
       }
       DisabledColor {
@@ -8553,362 +8546,6 @@ Objects {
   InstanceHistory {
     SelfId: 18285457517022162457
     SubobjectId: 4561981252546055895
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 17723034122587299292
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: -67721.8906
-      Y: -16582.3281
-      Z: -2137
-    }
-    Rotation {
-      Yaw: 129.999939
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9326967413303144425
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 911
-    Height: 100
-    UIX: 50
-    UIY: 450
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "1 - to close/open menu"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 14756091894735419662
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:top"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      OutlineColor {
-        A: 1
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 17723034122587299292
-    SubobjectId: 3997308462392720658
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 3421544291623900828
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: -67721.9141
-      Y: -16582.3438
-      Z: -2137
-    }
-    Rotation {
-      Yaw: 129.999939
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9326967413303144425
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 911
-    Height: 100
-    UIX: 50
-    UIY: 350
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "E - to use skill"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 14756091894735419662
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:top"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      OutlineColor {
-        A: 1
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3421544291623900828
-    SubobjectId: 17146984010344822354
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 11142989454386085292
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: -67721.9453
-      Y: -16582.3438
-      Z: -2137
-    }
-    Rotation {
-      Yaw: 129.999939
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9326967413303144425
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 911
-    Height: 100
-    UIX: 50
-    UIY: 250
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Q - return to last checkpoint"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 14756091894735419662
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:top"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      OutlineColor {
-        A: 1
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11142989454386085292
-    SubobjectId: 6354102584256421218
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 16028144355465643377
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: -67721.9609
-      Y: -16582.3516
-      Z: -2137
-    }
-    Rotation {
-      Yaw: 129.999939
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9326967413303144425
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Control {
-    Width: 911
-    Height: 100
-    UIX: 50
-    UIY: 150
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Shift - to boost"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 40
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 14756091894735419662
-      }
-      VerticalJustification {
-        Value: "mc:everticaljustification:top"
-      }
-      ShadowColor {
-        A: 1
-      }
-      ShadowOffset {
-      }
-      OutlineColor {
-        A: 1
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 16028144355465643377
-    SubobjectId: 2081506502250833343
     InstanceId: 7810896307375937404
     TemplateId: 8088207840596917020
   }
@@ -14625,6 +14262,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 16051756888913693676
   ChildIds: 15669665566305280114
+  ChildIds: 4290015243420298285
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -14644,6 +14282,121 @@ Objects {
     SubobjectId: 12055213845605400933
     InstanceId: 7810896307375937404
     TemplateId: 8088207840596917020
+  }
+}
+Objects {
+  Id: 4290015243420298285
+  Name: "post-processing"
+  Transform {
+    Location {
+      X: -15364.04
+      Y: -29900.9121
+      Z: -3544
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7332192672730030507
+  ChildIds: 11081186667686530447
+  ChildIds: 4076271791418972761
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4076271791418972761
+  Name: "post"
+  Transform {
+    Location {
+      X: 4.24903107
+      Y: 234.17395
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4290015243420298285
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "post"
+  }
+  InstanceHistory {
+    SelfId: 4076271791418972761
+    SubobjectId: 17007302933071946649
+    InstanceId: 6795784231832764528
+    TemplateId: 7738426219964834512
+  }
+}
+Objects {
+  Id: 11081186667686530447
+  Name: "DOF"
+  Transform {
+    Location {
+      X: -4.24903107
+      Y: -234.17395
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4290015243420298285
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:post"
+      ObjectReference {
+        SelfId: 4076271791418972761
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16933850661246879158
+    }
   }
 }
 Objects {
@@ -15258,6 +15011,12 @@ Objects {
         SelfId: 15669665566305280114
       }
     }
+    Overrides {
+      Name: "cs:post"
+      ObjectReference {
+        SelfId: 4076271791418972761
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15344,7 +15103,7 @@ Objects {
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:forceon"
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }
@@ -15441,71 +15200,6 @@ Objects {
     }
     TemplateAsset {
       Id: 14806753974442662994
-    }
-  }
-}
-Objects {
-  Id: 2657815348075819695
-  Name: "checkpoints"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15655750298899891746
-      value {
-        Overrides {
-          Name: "Name"
-          String: "checkpoints"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 3954256560392110441
-    }
-  }
-}
-Objects {
-  Id: 11216708368050348411
-  Name: "random_boxes"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10501919322107528700
-      value {
-        Overrides {
-          Name: "Name"
-          String: "random_boxes"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9756642403373410458
     }
   }
 }
@@ -15939,6 +15633,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15958,6 +15653,12 @@ Objects {
           Vector {
             X: -8062.59
             Y: -9183.9043
+            Z: -688.018311
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -16425,7 +16126,7 @@ Objects {
   Name: "DefaultCamera"
   Transform {
     Location {
-      Z: -7899.88477
+      Z: -23708.4414
     }
     Rotation {
     }
@@ -16691,120 +16392,6 @@ Objects {
       }
       PlayerInteractDistance: 500
       PlayerInteractAngleDeg: 50
-    }
-  }
-}
-Objects {
-  Id: 4290015243420298285
-  Name: "post-processing"
-  Transform {
-    Location {
-      X: 4.24903107
-      Y: 234.17395
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 11081186667686530447
-  ChildIds: 4076271791418972761
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 4076271791418972761
-  Name: "post"
-  Transform {
-    Location {
-      X: 4.24903107
-      Y: 234.17395
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4290015243420298285
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "post"
-  }
-  InstanceHistory {
-    SelfId: 4076271791418972761
-    SubobjectId: 17007302933071946649
-    InstanceId: 6795784231832764528
-    TemplateId: 7738426219964834512
-  }
-}
-Objects {
-  Id: 11081186667686530447
-  Name: "DOF"
-  Transform {
-    Location {
-      X: -4.24903107
-      Y: -234.17395
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4290015243420298285
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:post"
-      ObjectReference {
-        SelfId: 4076271791418972761
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16933850661246879158
     }
   }
 }

@@ -1,3245 +1,6 @@
 Name: "Tracks Settings"
 RootId: 1512248798048398230
 Objects {
-  Id: 14237011213259317984
-  Name: "Track 2"
-  Transform {
-    Location {
-      X: -16720
-      Y: -13545
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1512248798048398230
-  ChildIds: 12062848898070173412
-  ChildIds: 5338567227432450456
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 14237011213259317984
-    SubobjectId: 16221996480923354634
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 5338567227432450456
-  Name: "Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14237011213259317984
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Geo"
-  }
-  InstanceHistory {
-    SelfId: 5338567227432450456
-    SubobjectId: 7972069554960915826
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 12062848898070173412
-  Name: "Track 2 Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2
-      Y: 2
-      Z: 2
-    }
-  }
-  ParentId: 14237011213259317984
-  ChildIds: 6585104946674286331
-  ChildIds: 2818981025101625680
-  ChildIds: 1149659828914666127
-  ChildIds: 5523783835541843171
-  ChildIds: 11165411987979309471
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Waypoints"
-      ObjectReference {
-        SelfId: 5523783835541843171
-      }
-    }
-    Overrides {
-      Name: "cs:StartingPositions"
-      ObjectReference {
-        SelfId: 1149659828914666127
-      }
-    }
-    Overrides {
-      Name: "cs:Vehicles"
-      ObjectReference {
-        SelfId: 11165411987979309471
-      }
-    }
-    Overrides {
-      Name: "cs:Name"
-      String: "Track 2"
-    }
-    Overrides {
-      Name: "cs:Laps"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:RoundTime"
-      Float: 240
-    }
-    Overrides {
-      Name: "cs:DefaultVehicle"
-      AssetReference {
-        Id: 7251884829137708299
-      }
-    }
-    Overrides {
-      Name: "cs:AssignRandomVehicles"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:Loop"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:DEBUG_DrawPath"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:AssignRandomVehicles:tooltip"
-      String: "Ignores DefaultVehicle and assigns a random vehicle from the Vehicles list to each player before the race round starts. If the player has vehicle selected from the vehicle list, then this property ignores won\'t assign a random vehicle."
-    }
-    Overrides {
-      Name: "cs:Loop:tooltip"
-      String: "Should the race track be looping?"
-    }
-    Overrides {
-      Name: "cs:Name:tooltip"
-      String: "Race track name."
-    }
-    Overrides {
-      Name: "cs:RoundTime:tooltip"
-      String: "Set time for the race to end. This helps to ensure the race eventually ends if some players stay afk during a race."
-    }
-    Overrides {
-      Name: "cs:Laps:tooltip"
-      String: "Number of laps for this race track."
-    }
-    Overrides {
-      Name: "cs:DEBUG_DrawPath:tooltip"
-      String: "Draw the waypoints debug lines for this track."
-    }
-    Overrides {
-      Name: "cs:DefaultVehicle:tooltip"
-      String: "Set the default vehicle for this track. This will be asigned regardless of player\'s vehicle choice. If AssignRandomVehicle is selected, then this property will be ignored."
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 12062848898070173412
-    SubobjectId: 9499152330389369358
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 11165411987979309471
-  Name: "Vehicles"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12062848898070173412
-  ChildIds: 9081701301975050713
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11165411987979309471
-    SubobjectId: 13711101956274320757
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 9081701301975050713
-  Name: "Vehicle Reference"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11165411987979309471
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Vehicle"
-      AssetReference {
-        Id: 7251884829137708299
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9081701301975050713
-    SubobjectId: 6538297201727966515
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 5523783835541843171
-  Name: "Waypoints"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12062848898070173412
-  ChildIds: 17158303588572154355
-  ChildIds: 15381334342166805977
-  ChildIds: 14513096784405223099
-  ChildIds: 17039326969723903937
-  ChildIds: 10214591430307078765
-  ChildIds: 9903458568324530496
-  ChildIds: 11468414268097028320
-  ChildIds: 8881802523057310217
-  ChildIds: 7831307042588260216
-  ChildIds: 13403683716128785773
-  ChildIds: 16088102800736057847
-  ChildIds: 9867367242754438757
-  ChildIds: 9202388884362872122
-  ChildIds: 17314193687766006738
-  ChildIds: 3870079802320987730
-  ChildIds: 18051099718211971725
-  ChildIds: 7264524245852045100
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5523783835541843171
-    SubobjectId: 7501996147280824329
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 7264524245852045100
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 43575
-      Y: -7562.5
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 7264524245852045100
-    SubobjectId: 4640075196000689094
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 18051099718211971725
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 42825
-      Y: -9550
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 18051099718211971725
-    SubobjectId: 16012124134254071399
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 3870079802320987730
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 40062.5
-      Y: -10975
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 3870079802320987730
-    SubobjectId: 1225353538746467000
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 17314193687766006738
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 36775
-      Y: -10712.5
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 17314193687766006738
-    SubobjectId: 15347215240930238264
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 9202388884362872122
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 36825
-      Y: -4900
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 9202388884362872122
-    SubobjectId: 6557643965748879824
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 9867367242754438757
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 31412.5
-      Y: -3700
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 9867367242754438757
-    SubobjectId: 12419788283913294479
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 16088102800736057847
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 27137.5
-      Y: -3562.5
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 16088102800736057847
-    SubobjectId: 18154135288699886877
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 13403683716128785773
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 27912.5
-      Y: 2400
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 13403683716128785773
-    SubobjectId: 11436731603482222983
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 7831307042588260216
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 35925
-      Y: 2675
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 7831307042588260216
-    SubobjectId: 5195599110706369426
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 8881802523057310217
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 39200
-      Y: 4425
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 8881802523057310217
-    SubobjectId: 6914887761325338339
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 11468414268097028320
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 39450
-      Y: 7900
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 11468414268097028320
-    SubobjectId: 13516397173447590922
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 9903458568324530496
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 40337.5
-      Y: 10475
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 9903458568324530496
-    SubobjectId: 12521197213886031274
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 10214591430307078765
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 42787.5
-      Y: 10362.5
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 10214591430307078765
-    SubobjectId: 12210834564124378759
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 17039326969723903937
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 44725
-      Y: 8750
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 17039326969723903937
-    SubobjectId: 14466621965452032811
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 14513096784405223099
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 43775
-      Y: 6237.5
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 14513096784405223099
-    SubobjectId: 17139852732209279569
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 15381334342166805977
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 43575
-      Y: -2369.1958
-      Z: 128.077637
-    }
-    Rotation {
-    }
-    Scale {
-      X: 20
-      Y: 20
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 15381334342166805977
-    SubobjectId: 17420318673245018419
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 17158303588572154355
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 43568.5938
-      Y: -4850
-      Z: 287.406921
-    }
-    Rotation {
-    }
-    Scale {
-      X: 27.8905029
-      Y: 0.503183246
-      Z: 20
-    }
-  }
-  ParentId: 5523783835541843171
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 17158303588572154355
-    SubobjectId: 14603651502223830297
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 1149659828914666127
-  Name: "Starting Positions"
-  Transform {
-    Location {
-      X: 44115.4727
-      Y: -5451.24609
-      Z: 5.00000095
-    }
-    Rotation {
-      Yaw: 89.9999771
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 12062848898070173412
-  ChildIds: 10753398949892312489
-  ChildIds: 8245557852752429062
-  ChildIds: 3954993714250540119
-  ChildIds: 9606712559406363213
-  ChildIds: 503984243542942832
-  ChildIds: 213383165049437168
-  ChildIds: 11520423422294209128
-  ChildIds: 4263231373271126991
-  ChildIds: 691333741121915525
-  ChildIds: 16481032206135177110
-  ChildIds: 5813232743617234747
-  ChildIds: 3293049432382088766
-  ChildIds: 12609420089145001153
-  ChildIds: 5050913067552193401
-  ChildIds: 17388504362303078503
-  ChildIds: 11444630158237193786
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 1149659828914666127
-    SubobjectId: 3116618603844034149
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 11444630158237193786
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -3000.00098
-      Y: 1799.99854
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 4736394538436971009
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11444630158237193786
-    SubobjectId: 13431814229056467664
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 4736394538436971009
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 11444630158237193786
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4736394538436971009
-    SubobjectId: 7282056862963543787
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 17388504362303078503
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2699.99976
-      Y: -0.00146484375
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 7316331429539081730
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 17388504362303078503
-    SubobjectId: 15412581300881990797
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 7316331429539081730
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 17388504362303078503
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 7316331429539081730
-    SubobjectId: 4700853342957603560
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 5050913067552193401
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2900.00049
-      Y: 1199.99841
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 11118861690649522072
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5050913067552193401
-    SubobjectId: 7110180176315703187
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 11118861690649522072
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 5050913067552193401
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 11118861690649522072
-    SubobjectId: 13761377935835319154
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 12609420089145001153
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2800.00024
-      Y: 599.998535
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 5595338782952940891
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 12609420089145001153
-    SubobjectId: 9964695061732548651
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 5595338782952940891
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 12609420089145001153
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 5595338782952940891
-    SubobjectId: 7571324360709996977
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 3293049432382088766
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1800
-      Y: -0.0009765625
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 4456035357189805922
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3293049432382088766
-    SubobjectId: 650592697709380308
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 4456035357189805922
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 3.05175781e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 3293049432382088766
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4456035357189805922
-    SubobjectId: 1829333439403324296
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 5813232743617234747
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2000.00061
-      Y: 1199.99878
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 17584641673075632695
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 5813232743617234747
-    SubobjectId: 8365680395587970001
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 17584641673075632695
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 5813232743617234747
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 17584641673075632695
-    SubobjectId: 15041231044075704029
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 16481032206135177110
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1900.00024
-      Y: 599.999
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 14148693779634963416
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16481032206135177110
-    SubobjectId: 13838575285050821500
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 14148693779634963416
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200
-      Y: -3.05175781e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 16481032206135177110
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 14148693779634963416
-    SubobjectId: 16207997223687563058
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 691333741121915525
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2100.00098
-      Y: 1799.99878
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 5624351088697918395
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 691333741121915525
-    SubobjectId: 3254978561543614063
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 5624351088697918395
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 691333741121915525
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 5624351088697918395
-    SubobjectId: 7690362669968795473
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 4263231373271126991
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -900
-      Y: -0.00048828125
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 982227708776118212
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4263231373271126991
-    SubobjectId: 2278284604217603877
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 982227708776118212
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 4263231373271126991
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 982227708776118212
-    SubobjectId: 2960430092177937198
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 11520423422294209128
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1100.00061
-      Y: 1199.99927
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 7996601960553515634
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 11520423422294209128
-    SubobjectId: 13498653191061788290
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 7996601960553515634
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200
-      Y: -3.05175781e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 11520423422294209128
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 7996601960553515634
-    SubobjectId: 5354145006032383640
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 213383165049437168
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1000.00031
-      Y: 599.99939
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 8871572460254717172
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 213383165049437168
-    SubobjectId: 2756778316463611674
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 8871572460254717172
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 213383165049437168
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 8871572460254717172
-    SubobjectId: 6893381245512646686
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 503984243542942832
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1200.00098
-      Y: 1799.99939
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 8735301983758895599
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 503984243542942832
-    SubobjectId: 2470962587416952986
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 8735301983758895599
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 503984243542942832
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 8735301983758895599
-    SubobjectId: 6741355658730745093
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 9606712559406363213
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -300.000977
-      Y: 1799.99988
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 11959064878331098119
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9606712559406363213
-    SubobjectId: 11666007155557979815
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 11959064878331098119
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200
-      Y: -3.05175781e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 9606712559406363213
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 11959064878331098119
-    SubobjectId: 9314358528372609261
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 3954993714250540119
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -200.00061
-      Y: 1199.99976
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 6668506500875751299
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3954993714250540119
-    SubobjectId: 1321498946787311805
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 6668506500875751299
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: -4.57763672e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 3954993714250540119
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 6668506500875751299
-    SubobjectId: 8664739636680387433
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 8245557852752429062
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -100.000305
-      Y: 599.999878
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 15419724721234734541
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8245557852752429062
-    SubobjectId: 6258321986657461484
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 15419724721234734541
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 4.57763672e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 8245557852752429062
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 15419724721234734541
-    SubobjectId: 17386639431007504679
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 10753398949892312489
-  Name: "Race Start Position"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 6.83018834e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1149659828914666127
-  ChildIds: 1802170637952965380
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 10753398949892312489
-    SubobjectId: 12794624014129703235
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 1802170637952965380
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: -1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 10753398949892312489
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 1802170637952965380
-    SubobjectId: 4446888174405468142
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 2818981025101625680
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12062848898070173412
-  ChildIds: 10873377372710006811
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 2818981025101625680
-    SubobjectId: 264328990410300858
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 10873377372710006811
-  Name: "RaceTrackClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2818981025101625680
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 12062848898070173412
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10061233441421709261
-    }
-  }
-  InstanceHistory {
-    SelfId: 10873377372710006811
-    SubobjectId: 12849300260335883505
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 6585104946674286331
-  Name: "RaceTrackServer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 12062848898070173412
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 12062848898070173412
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3046165643444351811
-    }
-  }
-  InstanceHistory {
-    SelfId: 6585104946674286331
-    SubobjectId: 9211800300811311633
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
   Id: 7385718208138295310
   Name: "Track 1"
   Transform {
@@ -3454,9 +215,6 @@ Objects {
   }
   ParentId: 7465439610237324149
   ChildIds: 15632419627351312593
-  ChildIds: 6848707557536512673
-  ChildIds: 16260436646066513694
-  ChildIds: 3707231833835555500
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3482,141 +240,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3707231833835555500
-  Name: "Vehicle Reference"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 589893780284318308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Vehicle"
-      AssetReference {
-        Id: 4661176644471995311
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3707231833835555500
-    SubobjectId: 1713239400991174214
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 16260436646066513694
-  Name: "Vehicle Reference"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 589893780284318308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Vehicle"
-      AssetReference {
-        Id: 7251884829137708299
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16260436646066513694
-    SubobjectId: 14203422368294503412
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 6848707557536512673
-  Name: "Vehicle Reference"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 589893780284318308
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Vehicle"
-      AssetReference {
-        Id: 9812805254859464304
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6848707557536512673
-    SubobjectId: 8916954238060256843
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
   Id: 15632419627351312593
   Name: "Vehicle Reference"
   Transform {
@@ -3635,7 +258,7 @@ Objects {
     Overrides {
       Name: "cs:Vehicle"
       AssetReference {
-        Id: 17655265101728568550
+        Id: 15291278418653916146
       }
     }
   }
@@ -3666,6 +289,7 @@ Objects {
   Name: "Waypoints"
   Transform {
     Location {
+      Z: 19780.2539
     }
     Rotation {
     }
@@ -3678,16 +302,78 @@ Objects {
   ParentId: 7465439610237324149
   ChildIds: 15343208417995662205
   ChildIds: 17339653319120902639
-  ChildIds: 2317999730193897753
-  ChildIds: 9977395859029210544
-  ChildIds: 8503865053737903780
-  ChildIds: 16427812060462394574
-  ChildIds: 8819251696295735560
-  ChildIds: 9098479245887809186
-  ChildIds: 12347749068335058840
-  ChildIds: 539233553552686642
-  ChildIds: 9610975607171633286
-  ChildIds: 12113370459949282452
+  ChildIds: 3499887535326391367
+  ChildIds: 2522312540146225765
+  ChildIds: 7953876179724125472
+  ChildIds: 12741819629977923604
+  ChildIds: 9144426895166141291
+  ChildIds: 8853839392214304845
+  ChildIds: 8526995160053978379
+  ChildIds: 11593507518172384282
+  ChildIds: 12046032811302904189
+  ChildIds: 4757731418406552695
+  ChildIds: 658432480975672000
+  ChildIds: 13647317117645252580
+  ChildIds: 8535503400853098450
+  ChildIds: 8524285236945321925
+  ChildIds: 11536029601009951603
+  ChildIds: 9069846816281585936
+  ChildIds: 962264012454163112
+  ChildIds: 7175467715336612794
+  ChildIds: 7117501641298167615
+  ChildIds: 11463058529201894003
+  ChildIds: 3282832883511800872
+  ChildIds: 15696097343207816417
+  ChildIds: 14972860949569333084
+  ChildIds: 2664780220892293561
+  ChildIds: 8739498769207183122
+  ChildIds: 7987781189034057599
+  ChildIds: 15738892290325105555
+  ChildIds: 8968439870675230717
+  ChildIds: 1899580149175126911
+  ChildIds: 18183044134634353864
+  ChildIds: 2932495410145797796
+  ChildIds: 1310940294141800273
+  ChildIds: 13247495356402740577
+  ChildIds: 7354083656640270528
+  ChildIds: 14182668761596691458
+  ChildIds: 4400910954693540014
+  ChildIds: 1406524985566340381
+  ChildIds: 7617125080368417106
+  ChildIds: 16293333118476204252
+  ChildIds: 2966447169977300410
+  ChildIds: 3547541981634389556
+  ChildIds: 12738042002608388770
+  ChildIds: 16549300963849699730
+  ChildIds: 12586839243577164710
+  ChildIds: 6553129905073040824
+  ChildIds: 1561002111044552547
+  ChildIds: 5789559170669178609
+  ChildIds: 4081657971014981418
+  ChildIds: 72657784502468660
+  ChildIds: 16743853649020311745
+  ChildIds: 13143783187424535208
+  ChildIds: 466577123161913007
+  ChildIds: 5752097403804309358
+  ChildIds: 17330506949311846718
+  ChildIds: 12327316987797732406
+  ChildIds: 16369577751070942241
+  ChildIds: 5984582695473532506
+  ChildIds: 14332721491297891169
+  ChildIds: 16434289536563752309
+  ChildIds: 3097780362217789049
+  ChildIds: 9023655113324629352
+  ChildIds: 2094759569421321599
+  ChildIds: 15744374419796170980
+  ChildIds: 11629021080887310340
+  ChildIds: 18408156736278821480
+  ChildIds: 677695670743586917
+  ChildIds: 5363134568940725359
+  ChildIds: 17789909782705994289
+  ChildIds: 3991748199715326337
+  ChildIds: 15015775646744627570
+  ChildIds: 2136169511952385310
+  ChildIds: 5680699493533702365
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3711,15 +397,16 @@ Objects {
   }
 }
 Objects {
-  Id: 12113370459949282452
+  Id: 5680699493533702365
   Name: "Trigger"
   Transform {
     Location {
-      X: -575.646484
-      Y: -8968.8457
-      Z: 128.07959
+      X: 7603.67
+      Y: 13005.6133
+      Z: -138.905945
     }
     Rotation {
+      Yaw: -88.5114746
     }
     Scale {
       X: 20
@@ -3750,22 +437,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12113370459949282452
-    SubobjectId: 10137404709489430654
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 9610975607171633286
+  Id: 2136169511952385310
   Name: "Trigger"
   Transform {
     Location {
-      X: -6571.69629
-      Y: -8865.73926
-      Z: 128.077637
+      X: 5892.42529
+      Y: 14662.957
+      Z: -138.905945
     }
     Rotation {
+      Yaw: 4.80515
     }
     Scale {
       X: 20
@@ -3796,22 +484,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9610975607171633286
-    SubobjectId: 11661252076346356844
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 539233553552686642
+  Id: 15015775646744627570
   Name: "Trigger"
   Transform {
     Location {
-      X: -6649.86914
-      Y: 6379.89551
-      Z: 128.07959
+      X: 5316.77051
+      Y: 13240.0508
+      Z: -138.905945
     }
     Rotation {
+      Yaw: 67.4489517
     }
     Scale {
       X: 20
@@ -3842,22 +531,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 539233553552686642
-    SubobjectId: 2580460955326175960
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 12347749068335058840
+  Id: 3991748199715326337
   Name: "Trigger"
   Transform {
     Location {
-      X: 7602.33887
-      Y: 6386.15039
-      Z: 128.07959
+      X: 4816.50098
+      Y: 11441.6621
+      Z: -138.905945
     }
     Rotation {
+      Yaw: 77.42733
     }
     Scale {
       X: 20
@@ -3888,22 +578,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12347749068335058840
-    SubobjectId: 10369566476947712882
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 9098479245887809186
+  Id: 17789909782705994289
   Name: "Trigger"
   Transform {
     Location {
-      X: 7602.33887
-      Y: 1287.03076
-      Z: 128.07959
+      X: 3389.37866
+      Y: 11718.1133
+      Z: -138.905945
     }
     Rotation {
+      Yaw: -11.2151184
     }
     Scale {
       X: 20
@@ -3934,22 +625,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9098479245887809186
-    SubobjectId: 6552833344779436616
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 8819251696295735560
+  Id: 5363134568940725359
   Name: "Trigger"
   Transform {
     Location {
-      X: 7259.60547
-      Y: -2031.37061
-      Z: 128.07959
+      X: 2869.86499
+      Y: 10034.8076
+      Z: -138.905945
     }
     Rotation {
+      Yaw: 86.7571
     }
     Scale {
       X: 20
@@ -3980,22 +672,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8819251696295735560
-    SubobjectId: 6832060890044831202
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 16427812060462394574
+  Id: 677695670743586917
   Name: "Trigger"
   Transform {
     Location {
-      X: 1963.50537
-      Y: -2307.06885
-      Z: 128.07959
+      X: 1499.11353
+      Y: 9538.28711
+      Z: -138.905945
     }
     Rotation {
+      Yaw: 13.1541824
     }
     Scale {
       X: 20
@@ -4026,22 +719,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16427812060462394574
-    SubobjectId: 14361783058921474084
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 8503865053737903780
+  Id: 18408156736278821480
   Name: "Trigger"
   Transform {
     Location {
-      X: 1574.25635
-      Y: 1532.03418
-      Z: 128.077637
+      X: -134.434753
+      Y: 9736.49707
+      Z: -138.905945
     }
     Rotation {
+      Yaw: -22.8492432
     }
     Scale {
       X: 20
@@ -4072,22 +766,23 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8503865053737903780
-    SubobjectId: 5960463153436688974
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 9977395859029210544
+  Id: 11629021080887310340
   Name: "Trigger"
   Transform {
     Location {
-      X: -3357.5542
-      Y: 1533.75537
-      Z: 128.077637
+      X: -772.973938
+      Y: 11981.3555
+      Z: -138.905945
     }
     Rotation {
+      Yaw: -122.701874
     }
     Scale {
       X: 20
@@ -4118,20 +813,2934 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9977395859029210544
-    SubobjectId: 12592848740309684570
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 2317999730193897753
+  Id: 15744374419796170980
   Name: "Trigger"
   Transform {
     Location {
-      X: -3374.13623
-      Y: -2152.43896
-      Z: 128.077637
+      X: 1308.89099
+      Y: 13147.9072
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -153.397339
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2094759569421321599
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 2255.28833
+      Y: 15024.248
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -77.3565369
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 9023655113324629352
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 170.783508
+      Y: 14337.2979
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 26.7486649
+    }
+    Scale {
+      X: 19.9999962
+      Y: 11.2220564
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 3097780362217789049
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 70.6962891
+      Y: 16265.3711
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -94.5995178
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 16434289536563752309
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 1328.88574
+      Y: 17551.5273
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -115.531281
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 14332721491297891169
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 294.319214
+      Y: 19153.2148
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -36.6367493
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 5984582695473532506
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1570.20581
+      Y: 19639.6797
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -1.6244812
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 16369577751070942241
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3330.85352
+      Y: 18605.1875
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 60.1636772
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12327316987797732406
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3041.26831
+      Y: 16823.4648
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 111.389061
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 17330506949311846718
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3113.27441
+      Y: 14591.4043
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 75.6008377
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 5752097403804309358
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -4858.1748
+      Y: 13686.7734
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 3.70185351
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 466577123161913007
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5440.56
+      Y: 12463.2891
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 84.3515778
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 13143783187424535208
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6838.82812
+      Y: 11781.127
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 9.28961658
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 16743853649020311745
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6924.13135
+      Y: 11057.1074
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 91.7260513
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 72657784502468660
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -8052.01465
+      Y: 10337.4482
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 9.03354359
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 4081657971014981418
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -9434.19238
+      Y: 11572.3086
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -64.1692505
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 5789559170669178609
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -11878.1201
+      Y: 12021.4023
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -13.0993042
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 1561002111044552547
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -13107.1748
+      Y: 11107.7148
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 35.7049141
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 6553129905073040824
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -14667.2119
+      Y: 11072.0391
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 3.66785717
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12586839243577164710
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -14591.8281
+      Y: 8958.04395
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 99.322525
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 16549300963849699730
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -13062.8066
+      Y: 8786.68
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 178.376404
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12738042002608388770
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -11536.3398
+      Y: 8297.19141
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 153.485092
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 3547541981634389556
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -9943.13574
+      Y: 7904.74658
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 166.16214
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2966447169977300410
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -8577.23145
+      Y: 6991.47656
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 141.180588
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 16293333118476204252
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -7657.20361
+      Y: 7814.66211
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -133.959869
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7617125080368417106
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6656.53711
+      Y: 8113.78223
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -169.156265
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 1406524985566340381
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5292.31836
+      Y: 7979.50244
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 161.377518
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 4400910954693540014
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5505.94775
+      Y: 6744.64893
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 81.4386368
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 14182668761596691458
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6929.104
+      Y: 5713.26221
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 39.7694359
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7354083656640270528
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5384.11719
+      Y: 4630.23047
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 156.780014
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 13247495356402740577
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -6072.19629
+      Y: 3435.03027
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 63.7372322
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 1310940294141800273
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -7041.80908
+      Y: 1480.92041
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 68.9843063
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2932495410145797796
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -8508.41211
+      Y: 505.123047
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 32.9319305
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 18183044134634353864
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -7878.28223
+      Y: -881.009766
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 120.353004
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 1899580149175126911
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -8189.03027
+      Y: -2221.43359
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 74.6916199
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8968439870675230717
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -7963.93506
+      Y: -4023.15723
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 126.437447
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 15738892290325105555
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5668.06689
+      Y: -4924.13477
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -173.978226
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7987781189034057599
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3879.65601
+      Y: -5302.73926
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 154.593979
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8739498769207183122
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1749.53503
+      Y: -5937.55078
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -179.928619
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2664780220892293561
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -561.171692
+      Y: -4302.14062
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -100.047607
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 14972860949569333084
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -388.856842
+      Y: 545.544434
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: -89.0973511
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 15696097343207816417
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1843.95105
+      Y: 639.708
+      Z: -138.905945
+    }
+    Rotation {
+      Yaw: 0.662923336
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 3282832883511800872
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1836.3335
+      Y: 2399.64209
+      Z: -695.717712
+    }
+    Rotation {
+      Yaw: -90.1817627
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 11463058529201894003
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1422.20068
+      Y: 4937.76025
+      Z: -695.717712
+    }
+    Rotation {
+      Yaw: -98.7999878
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7117501641298167615
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 92.8463135
+      Y: 5949.26074
+      Z: -695.717712
+    }
+    Rotation {
+      Yaw: -162.620422
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7175467715336612794
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 2571.88403
+      Y: 4922.17188
+      Z: -695.717712
+    }
+    Rotation {
+      Yaw: 111.395203
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 962264012454163112
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 2775.51611
+      Y: 2517.99219
+      Z: -418.3172
+    }
+    Rotation {
+      Yaw: 83.7263641
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 9069846816281585936
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 2331.3252
+      Y: -1522.48145
+      Z: -418.3172
+    }
+    Rotation {
+      Yaw: 83.7263794
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 11536029601009951603
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 1344.90125
+      Y: -2202.63184
+      Z: -1094.38782
+    }
+    Rotation {
+      Yaw: 11.0553913
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8524285236945321925
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3019.62378
+      Y: -2249.71777
+      Z: -1094.38782
+    }
+    Rotation {
+      Yaw: 0.803927481
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8535503400853098450
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -3889.95361
+      Y: -326.886719
+      Z: 126.761963
+    }
+    Rotation {
+      Yaw: -83.5362244
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 13647317117645252580
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -4146.77637
+      Y: 1939.9585
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: -83.5362244
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 658432480975672000
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -2579.39087
+      Y: 3131.00488
+      Z: 1330.56946
+    }
+    Rotation {
+      Yaw: -161.013992
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 4757731418406552695
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 4106.9707
+      Y: 5205.14697
+      Z: 1330.56946
+    }
+    Rotation {
+      Yaw: -161.014023
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12046032811302904189
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 6655.11865
+      Y: 4563.2168
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: 116.380051
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 11593507518172384282
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 5446.72217
+      Y: 2525.28564
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: 47.6121521
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8526995160053978379
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 6836.88965
+      Y: 775.307129
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: 141.196625
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8853839392214304845
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 6592.13037
+      Y: -1796.21777
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: 91.8207092
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 9144426895166141291
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 10987.4746
+      Y: -1352.45605
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: -151.680252
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12741819629977923604
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 12771.2783
+      Y: 990.891602
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: -112.182159
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7953876179724125472
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 11336.0098
+      Y: 3354.09521
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: -89.9506226
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2522312540146225765
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 12983.4678
+      Y: 5848.62305
+      Z: 128.078125
+    }
+    Rotation {
+      Yaw: -69.8715515
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 20
+    }
+  }
+  ParentId: 3383358029800818634
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 3499887535326391367
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 10194.6777
+      Y: 7012.88965
+      Z: 128.078125
     }
     Rotation {
     }
@@ -4164,8 +3773,8 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2317999730193897753
-    SubobjectId: 333035369071738355
+    SelfId: 17339653319120902639
+    SubobjectId: 15282630317196590341
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
@@ -4175,9 +3784,9 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: -389.788574
-      Y: -2369.1958
-      Z: 128.077637
+      X: 7589.34229
+      Y: 7745.08887
+      Z: 128.078125
     }
     Rotation {
     }
@@ -4221,9 +3830,9 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: -500
-      Y: -4946.36865
-      Z: 128.077637
+      X: 7485.68945
+      Y: 10674.4668
+      Z: 128.078125
     }
     Rotation {
     }
@@ -4281,22 +3890,22 @@ Objects {
     }
   }
   ParentId: 7465439610237324149
-  ChildIds: 15764886916126027570
   ChildIds: 6402339010610783573
-  ChildIds: 3355242152897683905
   ChildIds: 9234261956587369291
-  ChildIds: 7915463500081460158
-  ChildIds: 16978371570734687181
   ChildIds: 3088370329089034248
   ChildIds: 10643290230478910541
   ChildIds: 9572197973570376468
   ChildIds: 201237294778365147
-  ChildIds: 2136319241063949097
-  ChildIds: 8849863518009812922
   ChildIds: 10314212515880220380
-  ChildIds: 7782994739145328184
-  ChildIds: 7286720924788313123
   ChildIds: 11823701206394044653
+  ChildIds: 7848213187520231199
+  ChildIds: 4775965512923041116
+  ChildIds: 17071616172234348120
+  ChildIds: 11828001693940851423
+  ChildIds: 17683825339429334360
+  ChildIds: 17160709518200308724
+  ChildIds: 14706520370196985696
+  ChildIds: 11431134575674153144
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4320,15 +3929,982 @@ Objects {
   }
 }
 Objects {
+  Id: 11431134575674153144
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -5386.30176
+      Y: 515.620117
+    }
+    Rotation {
+      Yaw: 6.51264
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 17986919123050385619
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 17986919123050385619
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 11431134575674153144
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 14706520370196985696
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -6069.72
+      Y: 981.682617
+    }
+    Rotation {
+      Yaw: 6.51264
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 10038349725756612473
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 10038349725756612473
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 14706520370196985696
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 17160709518200308724
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -4406.70508
+      Y: 596.456055
+    }
+    Rotation {
+      Yaw: 6.51263
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 13437973309392756089
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10314212515880220380
+    SubobjectId: 12364470309714940470
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 13437973309392756089
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 17160709518200308724
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 7622841922797076789
+    SubobjectId: 5583860770011571679
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 17683825339429334360
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -4903.7832
+      Y: 1369.59521
+    }
+    Rotation {
+      Yaw: 6.51263
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 15595557750424437417
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 15595557750424437417
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 17683825339429334360
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 11828001693940851423
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -4725.19727
+      Y: -194.177246
+    }
+    Rotation {
+      Yaw: 6.51263
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 12502594339061586676
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12502594339061586676
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 11828001693940851423
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 17071616172234348120
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -3898.40283
+      Y: -63.4379883
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 8934740880758175487
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8934740880758175487
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 17071616172234348120
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 4775965512923041116
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -3898.4541
+      Y: 1510.52441
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 11493231346532867727
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11823701206394044653
+    SubobjectId: 9269010583720059911
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 11493231346532867727
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 4775965512923041116
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 3601484434008111507
+    SubobjectId: 1535470859872312697
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 7848213187520231199
+  Name: "Race Start Position"
+  Transform {
+    Location {
+      X: -3492.26855
+      Y: 685.984619
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3753943933731090815
+  ChildIds: 8261605657761687763
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10314212515880220380
+    SubobjectId: 12364470309714940470
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 8261605657761687763
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 200.000015
+      Y: 1.52587891e-05
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.028
+      Y: 2.02849
+      Z: 0.402561963
+    }
+  }
+  ParentId: 7848213187520231199
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.14123176
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Slice Size"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 349046981903190460
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 7622841922797076789
+    SubobjectId: 5583860770011571679
+    InstanceId: 8971703626988002718
+    TemplateId: 3185697312841042802
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
   Id: 11823701206394044653
   Name: "Race Start Position"
   Transform {
     Location {
-      X: -3000.00098
-      Y: 1799.99854
+      X: -2999.97681
+      Y: 1359.6001
     }
     Rotation {
-      Yaw: -1.36603776e-05
     }
     Scale {
       X: 1
@@ -4441,256 +5017,14 @@ Objects {
   }
 }
 Objects {
-  Id: 7286720924788313123
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2699.99976
-      Y: -0.00146484375
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 8074852247743154999
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7286720924788313123
-    SubobjectId: 4732086447805835465
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 8074852247743154999
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 7286720924788313123
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 8074852247743154999
-    SubobjectId: 6105683487056932829
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 7782994739145328184
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2900.00049
-      Y: 1199.99841
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 12541948824681760903
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7782994739145328184
-    SubobjectId: 5239619191438058194
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 12541948824681760903
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 7782994739145328184
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 12541948824681760903
-    SubobjectId: 9996277721242086509
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 10314212515880220380
   Name: "Race Start Position"
   Transform {
     Location {
-      X: -2800.00024
-      Y: 599.998535
+      X: -2799.9917
+      Y: 159.602539
     }
     Rotation {
-      Yaw: -1.36603776e-05
     }
     Scale {
       X: 1
@@ -4795,248 +5129,6 @@ Objects {
   InstanceHistory {
     SelfId: 7622841922797076789
     SubobjectId: 5583860770011571679
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 8849863518009812922
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1800
-      Y: -0.0009765625
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 4028937963005309650
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8849863518009812922
-    SubobjectId: 6801871834802815824
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 4028937963005309650
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 3.05175781e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 8849863518009812922
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4028937963005309650
-    SubobjectId: 1395469532029883960
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 2136319241063949097
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -2000.00061
-      Y: 1199.99878
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 16873353709709520459
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2136319241063949097
-    SubobjectId: 4112251113224472515
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 16873353709709520459
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 2136319241063949097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 16873353709709520459
-    SubobjectId: 14888386151655180961
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }
@@ -5291,8 +5383,8 @@ Objects {
   Name: "Race Start Position"
   Transform {
     Location {
-      X: -900
-      Y: -0.00048828125
+      X: -899.999268
+      Y: 103.002014
     }
     Rotation {
     }
@@ -5528,248 +5620,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16978371570734687181
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1000.00031
-      Y: 599.99939
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 4807118659176131709
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 16978371570734687181
-    SubobjectId: 14928121474689173287
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 4807118659176131709
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 16978371570734687181
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 4807118659176131709
-    SubobjectId: 7350522676493518999
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 7915463500081460158
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -1200.00098
-      Y: 1799.99939
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 18428893014150009906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 7915463500081460158
-    SubobjectId: 5291023142958733140
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 18428893014150009906
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 200.000015
-      Y: 1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 7915463500081460158
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 18428893014150009906
-    SubobjectId: 15813414894165242072
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 9234261956587369291
   Name: "Race Start Position"
   Transform {
@@ -5891,133 +5741,12 @@ Objects {
   }
 }
 Objects {
-  Id: 3355242152897683905
-  Name: "Race Start Position"
-  Transform {
-    Location {
-      X: -200.00061
-      Y: 1199.99976
-    }
-    Rotation {
-      Yaw: -1.36603776e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 17772045459743227090
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3355242152897683905
-    SubobjectId: 730756767069488427
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 17772045459743227090
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: -4.57763672e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 3355242152897683905
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 17772045459743227090
-    SubobjectId: 15138534248477579320
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
   Id: 6402339010610783573
   Name: "Race Start Position"
   Transform {
     Location {
-      X: -100.000305
-      Y: 599.999878
+      X: -100.000183
+      Y: 703.002319
     }
     Rotation {
     }
@@ -6124,125 +5853,6 @@ Objects {
   InstanceHistory {
     SelfId: 3173702818461415159
     SubobjectId: 630324158379430429
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 15764886916126027570
-  Name: "Race Start Position"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 6.83018834e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3753943933731090815
-  ChildIds: 1793454813759798986
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 15764886916126027570
-    SubobjectId: 18337598310503992280
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 1793454813759798986
-  Name: "2D Basic Shapes Decal"
-  Transform {
-    Location {
-      X: 199.999985
-      Y: -1.52587891e-05
-      Z: -20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.028
-      Y: 2.02849
-      Z: 0.402561963
-    }
-  }
-  ParentId: 15764886916126027570
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.14123176
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Slice Size"
-      Float: 180
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 4
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 349046981903190460
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 1793454813759798986
-    SubobjectId: 4348150917617162784
     InstanceId: 8971703626988002718
     TemplateId: 3185697312841042802
   }

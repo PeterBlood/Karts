@@ -116,15 +116,20 @@ function OnStartRace()
             local vehicleTemplate = GetPlayerVehicleTemplate(player)
             local vehicle = World.SpawnAsset(vehicleTemplate, {position = startPosition, rotation = startRotation})
             playerVehicles[player] = vehicle
+            Task.Wait()
+            Task.Wait()
+            player:Spawn({position = startPosition+Vector3.UP*100, rotation = startRotation})
         end
 
         -- Wait 2 frames otherwise the camera wont work
-        Task.Wait()
-        Task.Wait()
+        --Task.Wait()
+        --Task.Wait()
 
-        if Object.IsValid(player) then
-            playerVehicles[player]:SetDriver(player)
-        end
+        --if Object.IsValid(player) then
+            -- playerVehicles[player]:SetDriver(player)
+            
+            -- Events.Broadcast("PlayerSpawnedInKart", player)
+        --end
         Events.Broadcast("PlayerSpawnedInRace", player)
     end
 end

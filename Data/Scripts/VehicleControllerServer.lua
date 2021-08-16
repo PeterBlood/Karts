@@ -117,6 +117,7 @@ local outDrift = 0
 -- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
 
 function StartVehicle(vehicleEquipment, player)
+	--print("srv entering")
 	oldVisiblity = player:GetVisibility()
 	player.isVisible = true
 	player.movementControlMode = MovementControlMode.NONE
@@ -468,3 +469,4 @@ Game.playerLeftEvent:Connect(DestroyVehicle)
 
 vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(StartVehicle)
+-- Events.Connect("PlayerSpawnedInKart", StartVehicle)

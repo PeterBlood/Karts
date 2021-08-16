@@ -37,13 +37,13 @@ function SavePlayer(player)
     saveData.playerPosition = player:GetWorldPosition()
     saveData.playerRotation = player:GetWorldRotation()
 
-    local vehicle = player.occupiedVehicle
+    local vehicle = player
     if vehicle then
         saveData.vehicle = vehicle
-        saveData.vehiclePosition = vehicle:GetWorldPosition()
-        saveData.vehicleRotation = vehicle:GetRotation()
-        saveData.vehicleVelocity = vehicle:GetVelocity()
-        saveData.vehicleAngularVelocity = vehicle:GetAngularVelocity()
+        saveData.vehiclePosition = player:GetWorldPosition()
+        saveData.vehicleRotation = player:GetWorldRotation()
+        saveData.vehicleVelocity = player:GetVelocity()
+        -- saveData.vehicleAngularVelocity = player:GetAngularVelocity()
     end
     playerCheckpointData[player] = saveData
 end
