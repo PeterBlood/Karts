@@ -1,10 +1,13 @@
-Name: "FireFlower"
-RootId: 17071054617309919729
+Name: "GreenShell"
+RootId: 15729707185198467235
 Objects {
-  Id: 1254336749477831269
-  Name: "FireFlower"
+  Id: 13922816297511280241
+  Name: "GreenShell"
   Transform {
     Location {
+      X: 7522.76953
+      Y: 10092.8975
+      Z: -227.147278
     }
     Rotation {
     }
@@ -14,24 +17,24 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17071054617309919729
+  ParentId: 15729707185198467235
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Folder"
+      Name: "cs:Trigger"
       ObjectReference {
-        SelfId: 17071054617309919729
+        SelfId: 9241226719149013872
       }
     }
     Overrides {
       Name: "cs:PhysicsSphere"
       ObjectReference {
-        SelfId: 12809717115273041631
+        SelfId: 18071901616974560117
       }
     }
     Overrides {
-      Name: "cs:Trigger"
+      Name: "cs:Folder"
       ObjectReference {
-        SelfId: 16074505607885085227
+        SelfId: 15729707185198467235
       }
     }
   }
@@ -50,12 +53,12 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 5558870768288686224
+      Id: 10200056802519469054
     }
   }
 }
 Objects {
-  Id: 12809717115273041631
+  Id: 18071901616974560117
   Name: "Physics Sphere"
   Transform {
     Location {
@@ -68,9 +71,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17071054617309919729
-  ChildIds: 16074505607885085227
-  ChildIds: 1528724154957679506
+  ParentId: 15729707185198467235
+  ChildIds: 9241226719149013872
+  ChildIds: 14908584802766313227
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -90,7 +93,7 @@ Objects {
     }
     Settings {
       Mass: -1
-      LinearDamping: 1
+      LinearDamping: 10
     }
     TeamSettings {
       IsTeamCollisionEnabled: true
@@ -100,7 +103,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1528724154957679506
+  Id: 14908584802766313227
   Name: "Torch Fire VFX"
   Transform {
     Location {
@@ -113,7 +116,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12809717115273041631
+  ParentId: 18071901616974560117
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -142,7 +145,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16074505607885085227
+  Id: 9241226719149013872
   Name: "Trigger"
   Transform {
     Location {
@@ -155,7 +158,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12809717115273041631
+  ParentId: 18071901616974560117
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

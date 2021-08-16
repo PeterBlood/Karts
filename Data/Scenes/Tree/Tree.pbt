@@ -35,8 +35,11 @@ Objects {
   ChildIds: 9072739091620502242
   ChildIds: 7153576185685040610
   ChildIds: 15925727378245494180
-  ChildIds: 9497476826664652053
-  ChildIds: 17071054617309919729
+  ChildIds: 1910681361239178916
+  ChildIds: 14628830033914833610
+  ChildIds: 1028665230414425188
+  ChildIds: 15729707185198467235
+  ChildIds: 913438508444720024
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -52,11 +55,57 @@ Objects {
   }
 }
 Objects {
-  Id: 17071054617309919729
-  Name: "FireFlower"
+  Id: 913438508444720024
+  Name: "BobOmb"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6788911329511626220
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BobOmb"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7762.85449
+            Y: -10092.8975
+            Z: 227.147278
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12233990066625297630
+    }
+  }
+}
+Objects {
+  Id: 15729707185198467235
+  Name: "GreenShell"
   Transform {
     Location {
-      X: -7522.76953
+      X: -8080.72119
       Y: -10092.8975
       Z: 227.147278
     }
@@ -87,7 +136,6 @@ Objects {
       Bool: true
     }
   }
-  Lifespan: 5
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -103,20 +151,13 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "FireFlower"
+    FilePartitionName: "GreenShell"
   }
 }
 Objects {
-  Id: 9497476826664652053
-  Name: "SuperHorn"
+  Id: 1028665230414425188
+  Name: "FireFlower"
   Transform {
-    Location {
-      X: -7707.95361
-      Y: -8383.1377
-      Z: 56.0179749
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -124,7 +165,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  Lifespan: 3
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -132,15 +172,111 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 849794311518539716
+      value {
+        Overrides {
+          Name: "Name"
+          String: "FireFlower"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7522.76953
+            Y: -10092.8975
+            Z: 227.147278
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7810977289943248596
+    }
+  }
+}
+Objects {
+  Id: 14628830033914833610
+  Name: "SuperHorn"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "SuperHorn"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2008663238508688178
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SuperHorn"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7707.95361
+            Y: -8383.1377
+            Z: 56.0179749
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7186742385081139300
+    }
+  }
+}
+Objects {
+  Id: 1910681361239178916
+  Name: "SkillBind"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9055005615946822552
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SkillBind"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10378301982891010179
+    }
   }
 }
 Objects {
