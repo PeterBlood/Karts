@@ -7,15 +7,22 @@ local Camera = script:GetCustomProperty("ThirdPersonCamera"):WaitForObject()
 local propLocalTop = script:GetCustomProperty("LocalTop"):WaitForObject()
 local TutorialWindow = script:GetCustomProperty("Tutorial"):WaitForObject()
 
-local MenuPortal = script:GetCustomProperty("GamePortal"):WaitForObject()
+local TutorialPortal = script:GetCustomProperty("TutorialPortal"):WaitForObject()
+local MenuPortal = script:GetCustomProperty("MenuPortal"):WaitForObject()
 local propMinimapUIMy = script:GetCustomProperty("MinimapUIMy"):WaitForObject()
 local propPost = script:GetCustomProperty("post"):WaitForObject()
 
 
 local PlayButt = script:GetCustomProperty("PlayButt"):WaitForObject()
 local TutorButt = script:GetCustomProperty("TutorButt"):WaitForObject()
-local CloseButt = script:GetCustomProperty("CloseButt"):WaitForObject()
+local CloseTutorButt = script:GetCustomProperty("CloseButt"):WaitForObject()
+local CloseGarageButt = script:GetCustomProperty("CloseButt_1"):WaitForObject()
+local CloseLBoardButt = script:GetCustomProperty("CloseButt_2"):WaitForObject()
+local GarageButt = script:GetCustomProperty("GarageButt"):WaitForObject()
+local LBoardButt = script:GetCustomProperty("LBoardButt"):WaitForObject()
 
+local GarageWindow = script:GetCustomProperty("Garage"):WaitForObject()
+local LeaderboardWindow = script:GetCustomProperty("Leaderboard"):WaitForObject()
 
 
 local player=Game.GetLocalPlayer()
@@ -34,10 +41,40 @@ end
 
 function TutorClick()
 	TutorialWindow.visibility=0
+	TutorialPortal.visibility=0
+	Menu.visibility= 3
+	MenuPortal.visibility= 3
 end
 
-function CloseClick()
+function CloseTutorClick()
 	TutorialWindow.visibility=2
+	TutorialPortal.visibility=3
+	Menu.visibility= 0
+	MenuPortal.visibility= 0
+end
+
+function GarageClick()
+	GarageWindow.visibility=0
+	Menu.visibility= 3
+	MenuPortal.visibility= 3
+end
+
+function LBoardClick()
+	LeaderboardWindow.visibility=0
+	Menu.visibility= 3
+	MenuPortal.visibility= 3
+end
+
+function CloseGarageClick()
+	GarageWindow.visibility=3
+	Menu.visibility= 0
+	MenuPortal.visibility= 0
+end
+
+function CloseLBoardClick()
+	LeaderboardWindow.visibility=3
+	Menu.visibility= 0
+	MenuPortal.visibility= 0
 end
 
 function OnBindingPressed(Player, binding)
@@ -83,7 +120,17 @@ function OnBindingPressed(Player, binding)
 	end
 end
 
+function OnPlayerJoined(player)
+	TutorialPortal.visibility=3
+	propPost.visibility = 3
+ end
+
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
 player.bindingPressedEvent:Connect(OnBindingPressed)
 PlayButt.clickedEvent:Connect(PlayClick)
 TutorButt.clickedEvent:Connect(TutorClick)
-CloseButt.clickedEvent:Connect(CloseClick)
+CloseTutorButt.clickedEvent:Connect(CloseTutorClick)
+CloseGarageButt.clickedEvent:Connect(CloseGarageClick)
+CloseLBoardButt.clickedEvent:Connect(CloseLBoardClick)
+GarageButt.clickedEvent:Connect(GarageClick)
+LBoardButt.clickedEvent:Connect(LBoardClick)

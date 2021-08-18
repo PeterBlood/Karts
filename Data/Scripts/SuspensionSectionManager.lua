@@ -69,6 +69,7 @@ function Tick(dt)
 	if highestPoint > 1.2 * lowestMarker01:GetPosition().z and highestPoint <= maxHeight then -- collision in between markers
 		
 		movingSuspension:MoveTo(Vector3.UP * highestPoint, 0.05, true)
+		--print("highestPoint")
 		
 		if trailState == false and enableFX then
 		
@@ -80,7 +81,7 @@ function Tick(dt)
 	elseif highestPoint ~= 0 and highestPoint > maxHeight then -- max height exceeded
 	
 		movingSuspension:MoveTo(Vector3.UP * maxHeight, 0.05, true)
-
+	--	print("maxHeight")
 		if trailState == false and enableFX then
 		
 			trailVFX:Play()
@@ -91,7 +92,7 @@ function Tick(dt)
 	else -- suspension is hanging (no collision)
 
 		movingSuspension:MoveTo(Vector3.UP * lowestMarker01:GetPosition().z, 0.05, true)
-
+		--print("lowestMarker01")
 		if trailState == true and enableFX then
 		
 			trailVFX:Stop()

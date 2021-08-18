@@ -17,11 +17,24 @@ local recentDriver = nil
 local targetRotation = nil
 local vehicleRotation = nil
 
--- local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
--- local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
--- local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
--- local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
--- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
+local LOCAL_PLAYER = Game.GetLocalPlayer()
+
+local zRotation = 0
+local turnLeft = "ability_extra_30"
+local turnRight = "ability_extra_32"
+
+local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
+local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
+local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
+local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
+local pelvisAnchor = script:GetCustomProperty("pelvisAnchor"):WaitForObject()
+local pelvisHIK = script:GetCustomProperty("pelvisHIK"):WaitForObject()
+local HandOnWheel = script:GetCustomProperty("handOnWheel"):WaitForObject()
+local rightLegAnchor = script:GetCustomProperty("rightLegAnchor"):WaitForObject()
+local leftLegAnchor = script:GetCustomProperty("leftLegAnchor"):WaitForObject()
+local rightLIK = script:GetCustomProperty("rightLIK"):WaitForObject()
+local leftLIK = script:GetCustomProperty("leftLIK"):WaitForObject()
+
 
 function EnterVehicle(vehicleEquipment, player)
 
@@ -34,6 +47,8 @@ function EnterVehicle(vehicleEquipment, player)
 	driver = player
 	recentDriver = player
 	
+	-- pelvisAnchor:AttachToPlayer(player, "pelvis")
+
 	ignitionSFX:Play()
 	
 	Task.Wait(0.5)
@@ -59,21 +74,21 @@ function LeaveVehicle(vehicleEquipment, player)
 	
 end
 
---  function SetIK(player)
---  	if not vehicleSet.owner then
-	
---  		return
-		
---  	end
---  	leftHandAnchor:AttachToPlayer(player, "left_hand")	
---  	print(leftHIK:GetPosition())
--- 	 print(leftHIK:GetRotation())
---  	leftHandAnchor:MoveTo(Vector3.New(leftHIK:GetPosition()),10,true)
---  	leftHandAnchor:RotateTo(Rotation.New(leftHIK:GetRotation()),10,true)
---  	leftHandAnchor:Activate(player)
---  print("IK yo")
-
---  end
+function SetIK(anchor, Driver, hit, IK)
+    if hit then
+    anchor:SetWorldPosition(hit:GetImpactPosition())
+    anchor:SetWorldRotation(Rotation.New (IK:GetWorldRotation()))
+    if not anchor.clientUserData.isActivated then
+    anchor:Activate(Driver)
+    anchor.clientUserData.isActivated = true
+    end
+    else
+    if anchor.clientUserData.isActivated then
+    anchor:Deactivate(Driver)
+    anchor.clientUserData.isActivated = false
+    end
+    end
+end
 
 function Resync(player)
 
@@ -89,6 +104,32 @@ function Resync(player)
 
 end
 
+function BindingPressed(LOCAL_PLAYER, binding)
+	
+	if binding == turnLeft then
+	
+		zRotation = -1
+		--pressedBefore = true
+	
+	elseif binding == turnRight then
+	
+		zRotation = 1
+	end
+end
+
+function BindingReleased(LOCAL_PLAYER, binding)
+	if binding == turnLeft then
+	
+		zRotation = 0
+		--pressedBefore = true
+	
+	elseif binding == turnRight then
+	
+		zRotation = 0
+	end
+end
+
+
 function Tick(dt)
 
 	if not driver then
@@ -96,18 +137,40 @@ function Tick(dt)
 		return
 		
 	end
-	local player = Game.GetLocalPlayer()
-	engineSFX.pitch = driver:GetVelocity().size / 3
-	-- SetIK(player)
+
+	-- CoreDebug.DrawLine(pelvisHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
+	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
+	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
+	
+		local locatePelvis = World.Raycast(pelvisHIK:GetWorldPosition(), driver:GetWorldPosition())
+		SetIK(pelvisAnchor, driver, locatePelvis, pelvisHIK)
+		local locateLhand = World.Raycast(leftHIK:GetWorldPosition(), driver:GetWorldPosition())
+		SetIK(leftHandAnchor, driver, locateLhand, leftHIK)
+		local locateRhand = World.Raycast(rightHIK:GetWorldPosition(), driver:GetWorldPosition())
+		SetIK(rightHandAnchor, driver, locateRhand, rightHIK)
+		local locateLleg = World.Raycast(leftLIK:GetWorldPosition(), driver:GetWorldPosition())
+		SetIK(leftLegAnchor, driver, locateLleg, leftLIK)
+		local locateRleg = World.Raycast(rightLIK:GetWorldPosition(), driver:GetWorldPosition())
+		SetIK(rightLegAnchor, driver, locateRleg, rightLIK)
+
+		engineSFX.pitch = driver:GetVelocity().size / 3
 	
 	targetRotation = driver:GetWorldRotation()
 	
-	
+	if zRotation > 0 then
+	HandOnWheel:RotateTo(Rotation.New(-48.963,46.345,-176.881),0.15,true)
+	elseif zRotation < 0 then
+	HandOnWheel:RotateTo(Rotation.New(30.024,24.583,163.135),0.15,true)
+	elseif zRotation == 0 then
+	HandOnWheel:RotateTo(Rotation.New(0,45,-180),0.15,true)
+	end
+
 	theVehicle:RotateTo(targetRotation, 0.05 * turnRate, false)
 
 end
 
 Game.playerJoinedEvent:Connect(Resync)
-
+LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
+LOCAL_PLAYER.bindingReleasedEvent:Connect(BindingReleased)
 vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(EnterVehicle)

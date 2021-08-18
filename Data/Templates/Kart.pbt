@@ -103,6 +103,7 @@ Assets {
         Name: "VehicleAnchorDock"
         Transform {
           Location {
+            Z: 33.121048
           }
           Rotation {
           }
@@ -381,6 +382,24 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:pelvisAnchor"
+            ObjectReference {
+              SubObjectId: 13516997147568169547
+            }
+          }
+          Overrides {
+            Name: "cs:pelvisHIK"
+            ObjectReference {
+              SubObjectId: 16859472810698030053
+            }
+          }
+          Overrides {
+            Name: "cs:handOnWheel"
+            ObjectReference {
+              SubObjectId: 4545678250753531644
+            }
+          }
+          Overrides {
             Name: "cs:zRotation:isrep"
             Bool: true
           }
@@ -494,9 +513,9 @@ Assets {
           }
         }
         ParentId: 17164896749810771429
+        ChildIds: 8207958758300616281
         ChildIds: 16957231513364112328
         ChildIds: 7061229307622074165
-        ChildIds: 8207958758300616281
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -508,6 +527,551 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8207958758300616281
+        Name: "IK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13289744291482549169
+        ChildIds: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6383520931738237925
+        Name: "HIK"
+        Transform {
+          Location {
+            X: 61.0947266
+            Y: 2.375
+            Z: 78.7421875
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8207958758300616281
+        ChildIds: 6715364484184844402
+        ChildIds: 15172324442613514033
+        ChildIds: 13516997147568169547
+        ChildIds: 16859472810698030053
+        ChildIds: 9248762241200268615
+        ChildIds: 2032157446477065150
+        ChildIds: 4545678250753531644
+        ChildIds: 9782172443692688736
+        ChildIds: 15485918703283430600
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 6715364484184844402
+        Name: "leftHandAnchor"
+        Transform {
+          Location {
+            X: -71.9209
+            Z: -119.460938
+          }
+          Rotation {
+            Pitch: 44.9999733
+            Yaw: 179.999985
+            Roll: -1.3660373e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        IKAnchor {
+          AimOffset {
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
+        }
+      }
+      Objects {
+        Id: 15172324442613514033
+        Name: "rightHandAnchor"
+        Transform {
+          Location {
+            X: -71.9209
+            Z: -119.460938
+          }
+          Rotation {
+            Pitch: 44.9999733
+            Yaw: 179.999985
+            Roll: -1.3660373e-05
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        IKAnchor {
+          AimOffset {
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+        }
+      }
+      Objects {
+        Id: 13516997147568169547
+        Name: "pelvisAnchor"
+        Transform {
+          Location {
+            X: -71.9209
+            Z: -119.460938
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        IKAnchor {
+          AimOffset {
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:hip"
+          }
+          BlendWeight: 1
+        }
+      }
+      Objects {
+        Id: 16859472810698030053
+        Name: "pelvisHIK"
+        Transform {
+          Location {
+            X: -59.7802734
+            Z: -40.2290039
+          }
+          Rotation {
+            Pitch: 20
+          }
+          Scale {
+            X: 0.0588276945
+            Y: 0.0588276945
+            Z: 0.0588276945
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9248762241200268615
+        Name: "leftLIK"
+        Transform {
+          Location {
+            X: 60.8886719
+            Y: -19.078125
+            Z: -26.6738281
+          }
+          Rotation {
+            Yaw: 1.53176279e-05
+          }
+          Scale {
+            X: 0.0588276945
+            Y: 0.0588276945
+            Z: 0.0588276945
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2032157446477065150
+        Name: "rightLIK"
+        Transform {
+          Location {
+            X: 60.8886719
+            Y: 19.078125
+            Z: -26.6738281
+          }
+          Rotation {
+            Yaw: 1.53176279e-05
+          }
+          Scale {
+            X: 0.0588276945
+            Y: 0.0588276945
+            Z: 0.0588276945
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4545678250753531644
+        Name: "handOnWheel"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: 45
+            Yaw: -180
+          }
+          Scale {
+            X: 0.0588276945
+            Y: 0.0588276945
+            Z: 0.0588276945
+          }
+        }
+        ParentId: 6383520931738237925
+        ChildIds: 14242337377457389359
+        ChildIds: 260402154295637801
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 14242337377457389359
+        Name: "rightHIK"
+        Transform {
+          Location {
+            X: -2.89941
+            Y: -446.151733
+            Z: 48.4907684
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4545678250753531644
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 260402154295637801
+        Name: "leftHIK"
+        Transform {
+          Location {
+            X: -2.8992641
+            Y: 437.569336
+            Z: 48.4906197
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4545678250753531644
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7672894170880533820
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 9782172443692688736
+        Name: "rightLegAnchor"
+        Transform {
+          Location {
+            X: -71.9209
+            Z: -119.460938
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        IKAnchor {
+          AimOffset {
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:righthand"
+          }
+          BlendWeight: 1
+        }
+      }
+      Objects {
+        Id: 15485918703283430600
+        Name: "leftLegAnchor"
+        Transform {
+          Location {
+            X: -71.9209
+            Z: -119.460938
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6383520931738237925
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        IKAnchor {
+          AimOffset {
+          }
+          IKAnchorType {
+            Value: "mc:eikanchortype:lefthand"
+          }
+          BlendWeight: 1
         }
       }
       Objects {
@@ -581,9 +1145,45 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:HIK"
+            Name: "cs:pelvisAnchor"
             ObjectReference {
-              SubObjectId: 6383520931738237925
+              SubObjectId: 13516997147568169547
+            }
+          }
+          Overrides {
+            Name: "cs:pelvisHIK"
+            ObjectReference {
+              SubObjectId: 16859472810698030053
+            }
+          }
+          Overrides {
+            Name: "cs:handOnWheel"
+            ObjectReference {
+              SubObjectId: 4545678250753531644
+            }
+          }
+          Overrides {
+            Name: "cs:rightLegAnchor"
+            ObjectReference {
+              SubObjectId: 9782172443692688736
+            }
+          }
+          Overrides {
+            Name: "cs:leftLegAnchor"
+            ObjectReference {
+              SubObjectId: 15485918703283430600
+            }
+          }
+          Overrides {
+            Name: "cs:rightLIK"
+            ObjectReference {
+              SubObjectId: 2032157446477065150
+            }
+          }
+          Overrides {
+            Name: "cs:leftLIK"
+            ObjectReference {
+              SubObjectId: 9248762241200268615
             }
           }
         }
@@ -740,256 +1340,6 @@ Assets {
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 8207958758300616281
-        Name: "IK"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13289744291482549169
-        ChildIds: 6383520931738237925
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 6383520931738237925
-        Name: "HIK"
-        Transform {
-          Location {
-            X: 61.0947266
-            Y: 2.375
-            Z: 78.7423553
-          }
-          Rotation {
-            Pitch: 45
-            Yaw: 180
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8207958758300616281
-        ChildIds: 260402154295637801
-        ChildIds: 14242337377457389359
-        ChildIds: 6715364484184844402
-        ChildIds: 15172324442613514033
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 260402154295637801
-        Name: "leftHIK"
-        Transform {
-          Location {
-            X: -3.81412428e-06
-            Y: -22.6240082
-            Z: 3.81412451e-06
-          }
-          Rotation {
-            Roll: -12.404
-          }
-          Scale {
-            X: 0.0588276945
-            Y: 0.0588276945
-            Z: 0.0588276945
-          }
-        }
-        ParentId: 6383520931738237925
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14242337377457389359
-        Name: "rightHIK"
-        Transform {
-          Location {
-            Y: 22.6240234
-          }
-          Rotation {
-            Roll: 12.404
-          }
-          Scale {
-            X: 0.0588276945
-            Y: 0.0588276945
-            Z: 0.0588276945
-          }
-        }
-        ParentId: 6383520931738237925
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7672894170880533820
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 6715364484184844402
-        Name: "leftHandAnchor"
-        Transform {
-          Location {
-            X: 748.289551
-            Y: 373.904755
-            Z: -751.984619
-          }
-          Rotation {
-            Pitch: 44.9999733
-            Yaw: 179.999985
-            Roll: -1.3660373e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6383520931738237925
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        IKAnchor {
-          AimOffset {
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:lefthand"
-          }
-          BlendWeight: 1
-        }
-      }
-      Objects {
-        Id: 15172324442613514033
-        Name: "rightHandAnchor"
-        Transform {
-          Location {
-            X: 748.289551
-            Y: 365.286652
-            Z: -751.984619
-          }
-          Rotation {
-            Pitch: 44.9999733
-            Yaw: 179.999985
-            Roll: -1.3660373e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6383520931738237925
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        IKAnchor {
-          AimOffset {
-          }
-          IKAnchorType {
-            Value: "mc:eikanchortype:righthand"
-          }
-          BlendWeight: 1
         }
       }
       Objects {
@@ -1348,6 +1698,7 @@ Assets {
         Name: "Body"
         Transform {
           Location {
+            Z: 5.48483276
           }
           Rotation {
           }
@@ -4544,7 +4895,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4695,7 +5046,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4765,7 +5116,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4835,7 +5186,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4905,7 +5256,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9637,6 +9988,15 @@ Assets {
       }
     }
     Assets {
+      Id: 7672894170880533820
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
       Id: 3909905581390442441
       Name: "Vehicle Generic Car Engine Idle Loop 01 SFX"
       PlatformAssetType: 7
@@ -9661,15 +10021,6 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfxui_click_01_Cue"
-      }
-    }
-    Assets {
-      Id: 7672894170880533820
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
       }
     }
     Assets {
@@ -9965,5 +10316,9 @@ Assets {
       AssetId: "None"
     }
   }
+  Marketplace {
+    Description: "asd"
+  }
   SerializationVersion: 95
+  DirectlyPublished: true
 }

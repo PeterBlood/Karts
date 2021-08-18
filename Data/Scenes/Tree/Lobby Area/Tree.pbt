@@ -16,7 +16,6 @@ Objects {
   }
   ParentId: 3088555438774805767
   ChildIds: 17383962626074814633
-  ChildIds: 1617066688546826327
   ChildIds: 7814609228084084681
   ChildIds: 10239914323384974262
   Collidable_v2 {
@@ -612,44 +611,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1617066688546826327
-  Name: "Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8040150154856307619
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Geo_2"
-  }
-  InstanceHistory {
-    SelfId: 1617066688546826327
-    SubobjectId: 3658299535650884797
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
   Id: 17383962626074814633
   Name: "LobbyPlayAreaServer"
   Transform {
@@ -720,7 +681,6 @@ Objects {
   ChildIds: 5637609382780460480
   ChildIds: 17026998855051584242
   ChildIds: 11403381233520719345
-  ChildIds: 17755840453982357242
   ChildIds: 12365242996934833829
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -783,44 +743,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17755840453982357242
-  Name: "Geo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5857347626194835161
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Geo_3"
-  }
-  InstanceHistory {
-    SelfId: 17755840453982357242
-    SubobjectId: 15194431903175336464
-    InstanceId: 8971703626988002718
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
   Id: 11403381233520719345
   Name: "Vehicle Selector Controller"
   Transform {
@@ -841,7 +763,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"

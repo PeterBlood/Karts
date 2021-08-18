@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8057146558961745871
-  Name: "Sand 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_sand_001_uv"
-  }
-}
-Assets {
   Id: 1628145178056
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1

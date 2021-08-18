@@ -8,7 +8,7 @@ LeaderboardConfigs {
     }
     Name: "MMR"
     Id: "C0FE767D34A29B72"
-    EntryLimit: 1000
+    EntryLimit: 500
   }
 }
 MaxPlayers: 16

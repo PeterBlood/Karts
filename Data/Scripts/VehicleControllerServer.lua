@@ -108,19 +108,23 @@ local milseconds = math.floor(0)
 local Drift = 0
 local outDrift = 0
 
--- local driversit = 0
+local driversit = 0
 
 -- local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
 -- local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
 -- local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
 -- local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
 -- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
+--local HandOnWheel = script:GetCustomProperty("handOnWheel"):WaitForObject()
+
+-- print("yo")
 
 function StartVehicle(vehicleEquipment, player)
-	--print("srv entering")
+	print("srv entering")
 	oldVisiblity = player:GetVisibility()
 	player.isVisible = true
 	player.movementControlMode = MovementControlMode.NONE
+	--driversit = 1
 
 	Task.Wait()
 	
@@ -143,19 +147,19 @@ function StartVehicle(vehicleEquipment, player)
 	Task.Wait(0.5)
 	
 	driverSettings:ApplyToPlayer(player)
-	
+	-- print("before")
+	-- print("after")
 	player.animationStance = "unarmed_sit_car_low"
+	-- print("anim entering")
 	player.maxWalkSpeed = topSpeed
 	player.maxAcceleration = acceleration
 	player.groundFriction = friction
 	player.walkableFloorAngle = maxClimbAngle
 	player.gravityScale = gravity
-	
 	pressedListener = player.bindingPressedEvent:Connect(BindingPressed)
 	releasedListener = player.bindingReleasedEvent:Connect(BindingReleased)
 	
 	driver = player
-
 end
 
 function LeaveVehicle(vehicleEquipment, player)
@@ -373,12 +377,7 @@ UpdatemilsecondTask.repeatInterval = 0.01
 UpdatemilsecondTask.repeatCount = -1
 ------------------------------------------------------
 
--- function SetIK(driver)
--- leftHandAnchor:MoveTo(Vector3.New(leftHIK.GetWorldPosition),0.15,true)
--- leftHandAnchor:RotateTo(Rotation.New(leftHIK.GetWorldRotation),0.15,true)
--- leftHandAnchor:Activate(driver)
--- print("IK yo")
--- end
+
 
 function Tick(dt)
 
@@ -395,10 +394,6 @@ function Tick(dt)
 		return
 		
 	end
-
-	-- if driversit> 0 then
-	-- SetIK(driver)
-	-- end
 	
 	accumulatedDt = 0
 	
@@ -429,13 +424,6 @@ function Tick(dt)
 		driver:SetWorldRotation(Rotation.New(0, 0, -zRotation * turnRatePerTick * (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
 	
 	end
--- if zRotation > 0 then
--- 	HIK:RotateTo(Rotation.New(45,0,0),0.15,true)
--- elseif zRotation < 0 then
--- 	HIK:RotateTo(Rotation.New(-45,0,0),0.15,true)
--- elseif zRotation == 0 then
--- 	HIK:RotateTo(Rotation.New(0,0,0),0.15,true)
--- end
 --debug ui
 	propVelocity.text = tostring(driver:GetVelocity().size)
 	propMilseconds.text = tostring(milseconds)
@@ -449,16 +437,20 @@ function Tick(dt)
 				else
 				driver:AddImpulse(Vector3.New(VeloSize* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				end
+				--print("forward")
 	elseif movingDirection < 0 then
 				if milseconds < 30 then
 				driver:SetVelocity(Vector3.New(milseconds*-ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*-ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				else
-				driver:AddImpulse(Vector3.New(-(VeloSize-1000) * 1.6 *ServerVelo* math.cos(math.rad(driver:GetWorldRotation().z)),-(VeloSize-1000) * 1.6 *ServerVelo* math.sin(math.rad(driver:GetWorldRotation().z)),0))
+				driver:AddImpulse(Vector3.New(-(VeloSize-1000) * 1.6 *ServerVelo* math.cos(math.rad(driver:GetWorldRotation().z)),-(VeloSize-1000) * 1.6 *ServerVelo* math.sin(math.rad(driver:GetWorldRotation().z)),0)-driver:GetVelocity())
 				end
+				--print("backward")
 	elseif movingDirection == 0 and driver:GetVelocity().size > 0 then
 			driver:AddImpulse(Vector3.New(100 * 10 * math.cos(math.rad(driver:GetWorldRotation().z)),100 * 10 * math.sin(math.rad(driver:GetWorldRotation().z)),0))
+			--print("stop")
 	elseif movingOn == false then
 			milseconds = 0
+			--print("0")
 			--elseif driver:GetVelocity().size > topSpeed then
 			--	driver:SetVelocity().size = topSpeed
 	end

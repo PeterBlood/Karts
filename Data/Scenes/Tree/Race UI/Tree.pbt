@@ -3951,7 +3951,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5317,8 +5317,8 @@ Objects {
   Control {
     Width: 200
     Height: 70
-    UIX: 40
-    UIY: 30
+    UIX: 1183.76025
+    UIY: 697.271118
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5377,6 +5377,8 @@ Objects {
   Control {
     Width: 350
     Height: 70
+    UIX: 431.581299
+    UIY: 185.542297
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5385,19 +5387,18 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "1st"
       Color {
         R: 1
         G: 1
         B: 1
         A: 1
       }
-      Size: 35
+      Size: 200
       Justification {
         Value: "mc:etextjustify:left"
       }
       Font {
-        Id: 6145963262670495219
+        Id: 5075404994582394827
       }
       VerticalJustification {
         Value: "mc:everticaljustification:center"
@@ -5409,6 +5410,7 @@ Objects {
         X: 1
         Y: 1
       }
+      OutlineSize: 5
     }
     AnchorLayout {
       SelfAnchor {
@@ -5450,6 +5452,41 @@ Objects {
       Name: "cs:UITextBox"
       ObjectReference {
         SelfId: 10954791647144996943
+      }
+    }
+    Overrides {
+      Name: "cs:FIRST_PLACE_COLOR"
+      Color {
+        R: 0.960000038
+        G: 0.604000032
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:SECOND_PLACE_COLOR"
+      Color {
+        R: 0.239693969
+        G: 0.533828914
+        B: 0.546
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:THIRD_PLACE_COLOR"
+      Color {
+        R: 0.344
+        G: 0.0983568206
+        B: 0.0213279929
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:OTHER_PLACE_COLOR"
+      Color {
+        R: 0.781
+        G: 0.781
+        B: 0.781
+        A: 1
       }
     }
   }
@@ -5515,7 +5552,7 @@ Objects {
   Control {
     Width: 400
     Height: 64
-    UIY: -150
+    UIY: -822.377808
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"

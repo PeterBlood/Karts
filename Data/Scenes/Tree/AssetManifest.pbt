@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18041138028405362270
+  Name: "Right Turn"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_017"
+  }
+}
+Assets {
   Id: 17751393423790263587
   Name: "Frame Outlined 001"
   PlatformAssetType: 9
@@ -41,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing8x_001Wedge"
-  }
-}
-Assets {
-  Id: 15136791066424950142
-  Name: "BG Flat 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12401038489267598665
+  Name: "BG Flat 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_33"
+  }
+}
+Assets {
   Id: 12055838100548602759
   Name: "BG Highlighted 010"
   PlatformAssetType: 9
@@ -131,6 +140,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing8x_001"
+  }
+}
+Assets {
+  Id: 8989525092399486701
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {

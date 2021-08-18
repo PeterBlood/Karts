@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5075404994582394827
+  Name: "Mouse Memoirs"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "MouseMemoirsRegular_ref"
+  }
+}
+Assets {
   Id: 4045624956404448195
   Name: "UI Basic Shape Circle"
   PlatformAssetType: 9

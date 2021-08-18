@@ -5,6 +5,9 @@ local propGameId1 = script:GetCustomProperty("GameId1")
 local propGameId2 = script:GetCustomProperty("GameId2")
 local propGameId3 = script:GetCustomProperty("GameId3")
 local propGameId4 = script:GetCustomProperty("GameId4")
+local propGameId5 = script:GetCustomProperty("GameId5")
+local propGameId6 = script:GetCustomProperty("GameId6")
+
 
 local frameIndex = 1
 
@@ -24,6 +27,10 @@ while(true) do
             gameId = propGameId3
         elseif(propGameId4 ~= nil and frameIndex >= 16 and frameIndex <= 20) then
             gameId = propGameId4
+        elseif(propGameId5 ~= nil and frameIndex >= 21 and frameIndex <= 25) then
+            gameId = propGameId5
+        elseif(propGameId6 ~= nil and frameIndex >= 26 and frameIndex <= 30) then
+            gameId = propGameId6
         end
     end
     local imageToDisplay = ((frameIndex - 1) % 5) + 1

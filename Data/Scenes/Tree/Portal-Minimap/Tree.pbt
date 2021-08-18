@@ -1,7 +1,7 @@
 Name: "Portal-Minimap"
-RootId: 17128124066767226084
+RootId: 12992027928867702351
 Objects {
-  Id: 6938031885031256617
+  Id: 16206995193148217152
   Name: "Minimap Image"
   Transform {
     Location {
@@ -14,10 +14,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17128124066767226084
-  ChildIds: 1498170726136298273
-  ChildIds: 2082056253015429278
-  ChildIds: 11908963087072308822
+  ParentId: 12992027928867702351
+  ChildIds: 10229679824637496442
+  ChildIds: 15821300599662441337
+  ChildIds: 5716079909544200419
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -37,7 +37,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11908963087072308822
+  Id: 5716079909544200419
   Name: "MapImageObjectGroup"
   Transform {
     Location {
@@ -53,9 +53,9 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 6938031885031256617
-  ChildIds: 7756249285349190125
-  ChildIds: 10962083806799146922
+  ParentId: 16206995193148217152
+  ChildIds: 11391501684589284486
+  ChildIds: 1679169880458277165
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -76,7 +76,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10962083806799146922
+  Id: 1679169880458277165
   Name: "ImageAnimator"
   Transform {
     Location {
@@ -91,37 +91,45 @@ Objects {
       Z: 10
     }
   }
-  ParentId: 11908963087072308822
+  ParentId: 5716079909544200419
   UnregisteredParameters {
     Overrides {
       Name: "cs:GamePortalImage"
       ObjectReference {
-        SelfId: 7756249285349190125
+        SelfId: 11391501684589284486
       }
     }
     Overrides {
       Name: "cs:Frames"
-      Int: 5
+      Int: 30
     }
     Overrides {
       Name: "cs:FrameInterval"
-      Float: 10
+      Float: 0.0333333
     }
     Overrides {
       Name: "cs:GameId1"
-      String: "aa5acf/karts-menu"
+      String: "8e3d5c/kartsloading1"
     }
     Overrides {
       Name: "cs:GameId2"
-      String: "aa5acf/karts-menu"
+      String: "5a809f/kartsloading2"
     }
     Overrides {
       Name: "cs:GameId3"
-      String: "aa5acf/karts-menu"
+      String: "671a73/kartsloading3"
     }
     Overrides {
       Name: "cs:GameId4"
-      String: "aa5acf/karts-menu"
+      String: "4c540f/kartsloading4"
+    }
+    Overrides {
+      Name: "cs:GameId5"
+      String: "29997d/kartsloading5"
+    }
+    Overrides {
+      Name: "cs:GameId6"
+      String: "10b046/kartsloading6"
     }
   }
   Collidable_v2 {
@@ -149,7 +157,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7756249285349190125
+  Id: 11391501684589284486
   Name: "Game Portal"
   Transform {
     Location {
@@ -162,7 +170,7 @@ Objects {
       Z: 0.071
     }
   }
-  ParentId: 11908963087072308822
+  ParentId: 5716079909544200419
   UnregisteredParameters {
     Overrides {
       Name: "bp:Portal Shape"
@@ -277,7 +285,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -297,7 +305,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2082056253015429278
+  Id: 15821300599662441337
   Name: "MinimapSetup"
   Transform {
     Location {
@@ -310,8 +318,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6938031885031256617
-  ChildIds: 9210223697564705420
+  ParentId: 16206995193148217152
+  ChildIds: 4455412793424844808
   UnregisteredParameters {
     Overrides {
       Name: "cs:IsDevMode"
@@ -361,7 +369,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9210223697564705420
+  Id: 4455412793424844808
   Name: "MinimapImageClient"
   Transform {
     Location {
@@ -374,7 +382,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2082056253015429278
+  ParentId: 15821300599662441337
   UnregisteredParameters {
     Overrides {
       Name: "cs:GetAbsoluteUI"
@@ -385,19 +393,19 @@ Objects {
     Overrides {
       Name: "cs:MiniMapObject"
       ObjectReference {
-        SelfId: 11908963087072308822
+        SelfId: 5716079909544200419
       }
     }
     Overrides {
       Name: "cs:MiniMapPanel"
       ObjectReference {
-        SelfId: 4157859728528050172
+        SelfId: 17199160915390631609
       }
     }
     Overrides {
       Name: "cs:MinimapSetup"
       ObjectReference {
-        SelfId: 2082056253015429278
+        SelfId: 15821300599662441337
       }
     }
   }
@@ -426,7 +434,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1498170726136298273
+  Id: 10229679824637496442
   Name: "Minimap Container"
   Transform {
     Location {
@@ -443,13 +451,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6938031885031256617
-  ChildIds: 4157859728528050172
+  ParentId: 16206995193148217152
+  ChildIds: 17199160915390631609
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -492,7 +500,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4157859728528050172
+  Id: 17199160915390631609
   Name: "Minimap Panel"
   Transform {
     Location {
@@ -509,7 +517,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1498170726136298273
+  ParentId: 10229679824637496442
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
