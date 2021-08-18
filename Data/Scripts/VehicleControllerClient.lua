@@ -137,7 +137,7 @@ function Tick(dt)
 		return
 		
 	end
-
+print(dt)
 	-- CoreDebug.DrawLine(pelvisHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
 	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
 	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})

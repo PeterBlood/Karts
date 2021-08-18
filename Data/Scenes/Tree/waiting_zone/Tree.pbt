@@ -369,7 +369,7 @@ Objects {
     Overrides {
       Name: "cs:MapTrigger"
       ObjectReference {
-        SelfId: 6605653072264151677
+        SelfId: 841534158063459245
       }
     }
   }

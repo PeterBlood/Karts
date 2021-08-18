@@ -190,8 +190,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 1104219395452180725
-  ChildIds: 4100952654685808648
   ChildIds: 8880858079582896858
   ChildIds: 3039234142630237256
   ChildIds: 1176471215281876720
@@ -200,7 +198,6 @@ Objects {
   ChildIds: 2779770280758357690
   ChildIds: 15579001893923499777
   ChildIds: 281188003709079429
-  ChildIds: 6605653072264151677
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -222,54 +219,6 @@ Objects {
     InstanceId: 7810896307375937404
     TemplateId: 8088207840596917020
     WasRoot: true
-  }
-}
-Objects {
-  Id: 6605653072264151677
-  Name: "MapTrigger"
-  Transform {
-    Location {
-      X: -29409.5469
-      Y: -6858.57812
-      Z: 25922.625
-    }
-    Rotation {
-      Yaw: 47.9907455
-    }
-    Scale {
-      X: 1972.79102
-      Y: 1828.35706
-      Z: 2000
-    }
-  }
-  ParentId: 11947454765333511696
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 6605653072264151677
-    SubobjectId: 11035623407073895091
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
   }
 }
 Objects {
@@ -7712,103 +7661,6 @@ Objects {
   InstanceHistory {
     SelfId: 8880858079582896858
     SubobjectId: 13380953304961884692
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 4100952654685808648
-  Name: "KillBox"
-  Transform {
-    Location {
-      X: -28476.7109
-      Y: -4750.91406
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2265.7
-      Y: 3096.10059
-      Z: 1
-    }
-  }
-  ParentId: 11947454765333511696
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 4100952654685808648
-    SubobjectId: 18042569965610715334
-    InstanceId: 7810896307375937404
-    TemplateId: 8088207840596917020
-  }
-}
-Objects {
-  Id: 1104219395452180725
-  Name: "Kart_Control"
-  Transform {
-    Location {
-      X: 14389.2891
-      Y: 25173.0859
-      Z: 2910
-    }
-    Rotation {
-    }
-    Scale {
-      X: 7.80000067
-      Y: 24.8000031
-      Z: 7.80000067
-    }
-  }
-  ParentId: 11947454765333511696
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:AdvancedCarPolice_1"
-      AssetReference {
-        Id: 12011760882033853990
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14564479026311385440
-    }
-  }
-  InstanceHistory {
-    SelfId: 1104219395452180725
-    SubobjectId: 14834697524201388091
     InstanceId: 7810896307375937404
     TemplateId: 8088207840596917020
   }
@@ -16826,7 +16678,7 @@ Objects {
   Name: "collision road"
   Transform {
     Location {
-      Z: 337.185425
+      Z: 333
     }
     Rotation {
     }
@@ -16838,10 +16690,10 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceoff"
@@ -17369,30 +17221,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 1051298032209794347
-      value {
-        Overrides {
-          Name: "cs:VeloSize"
-          Float: 6000
-        }
-        Overrides {
-          Name: "cs:ServerVelo"
-          Float: 1.6
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8207958758300616281
-      value {
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 12637584477876243657
       value {

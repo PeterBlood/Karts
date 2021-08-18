@@ -435,7 +435,7 @@ function Tick(dt)
 				if milseconds < 30 then
 				driver:SetVelocity(Vector3.New(milseconds*ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				else
-				driver:AddImpulse(Vector3.New(VeloSize* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+				driver:AddImpulse(Vector3.New(VeloSize*ServerVelo* 1.6 *  math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*ServerVelo*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				end
 				--print("forward")
 	elseif movingDirection < 0 then
