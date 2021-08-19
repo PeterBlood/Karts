@@ -159,6 +159,7 @@ Assets {
         ParentId: 15380668312713142507
         ChildIds: 13824044274499618248
         ChildIds: 1051298032209794347
+        ChildIds: 11046373729995318156
         ChildIds: 3070704753677720218
         ChildIds: 13289744291482549169
         ChildIds: 15755058365741298130
@@ -345,7 +346,7 @@ Assets {
           }
           Overrides {
             Name: "cs:VeloSize"
-            Float: 6000
+            Float: 5500
           }
           Overrides {
             Name: "cs:ServerVelo"
@@ -400,6 +401,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 11046373729995318156
+            }
+          }
+          Overrides {
             Name: "cs:zRotation:isrep"
             Bool: true
           }
@@ -425,6 +432,46 @@ Assets {
         Script {
           ScriptAsset {
             Id: 18200134142114187288
+          }
+        }
+      }
+      Objects {
+        Id: 11046373729995318156
+        Name: "Hitbox"
+        Transform {
+          Location {
+            X: 4.90625
+            Z: 55.7304688
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.79554653
+            Y: 1.5
+            Z: 1
+          }
+        }
+        ParentId: 17164896749810771429
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Trigger {
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -458,8 +505,6 @@ Assets {
         Settings {
           IsDefault: true
           PlayerMovementSettings {
-            WalkSpeed: 1000
-            MaxAcceleration: 1800
             WalkableFloorAngle: 90
             JumpMaxCount: 1
             JumpVelocity: 900
@@ -1184,6 +1229,12 @@ Assets {
             Name: "cs:leftLIK"
             ObjectReference {
               SubObjectId: 9248762241200268615
+            }
+          }
+          Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 11046373729995318156
             }
           }
         }

@@ -110,17 +110,22 @@ local outDrift = 0
 
 local driversit = 0
 
+local TickControl = 1
+
+local mark = 0
+
 -- local leftHandAnchor = script:GetCustomProperty("leftHandAnchor"):WaitForObject()
 -- local leftHIK = script:GetCustomProperty("leftHIK"):WaitForObject()
 -- local rightHIK = script:GetCustomProperty("rightHIK"):WaitForObject()
 -- local rightHandAnchor = script:GetCustomProperty("rightHandAnchor"):WaitForObject()
 -- local HIK = script:GetCustomProperty("HIK"):WaitForObject()
 --local HandOnWheel = script:GetCustomProperty("handOnWheel"):WaitForObject()
+local Hitbox = script:GetCustomProperty("Hitbox"):WaitForObject()
 
 -- print("yo")
 
 function StartVehicle(vehicleEquipment, player)
-	print("srv entering")
+	--print("srv entering")
 	oldVisiblity = player:GetVisibility()
 	player.isVisible = true
 	player.movementControlMode = MovementControlMode.NONE
@@ -337,7 +342,6 @@ function BindingReleased(player, binding)
 	if binding == turnLeft then
 	
 		zRotation = 0
-		
 		-- if leftToggle then
 		
 		-- 	script:SetNetworkedCustomProperty("TurnSignals", 0)
@@ -349,9 +353,11 @@ function BindingReleased(player, binding)
 	elseif binding == goForward then
 			movingOn = false
 			movingDirection = 0
+			milseconds = 0
 	elseif binding == goBackward then
 	
 			movingDirection = 0
+			milseconds = 0
 	
 	elseif binding == turnRight then
 	
@@ -377,23 +383,56 @@ UpdatemilsecondTask.repeatInterval = 0.01
 UpdatemilsecondTask.repeatCount = -1
 ------------------------------------------------------
 
+function OnBeginOverlap(theTrigger, player)
+    local objects = Hitbox:GetOverlappingObjects()
+
+    for _, obj in pairs(objects) do
+        if obj.name=="TickDown" then
+            print("TickDown")
+			TickControl = -1
+		elseif obj.name=="TickUp" then
+			TickControl = 1
+			print("TickUp")
+        end
+    end
+end
 
 
 function Tick(dt)
 
 	script:SetNetworkedCustomProperty("zRotation", zRotation)
-
 	accumulatedDt = accumulatedDt + dt
-
-	if not driver or accumulatedDt < 0.02 then
-		
+	if TickControl > 0 then
+		if not driver or accumulatedDt < 0.02 then
+	-- if not driver then
+	
+		mark = 1111111111111111111
+		--print(mark)
 		return
 		
-	elseif not driver.isGrounded then
+		elseif not driver.isGrounded then
 	
 		return
 		
+		end
+	elseif TickControl < 0 then
+		if not driver then
+		
+		return
+		
+		elseif not driver.isGrounded then
+	
+		return
+		
+		end
 	end
+	mark = 0
+	--print(mark)
+	propVelocity.text = tostring(driver:GetVelocity().size)
+	propMilseconds.text = tostring(milseconds)
+	propTick.text = tostring(TickControl)
+	propZRotationMem.text = tostring(milseconds)
+	--print(driver:GetVelocity())
 	
 	accumulatedDt = 0
 	
@@ -417,26 +456,26 @@ function Tick(dt)
 	
 	if xMovement > 0 then
 	
-		driver:SetWorldRotation(Rotation.New(0, 0, zRotation * turnRatePerTick * (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
+		driver:SetWorldRotation(Rotation.New(0, 0, zRotation * turnRatePerTick*1.3* (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
 	
 	elseif xMovement < 0 then
 	
-		driver:SetWorldRotation(Rotation.New(0, 0, -zRotation * turnRatePerTick * (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
+		driver:SetWorldRotation(Rotation.New(0, 0, -zRotation * turnRatePerTick*1.3* (driver:GetVelocity().size/topSpeed)) + driver:GetWorldRotation())
 	
 	end
 --debug ui
-	propVelocity.text = tostring(driver:GetVelocity().size)
-	propMilseconds.text = tostring(milseconds)
-	propTick.text = tostring(dt)
-	propZRotationMem.text = tostring(zRotation)
 ------------------------------------------
 
 	if movingDirection > 0 and movingOn == true and driver:GetVelocity().size < topSpeed then
 				if milseconds < 30 then
 				driver:SetVelocity(Vector3.New(milseconds*ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 				else
-				driver:AddImpulse(Vector3.New(VeloSize*ServerVelo* 1.6 *  math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*ServerVelo*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
-				end
+					if TickControl > 0 then
+				driver:AddImpulse(Vector3.New(VeloSize*ServerVelo* 1.7 *  math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*ServerVelo*1.7 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+					else
+				driver:AddImpulse(Vector3.New(VeloSize*ServerVelo* 1.3 *  math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*ServerVelo*1.3 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
+					end
+			end
 				--print("forward")
 	elseif movingDirection < 0 then
 				if milseconds < 30 then
@@ -461,4 +500,5 @@ Game.playerLeftEvent:Connect(DestroyVehicle)
 
 vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(StartVehicle)
+Hitbox.beginOverlapEvent:Connect(OnBeginOverlap)
 -- Events.Connect("PlayerSpawnedInKart", StartVehicle)

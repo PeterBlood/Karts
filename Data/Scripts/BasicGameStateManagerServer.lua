@@ -26,6 +26,8 @@ local ROUND_HAS_DURATION = COMPONENT_ROOT:GetCustomProperty("RoundHasDuration")
 local ROUND_DURATION = COMPONENT_ROOT:GetCustomProperty("RoundDuration")
 local ROUND_END_HAS_DURATION = COMPONENT_ROOT:GetCustomProperty("RoundEndHasDuration")
 local ROUND_END_DURATION = COMPONENT_ROOT:GetCustomProperty("RoundEndDuration")
+local MENU_HAS_DURATION = COMPONENT_ROOT:GetCustomProperty("MenuHasDuration")
+local MENU_DURATION = COMPONENT_ROOT:GetCustomProperty("MenuDuration")
 
 -- Check user properties
 if LOBBY_DURATION < 0.0 then
@@ -41,6 +43,11 @@ end
 if ROUND_END_DURATION < 0.0 then
     warn("RoundEndDuration must be non-negative")
     ROUND_END_DURATION = 0.0
+end
+
+if MENU_DURATION < 0.0 then
+    warn("RoundEndDuration must be non-negative")
+    MENU_DURATION = 0.0
 end
 
 -- int GetGameState()
@@ -67,7 +74,10 @@ function SetGameState(newState)
 	local stateDuration
 
 	-- Get new state duration information
-	if newState == ABGS.GAME_STATE_LOBBY then
+	if newState == ABGS.GAME_STATE_MENU then
+		stateHasduration = MENU_HAS_DURATION
+		stateDuration = MENU_DURATION
+	elseif newState == ABGS.GAME_STATE_LOBBY then
 		stateHasduration = LOBBY_HAS_DURATION
 		stateDuration = LOBBY_DURATION
 	elseif newState == ABGS.GAME_STATE_ROUND then
@@ -124,19 +134,25 @@ function Tick(deltaTime)
 	if GetTimeRemainingInState() == 0.0 and script:GetCustomProperty("StateHasDuration") then
 		local previousState = GetGameState()
 		local nextState
-		if previousState == ABGS.GAME_STATE_LOBBY then
+		if previousState == ABGS.GAME_STATE_MENU then
+			nextState = ABGS.GAME_STATE_LOBBY
+		elseif previousState == ABGS.GAME_STATE_LOBBY then
 			nextState = ABGS.GAME_STATE_ROUND
 		elseif previousState == ABGS.GAME_STATE_ROUND then
 			nextState = ABGS.GAME_STATE_ROUND_END
 		elseif previousState == ABGS.GAME_STATE_ROUND_END then
-			nextState = ABGS.GAME_STATE_LOBBY
+			nextState = ABGS.GAME_STATE_MENU
 		end
 
 		SetGameState(nextState)
 	end
 end
 
+function test()
+print("test yo")
+end
 -- Initialize
-SetGameState(ABGS.GAME_STATE_LOBBY)
+SetGameState(ABGS.GAME_STATE_MENU)
 
 ABGS.RegisterGameStateManagerServer(GetGameState, GetTimeRemainingInState, SetGameState, SetTimeRemainingInState)
+Events.Connect("test",test)

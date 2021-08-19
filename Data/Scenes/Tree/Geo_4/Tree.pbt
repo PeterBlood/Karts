@@ -46,6 +46,12 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 9330775173301116037
+    SubobjectId: 18048903411354452729
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 1663278308459405629
@@ -80,6 +86,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "fences"
+  }
+  InstanceHistory {
+    SelfId: 1663278308459405629
+    SubobjectId: 7787324487479738177
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -116,6 +128,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "windmills"
   }
+  InstanceHistory {
+    SelfId: 17354970951068471339
+    SubobjectId: 10078557555519589975
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 14604527693161286482
@@ -151,6 +169,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "green"
   }
+  InstanceHistory {
+    SelfId: 14604527693161286482
+    SubobjectId: 12802238529077777710
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 7903007466115926703
@@ -185,6 +209,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "beach"
+  }
+  InstanceHistory {
+    SelfId: 7903007466115926703
+    SubobjectId: 1633148570123261139
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -228,10 +258,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6236935065341679266
-    SubobjectId: 16634734113906084397
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
-    WasRoot: true
+    SubobjectId: 3281171354101319902
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -295,9 +324,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 9537839023249598828
-    SubobjectId: 3749615995384837603
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 18400074878425069328
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -343,9 +372,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 10509567922442894360
-    SubobjectId: 2417594865360822423
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 16924097233060078180
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -409,9 +438,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 9243857044584968293
-    SubobjectId: 3466855746746264810
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 18108907660261813785
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -475,9 +504,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 4506089618436224577
-    SubobjectId: 10294280201560451790
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 5012467016927062077
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -541,9 +570,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 4740940254733297248
-    SubobjectId: 17410720328100215535
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 4236814782734383132
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -607,9 +636,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 8936339644425215406
-    SubobjectId: 14722329167422751009
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 505323572752761810
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -673,9 +702,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 11455216623544734676
-    SubobjectId: 3363453609674477403
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 16572716940191288744
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -723,9 +752,9 @@ Objects {
   }
   InstanceHistory {
     SelfId: 939795824128790283
-    SubobjectId: 13645531653231612804
-    InstanceId: 8119880794124876271
-    TemplateId: 18022223788027272875
+    SubobjectId: 8506692496211595639
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -762,6 +791,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "stone bridge"
   }
+  InstanceHistory {
+    SelfId: 12934660901223753058
+    SubobjectId: 14449272862687148830
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 10168307389944982551
@@ -796,6 +831,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "knot bridge"
+  }
+  InstanceHistory {
+    SelfId: 10168307389944982551
+    SubobjectId: 17733505318708425323
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -832,6 +873,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "finish sign"
   }
+  InstanceHistory {
+    SelfId: 6607803314828377083
+    SubobjectId: 2356691612585010567
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 2171434017144120144
@@ -865,6 +912,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "water"
+  }
+  InstanceHistory {
+    SelfId: 2171434017144120144
+    SubobjectId: 7288371382778920236
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -901,6 +954,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "houses"
   }
+  InstanceHistory {
+    SelfId: 3720597403414445511
+    SubobjectId: 5234646439622730683
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 7954745545591554639
@@ -935,6 +994,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "scull mount"
+  }
+  InstanceHistory {
+    SelfId: 7954745545591554639
+    SubobjectId: 1541333326980242483
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -971,6 +1036,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "underwater fx"
   }
+  InstanceHistory {
+    SelfId: 9466495524792175710
+    SubobjectId: 17895258821709517346
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 1226579339969910158
@@ -1005,5 +1076,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "finish"
+  }
+  InstanceHistory {
+    SelfId: 1226579339969910158
+    SubobjectId: 7638857011811486706
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

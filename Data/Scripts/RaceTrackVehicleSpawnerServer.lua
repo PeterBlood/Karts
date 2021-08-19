@@ -46,7 +46,8 @@ function OnPlayerNonActive(player)
         vehicle:RemoveDriver()
         Task.Wait()
         vehicle:Destroy()
-        Events.Broadcast("EnterLobbyArea", player)
+        --Events.Broadcast("EnterLobbyArea", player)
+        Events.Broadcast("EnterMenu")
     end
 end
 

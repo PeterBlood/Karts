@@ -35,7 +35,6 @@ local leftLegAnchor = script:GetCustomProperty("leftLegAnchor"):WaitForObject()
 local rightLIK = script:GetCustomProperty("rightLIK"):WaitForObject()
 local leftLIK = script:GetCustomProperty("leftLIK"):WaitForObject()
 
-
 function EnterVehicle(vehicleEquipment, player)
 
 	--print("entering")
@@ -129,7 +128,6 @@ function BindingReleased(LOCAL_PLAYER, binding)
 	end
 end
 
-
 function Tick(dt)
 
 	if not driver then
@@ -137,7 +135,7 @@ function Tick(dt)
 		return
 		
 	end
-print(dt)
+-- print(dt)
 	-- CoreDebug.DrawLine(pelvisHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
 	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})
 	-- CoreDebug.DrawLine(rightHIK:GetWorldPosition(), driver:GetWorldPosition(),{thickness = 10})

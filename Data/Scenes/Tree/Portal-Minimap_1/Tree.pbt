@@ -30,10 +30,10 @@ Objects {
   NetworkContext {
   }
   InstanceHistory {
-    SelfId: 6938031885031256617
-    SubobjectId: 8644509812515855202
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 4628827056164567890
+    SubobjectId: 4268252724943660334
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -69,10 +69,10 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11908963087072308822
-    SubobjectId: 12896763651701262109
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 2137079559200487167
+    SubobjectId: 7399249375620196483
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -150,10 +150,10 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10962083806799146922
-    SubobjectId: 5736325875256565837
-    InstanceId: 4098152411849990361
-    TemplateId: 4977818097561193378
+    SelfId: 11242955222465012909
+    SubobjectId: 16645309337599589073
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -285,7 +285,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -298,10 +298,10 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7756249285349190125
-    SubobjectId: 8943052937603596454
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 11533545141702736961
+    SubobjectId: 15782977736141988413
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -362,10 +362,10 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 2082056253015429278
-    SubobjectId: 818339855365863893
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 5768199916590227427
+    SubobjectId: 3101792467452133791
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -427,10 +427,10 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9210223697564705420
-    SubobjectId: 7525208511836801991
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 12220011982694560800
+    SubobjectId: 15172962171441998428
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -493,10 +493,10 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1498170726136298273
-    SubobjectId: 249161106214605418
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 11873037817246249848
+    SubobjectId: 16123595228166106372
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -554,9 +554,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4157859728528050172
-    SubobjectId: 3318044093986959031
-    InstanceId: 14122700515233997026
-    TemplateId: 7826251976767064807
+    SelfId: 4021617210199186885
+    SubobjectId: 5532851467649467321
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

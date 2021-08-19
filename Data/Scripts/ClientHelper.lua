@@ -96,14 +96,14 @@ function Initialize()
 	
 	-- steeringArm:LookAtContinuous(steeringTarget, false)
 	
-	turnTask = Task.Spawn(TurnSignalsTask, 0)
-	turnTask.repeatCount = -1
+	-- turnTask = Task.Spawn(TurnSignalsTask, 0)
+	-- turnTask.repeatCount = -1
 	
 end
 
 function TurnSignalsTask()
 
-	turnSignalState = vehicleControllerServer:GetCustomProperty("TurnSignals")
+--	turnSignalState = vehicleControllerServer:GetCustomProperty("TurnSignals")
 	
 	if turnSignalState == 0 then
 	

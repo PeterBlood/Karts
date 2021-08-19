@@ -35,8 +35,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 8040150154856307619
-    SubobjectId: 5413401973577940809
-    InstanceId: 8971703626988002718
+    SubobjectId: 1482631387515766239
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -73,8 +73,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 10239914323384974262
-    SubobjectId: 12299161586715221852
-    InstanceId: 8971703626988002718
+    SubobjectId: 17662131756854175178
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -117,8 +117,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7814609228084084681
-    SubobjectId: 5244173682920725283
-    InstanceId: 8971703626988002718
+    SubobjectId: 1689999002835820981
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -159,8 +159,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 11795883471796637567
-    SubobjectId: 9729877578538740629
-    InstanceId: 8971703626988002718
+    SubobjectId: 15615212558689816835
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -236,8 +236,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 768411818481574267
-    SubobjectId: 3323075863495280017
-    InstanceId: 8971703626988002718
+    SubobjectId: 8191756255664389895
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -281,8 +281,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 14192856910571498766
-    SubobjectId: 16159818951152241124
-    InstanceId: 8971703626988002718
+    SubobjectId: 13830603633671287666
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -358,8 +358,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 1394779258333874795
-    SubobjectId: 4030543296598322817
-    InstanceId: 8971703626988002718
+    SubobjectId: 7519961119048930327
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -403,8 +403,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7084621600938619942
-    SubobjectId: 5108696408811147468
-    InstanceId: 8971703626988002718
+    SubobjectId: 1825828515727714906
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -480,8 +480,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6373782716070575041
-    SubobjectId: 8989224448152887083
-    InstanceId: 8971703626988002718
+    SubobjectId: 2554452551140566461
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -525,8 +525,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 14122890703719116464
-    SubobjectId: 16666287142415747674
-    InstanceId: 8971703626988002718
+    SubobjectId: 13328846025040064716
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -602,8 +602,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 13735219522102739983
-    SubobjectId: 11108499001067970789
-    InstanceId: 8971703626988002718
+    SubobjectId: 14238774475319024243
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -658,8 +658,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 17383962626074814633
-    SubobjectId: 15416983128582573123
-    InstanceId: 8971703626988002718
+    SubobjectId: 9963995873566324437
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -678,10 +678,11 @@ Objects {
     }
   }
   ParentId: 3088555438774805767
-  ChildIds: 5637609382780460480
+  ChildIds: 17565197232191130042
   ChildIds: 17026998855051584242
   ChildIds: 11403381233520719345
   ChildIds: 12365242996934833829
+  ChildIds: 12992027928867702351
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -699,8 +700,50 @@ Objects {
   }
   InstanceHistory {
     SelfId: 5857347626194835161
-    SubobjectId: 8502065194339660339
-    InstanceId: 8971703626988002718
+    SubobjectId: 3048512751156185253
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12992027928867702351
+  Name: "Portal-Minimap"
+  Transform {
+    Location {
+      X: 75236.3047
+      Y: -60995.8828
+      Z: 45097.5586
+    }
+    Rotation {
+      Yaw: -1.00001025
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5857347626194835161
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Portal-Minimap"
+  }
+  InstanceHistory {
+    SelfId: 12992027928867702351
+    SubobjectId: 14937296484455340083
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -737,8 +780,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 12365242996934833829
-    SubobjectId: 10317244697196499535
-    InstanceId: 8971703626988002718
+    SubobjectId: 15032222181366180057
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -776,8 +819,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 11403381233520719345
-    SubobjectId: 13471655503974781211
-    InstanceId: 8971703626988002718
+    SubobjectId: 16521444528052267917
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -817,8 +860,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 16240627339494470268
-    SubobjectId: 14255670845561198230
-    InstanceId: 8971703626988002718
+    SubobjectId: 11125377718859557888
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -870,8 +913,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 2415814454988842105
-    SubobjectId: 374555151406252179
-    InstanceId: 8971703626988002718
+    SubobjectId: 6521694814510447109
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -909,8 +952,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 17026998855051584242
-    SubobjectId: 14481342883721168408
-    InstanceId: 8971703626988002718
+    SubobjectId: 10901817961797844110
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -956,8 +999,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7078356801469011001
-    SubobjectId: 5084420614996242643
-    InstanceId: 8971703626988002718
+    SubobjectId: 1818438927673723461
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1004,14 +1047,14 @@ Objects {
   }
   InstanceHistory {
     SelfId: 2721947646214652871
-    SubobjectId: 104235248657901357
-    InstanceId: 8971703626988002718
+    SubobjectId: 6827818111206301115
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
 Objects {
-  Id: 5637609382780460480
-  Name: "LobbyAreaServer"
+  Id: 17565197232191130042
+  Name: "ClientContext"
   Transform {
     Location {
     }
@@ -1024,11 +1067,73 @@ Objects {
     }
   }
   ParentId: 5857347626194835161
+  ChildIds: 5015814070567063307
+  ChildIds: 2754857009977133027
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 17565197232191130042
+    SubobjectId: 9854748183473067974
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 2754857009977133027
+  Name: "LobbyAreaServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17565197232191130042
   UnregisteredParameters {
     Overrides {
       Name: "cs:SpawnPoints"
       ObjectReference {
         SelfId: 708623744406616352
+      }
+    }
+    Overrides {
+      Name: "cs:GamePortal"
+      ObjectReference {
+        SelfId: 11391501684589284486
+      }
+    }
+    Overrides {
+      Name: "cs:post"
+      ObjectReference {
+        SelfId: 4076271791418972761
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapUIMy"
+      ObjectReference {
+        SelfId: 15669665566305280114
+      }
+    }
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
       }
     }
   }
@@ -1050,9 +1155,68 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5637609382780460480
-    SubobjectId: 7676616751123544362
-    InstanceId: 8971703626988002718
+    SelfId: 2754857009977133027
+    SubobjectId: 6718301133528717727
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 5015814070567063307
+  Name: "LobbyAreaClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17565197232191130042
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:post"
+      ObjectReference {
+        SelfId: 4076271791418972761
+      }
+    }
+    Overrides {
+      Name: "cs:MinimapUIMy"
+      ObjectReference {
+        SelfId: 15669665566305280114
+      }
+    }
+    Overrides {
+      Name: "cs:GamePortal"
+      ObjectReference {
+        SelfId: 11391501684589284486
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14135988884579760697
+    }
+  }
+  InstanceHistory {
+    SelfId: 5015814070567063307
+    SubobjectId: 4511697262597214583
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }

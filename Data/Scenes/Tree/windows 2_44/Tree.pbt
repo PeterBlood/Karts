@@ -57,6 +57,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 12402995093121339872
+    SubobjectId: 15503446833699671964
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 17498866303228456037
@@ -112,6 +118,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 17498866303228456037
+    SubobjectId: 9934785349409042969
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -169,6 +181,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 14786287146307528263
+    SubobjectId: 13129247741734451259
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12798392209395630970
@@ -224,6 +242,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 12798392209395630970
+    SubobjectId: 14598982740769283334
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -283,6 +307,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 10848299278850677392
+    SubobjectId: 17117023454168515820
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 15340851824045005177
@@ -341,6 +371,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 15340851824045005177
+    SubobjectId: 12673872516131899141
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 5578553828948033255
@@ -397,6 +433,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 5578553828948033255
+    SubobjectId: 3921515651661586587
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 14820557770651975293
@@ -432,5 +474,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "bushes_74"
+  }
+  InstanceHistory {
+    SelfId: 14820557770651975293
+    SubobjectId: 13162392607904915457
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

@@ -36,8 +36,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7385718208138295310
-    SubobjectId: 4813022034721660132
-    InstanceId: 8971703626988002718
+    SubobjectId: 2123538517585585778
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -74,8 +74,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3090068304081904457
-    SubobjectId: 1033080639823218595
-    InstanceId: 8971703626988002718
+    SubobjectId: 5901162829075266869
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -99,6 +99,7 @@ Objects {
   ChildIds: 3753943933731090815
   ChildIds: 3383358029800818634
   ChildIds: 589893780284318308
+  ChildIds: 4127071564309745438
   UnregisteredParameters {
     Overrides {
       Name: "cs:Waypoints"
@@ -133,7 +134,7 @@ Objects {
     Overrides {
       Name: "cs:DefaultVehicle"
       AssetReference {
-        Id: 17655265101728568550
+        Id: 15291278418653916146
       }
     }
     Overrides {
@@ -194,8 +195,431 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7465439610237324149
-    SubobjectId: 4840960975711661983
-    InstanceId: 8971703626988002718
+    SubobjectId: 2061968403100882185
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 4127071564309745438
+  Name: "Tick Control"
+  Transform {
+    Location {
+      X: -337.5
+      Y: 6772.5
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 7465439610237324149
+  ChildIds: 13546071182055808956
+  ChildIds: 10473551424319738939
+  ChildIds: 12555649297773812876
+  ChildIds: 14238350624387288368
+  ChildIds: 12002488885386831001
+  ChildIds: 17542879176283276083
+  ChildIds: 1612378205197963177
+  ChildIds: 15580309286097804379
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 4127071564309745438
+    SubobjectId: 4774177530531254626
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 15580309286097804379
+  Name: "TickUp"
+  Transform {
+    Location {
+      X: -28776
+      Y: 6384.26855
+      Z: 40903.1836
+    }
+    Rotation {
+      Yaw: -94.5980225
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 15580309286097804379
+    SubobjectId: 11763230894141178407
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 1612378205197963177
+  Name: "TickDown"
+  Transform {
+    Location {
+      X: -576.072144
+      Y: 6780.0542
+      Z: 40925.7266
+    }
+    Rotation {
+      Yaw: -28.1601562
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 1612378205197963177
+    SubobjectId: 7883364216589242837
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 17542879176283276083
+  Name: "TickDown"
+  Transform {
+    Location {
+      X: -9898.625
+      Y: 1588.38293
+      Z: 40925.7266
+    }
+    Rotation {
+      Yaw: 107.885056
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 17542879176283276083
+    SubobjectId: 9832439054636784975
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12002488885386831001
+  Name: "TickUp"
+  Transform {
+    Location {
+      X: 15101.0371
+      Y: 13319.5469
+      Z: 40903.1836
+    }
+    Rotation {
+      Yaw: 102.475945
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 12002488885386831001
+    SubobjectId: 15967068960163478245
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 14238350624387288368
+  Name: "TickDown"
+  Transform {
+    Location {
+      X: -1831.78784
+      Y: -12094.9717
+      Z: 40925.7266
+    }
+    Rotation {
+      Yaw: 168.458923
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 14238350624387288368
+    SubobjectId: 13735922683473498956
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12555649297773812876
+  Name: "TickUp"
+  Transform {
+    Location {
+      X: -15362.8779
+      Y: -17616.4707
+      Z: 40959.4258
+    }
+    Rotation {
+      Yaw: 80.9531631
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 12555649297773812876
+    SubobjectId: 15364491995037500144
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 10473551424319738939
+  Name: "TickDown"
+  Transform {
+    Location {
+      X: 9564.125
+      Y: -3030.89429
+      Z: 40925.7266
+    }
+    Rotation {
+      Yaw: 8.05351734
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 10473551424319738939
+    SubobjectId: 16888079777156991559
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 13546071182055808956
+  Name: "TickUp"
+  Transform {
+    Location {
+      X: -5481.53418
+      Y: -7538.28662
+      Z: 41473.3477
+    }
+    Rotation {
+      Yaw: 17.0803719
+    }
+    Scale {
+      X: 1
+      Y: 33.5
+      Z: 29.5000114
+    }
+  }
+  ParentId: 4127071564309745438
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 13546071182055808956
+    SubobjectId: 13905509725281993152
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -234,8 +658,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 589893780284318308
-    SubobjectId: 3214344019321472654
-    InstanceId: 8971703626988002718
+    SubobjectId: 8298091046386334744
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -279,8 +703,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 15632419627351312593
-    SubobjectId: 18178110627378064443
-    InstanceId: 8971703626988002718
+    SubobjectId: 11814778283309225645
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -391,8 +815,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3383358029800818634
-    SubobjectId: 738598781565510432
-    InstanceId: 8971703626988002718
+    SubobjectId: 6193327585821563318
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -425,7 +849,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -437,9 +861,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 5680699493533702365
+    SubobjectId: 3878411288290428577
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -472,7 +896,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -484,9 +908,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2136169511952385310
+    SubobjectId: 7395533227593227106
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -519,7 +943,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -531,9 +955,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 15015775646744627570
+    SubobjectId: 12350494119000741646
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -566,7 +990,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -578,9 +1002,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 3991748199715326337
+    SubobjectId: 5504117023240460285
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -613,7 +1037,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -625,9 +1049,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 17789909782705994289
+    SubobjectId: 10224701823044035661
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -660,7 +1084,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -672,9 +1096,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 5363134568940725359
+    SubobjectId: 3560846378746755603
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -707,7 +1131,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -719,9 +1143,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 677695670743586917
+    SubobjectId: 8241776489264449049
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -754,7 +1178,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -766,9 +1190,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 18408156736278821480
+    SubobjectId: 9543670316076049428
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -801,7 +1225,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -813,9 +1237,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 11629021080887310340
+    SubobjectId: 15737144575127119480
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -848,7 +1272,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -860,9 +1284,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 15744374419796170980
+    SubobjectId: 11635126113332184728
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -895,7 +1319,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -907,9 +1331,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2094759569421321599
+    SubobjectId: 7355803335624923907
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -942,7 +1366,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -954,9 +1378,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 9023655113324629352
+    SubobjectId: 449640984236643092
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -989,7 +1413,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1001,9 +1425,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 3097780362217789049
+    SubobjectId: 5907177073756588037
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1036,7 +1460,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1048,9 +1472,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 16434289536563752309
+    SubobjectId: 11463164982413685513
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1083,7 +1507,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1095,9 +1519,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 14332721491297891169
+    SubobjectId: 13686169688618380573
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1130,7 +1554,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1142,9 +1566,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 5984582695473532506
+    SubobjectId: 2885266752552144934
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1177,7 +1601,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1189,9 +1613,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 16369577751070942241
+    SubobjectId: 10964972822870587997
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1224,7 +1648,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1236,9 +1660,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 12327316987797732406
+    SubobjectId: 14993725535378055754
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1271,7 +1695,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1283,9 +1707,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 17330506949311846718
+    SubobjectId: 10053530443838392130
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1318,7 +1742,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1330,9 +1754,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 5752097403804309358
+    SubobjectId: 3806819931879115026
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1365,7 +1789,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1377,9 +1801,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 466577123161913007
+    SubobjectId: 9042834392352319699
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1412,7 +1836,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1424,9 +1848,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 13143783187424535208
+    SubobjectId: 14803083178239802580
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1459,7 +1883,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1471,9 +1895,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 16743853649020311745
+    SubobjectId: 10617546998644999869
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1506,7 +1930,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1518,9 +1942,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 72657784502468660
+    SubobjectId: 8792474861694099016
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1553,7 +1977,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1565,9 +1989,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 4081657971014981418
+    SubobjectId: 4874006263220308310
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1600,7 +2024,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1612,9 +2036,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 5789559170669178609
+    SubobjectId: 3125394752093859981
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1647,7 +2071,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1659,9 +2083,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 1561002111044552547
+    SubobjectId: 7975540369146894623
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1694,7 +2118,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1706,9 +2130,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 6553129905073040824
+    SubobjectId: 2447249543388328900
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1741,7 +2165,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1753,9 +2177,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 12586839243577164710
+    SubobjectId: 15396235963707874778
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1788,7 +2212,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1800,9 +2224,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 16549300963849699730
+    SubobjectId: 11434051320667004910
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1835,7 +2259,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1847,9 +2271,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 12738042002608388770
+    SubobjectId: 14682184647547397342
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1882,7 +2306,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1894,9 +2318,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 3547541981634389556
+    SubobjectId: 5349258420432255048
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1929,7 +2353,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1941,9 +2365,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2966447169977300410
+    SubobjectId: 5921647917303491526
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -1976,7 +2400,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -1988,9 +2412,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 16293333118476204252
+    SubobjectId: 11032280556176565920
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2023,7 +2447,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2035,9 +2459,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7617125080368417106
+    SubobjectId: 1347265083791628078
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2070,7 +2494,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2082,9 +2506,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 1406524985566340381
+    SubobjectId: 7531144023027710817
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2117,7 +2541,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2129,9 +2553,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 4400910954693540014
+    SubobjectId: 5049706857381881554
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2164,7 +2588,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2176,9 +2600,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 14182668761596691458
+    SubobjectId: 13823221312761092734
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2211,7 +2635,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2223,9 +2647,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7354083656640270528
+    SubobjectId: 2092467988697927356
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2258,7 +2682,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2270,9 +2694,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 13247495356402740577
+    SubobjectId: 14762670133620929309
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2305,7 +2729,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2317,9 +2741,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 1310940294141800273
+    SubobjectId: 7581354584185680173
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2352,7 +2776,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2364,9 +2788,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2932495410145797796
+    SubobjectId: 6031821396845263064
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2399,7 +2823,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2411,9 +2835,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 18183044134634353864
+    SubobjectId: 9750331532628372148
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2446,7 +2870,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2458,9 +2882,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 1899580149175126911
+    SubobjectId: 7015392740163474691
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2493,7 +2917,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2505,9 +2929,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8968439870675230717
+    SubobjectId: 536289099786994049
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2540,7 +2964,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2552,9 +2976,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 15738892290325105555
+    SubobjectId: 11631887122873292271
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2587,7 +3011,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2599,9 +3023,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7987781189034057599
+    SubobjectId: 1575494852074258691
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2634,7 +3058,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2646,9 +3070,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8739498769207183122
+    SubobjectId: 166610372507539822
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2681,7 +3105,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2693,9 +3117,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2664780220892293561
+    SubobjectId: 6916464622648063941
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2728,7 +3152,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2740,9 +3164,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 14972860949569333084
+    SubobjectId: 13028154130623772960
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2775,7 +3199,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2787,9 +3211,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 15696097343207816417
+    SubobjectId: 11733207217806074525
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2822,7 +3246,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2834,9 +3258,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 3282832883511800872
+    SubobjectId: 6235782953067801172
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2869,7 +3293,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2881,9 +3305,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 11463058529201894003
+    SubobjectId: 16434746012891671567
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2916,7 +3340,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2928,9 +3352,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7117501641298167615
+    SubobjectId: 1855894932656331075
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -2963,7 +3387,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -2975,9 +3399,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7175467715336612794
+    SubobjectId: 1770870461171234246
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3010,7 +3434,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3022,9 +3446,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 962264012454163112
+    SubobjectId: 8529152036632210644
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3057,7 +3481,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3069,9 +3493,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 9069846816281585936
+    SubobjectId: 493589684527576940
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3104,7 +3528,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3116,9 +3540,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 11536029601009951603
+    SubobjectId: 15789393101974224143
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3151,7 +3575,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3163,9 +3587,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8524285236945321925
+    SubobjectId: 957961400754414009
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3198,7 +3622,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3210,9 +3634,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8535503400853098450
+    SubobjectId: 969179425059312046
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3245,7 +3669,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3257,9 +3681,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 13647317117645252580
+    SubobjectId: 14294994829910849944
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3292,7 +3716,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3304,9 +3728,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 658432480975672000
+    SubobjectId: 8224765106829495484
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3339,7 +3763,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3351,9 +3775,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 4757731418406552695
+    SubobjectId: 4107809627606702603
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3386,7 +3810,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3398,9 +3822,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 12046032811302904189
+    SubobjectId: 15864808845991952129
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3433,7 +3857,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3445,9 +3869,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 11593507518172384282
+    SubobjectId: 15844628011132883558
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3480,7 +3904,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3492,9 +3916,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8526995160053978379
+    SubobjectId: 960107264734514039
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3527,7 +3951,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3539,9 +3963,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 8853839392214304845
+    SubobjectId: 132905218742457905
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3574,7 +3998,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3586,9 +4010,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 9144426895166141291
+    SubobjectId: 423482797078621463
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3621,7 +4045,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3633,9 +4057,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 12741819629977923604
+    SubobjectId: 14687098074708651624
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3668,7 +4092,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3680,9 +4104,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 7953876179724125472
+    SubobjectId: 1542162560547953500
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3715,7 +4139,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3727,9 +4151,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 2522312540146225765
+    SubobjectId: 6342767535516421145
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3761,7 +4185,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3773,9 +4197,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SelfId: 3499887535326391367
+    SubobjectId: 5446292002369548859
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3807,7 +4231,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3820,8 +4244,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 17339653319120902639
-    SubobjectId: 15282630317196590341
-    InstanceId: 8971703626988002718
+    SubobjectId: 10062684516656613267
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3853,7 +4277,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Trigger {
     TeamSettings {
@@ -3866,8 +4290,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 15343208417995662205
-    SubobjectId: 17319185406774462359
-    InstanceId: 8971703626988002718
+    SubobjectId: 12675665170137218305
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3923,8 +4347,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3753943933731090815
-    SubobjectId: 1201525966544295317
-    InstanceId: 8971703626988002718
+    SubobjectId: 5701474173985877763
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -3963,9 +4387,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 11431134575674153144
+    SubobjectId: 16547501319448266436
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4040,9 +4464,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 17986919123050385619
+    SubobjectId: 9410653188780101295
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4084,9 +4508,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 14706520370196985696
+    SubobjectId: 13195277288722721052
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4161,9 +4585,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 10038349725756612473
+    SubobjectId: 17314200300183552261
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4205,9 +4629,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 10314212515880220380
-    SubobjectId: 12364470309714940470
-    InstanceId: 8971703626988002718
+    SelfId: 17160709518200308724
+    SubobjectId: 10745609538498813320
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4282,9 +4706,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7622841922797076789
-    SubobjectId: 5583860770011571679
-    InstanceId: 8971703626988002718
+    SelfId: 13437973309392756089
+    SubobjectId: 13941527154512806661
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4326,9 +4750,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 17683825339429334360
+    SubobjectId: 10263305424120279844
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4403,9 +4827,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 15595557750424437417
+    SubobjectId: 11775094118946462933
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4447,9 +4871,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 11828001693940851423
+    SubobjectId: 16078559083408129187
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4524,9 +4948,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 12502594339061586676
+    SubobjectId: 15457805124787274888
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4568,9 +4992,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 17071616172234348120
+    SubobjectId: 10947569986774517796
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4645,9 +5069,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 8934740880758175487
+    SubobjectId: 70254316677212291
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4689,9 +5113,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SelfId: 4775965512923041116
+    SubobjectId: 4125481734260167456
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4766,9 +5190,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SelfId: 11493231346532867727
+    SubobjectId: 16467180693156397299
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4810,9 +5234,9 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 10314212515880220380
-    SubobjectId: 12364470309714940470
-    InstanceId: 8971703626988002718
+    SelfId: 7848213187520231199
+    SubobjectId: 1724158323002321251
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -4887,9 +5311,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7622841922797076789
-    SubobjectId: 5583860770011571679
-    InstanceId: 8971703626988002718
+    SelfId: 8261605657761687763
+    SubobjectId: 693582934372120239
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -4931,8 +5355,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 11823701206394044653
-    SubobjectId: 9269010583720059911
-    InstanceId: 8971703626988002718
+    SubobjectId: 16073695656639880849
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5008,8 +5432,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3601484434008111507
-    SubobjectId: 1535470859872312697
-    InstanceId: 8971703626988002718
+    SubobjectId: 5403210768409503727
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5051,8 +5475,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 10314212515880220380
-    SubobjectId: 12364470309714940470
-    InstanceId: 8971703626988002718
+    SubobjectId: 17592314898708588704
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5128,8 +5552,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7622841922797076789
-    SubobjectId: 5583860770011571679
-    InstanceId: 8971703626988002718
+    SubobjectId: 1355234688108420937
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5172,8 +5596,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 201237294778365147
-    SubobjectId: 2773915960968663089
-    InstanceId: 8971703626988002718
+    SubobjectId: 8776940436937304743
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5249,8 +5673,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7312166670755347295
-    SubobjectId: 4741750848199286709
-    InstanceId: 8971703626988002718
+    SubobjectId: 2196925711978685731
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5293,8 +5717,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 9572197973570376468
-    SubobjectId: 11557180888682969086
-    InstanceId: 8971703626988002718
+    SubobjectId: 18433307787122150760
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5370,8 +5794,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 16861784025904277791
-    SubobjectId: 14894823048998850037
-    InstanceId: 8971703626988002718
+    SubobjectId: 10450061597767022435
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5413,8 +5837,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 10643290230478910541
-    SubobjectId: 13186695343684014247
-    InstanceId: 8971703626988002718
+    SubobjectId: 16767909119765998129
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5490,8 +5914,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 5803803927259676757
-    SubobjectId: 8376516578200872127
-    InstanceId: 8971703626988002718
+    SubobjectId: 3137958356496375337
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5534,8 +5958,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3088370329089034248
-    SubobjectId: 1038086233545551074
-    InstanceId: 8971703626988002718
+    SubobjectId: 5898339887258441332
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5611,8 +6035,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 13925633321693016720
-    SubobjectId: 16570383671964145274
-    InstanceId: 8971703626988002718
+    SubobjectId: 13422641321632410860
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5655,8 +6079,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 9234261956587369291
-    SubobjectId: 11858731866843174817
-    InstanceId: 8971703626988002718
+    SubobjectId: 18095943518335855927
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5732,8 +6156,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 2855324534179202944
-    SubobjectId: 221867253207163754
-    InstanceId: 8971703626988002718
+    SubobjectId: 6676342470928652796
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5775,8 +6199,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6402339010610783573
-    SubobjectId: 8966017007121400255
-    InstanceId: 8971703626988002718
+    SubobjectId: 2584690133197339433
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5852,8 +6276,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3173702818461415159
-    SubobjectId: 630324158379430429
-    InstanceId: 8971703626988002718
+    SubobjectId: 6272464754627291275
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
   Relevance {
@@ -5892,8 +6316,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 13720800304170652657
-    SubobjectId: 11159373076698248987
-    InstanceId: 8971703626988002718
+    SubobjectId: 14226052901210557837
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5939,8 +6363,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 752323903773336420
-    SubobjectId: 3370054836529661838
-    InstanceId: 8971703626988002718
+    SubobjectId: 8176230187114577176
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -5986,8 +6410,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 8633205941900416800
-    SubobjectId: 6015492498250920906
-    InstanceId: 8971703626988002718
+    SubobjectId: 921069153559759196
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }

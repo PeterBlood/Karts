@@ -46,7 +46,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
         Events.Broadcast("EndRace")
 	end
 
-	if newState == ABGS.GAME_STATE_LOBBY and oldState == ABGS.GAME_STATE_ROUND_END then
+	if newState == ABGS.GAME_STATE_MENU and oldState == ABGS.GAME_STATE_ROUND_END then
 		Events.Broadcast("ResetRace")
 	end
 end

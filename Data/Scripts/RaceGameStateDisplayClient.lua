@@ -71,9 +71,9 @@ function Tick(deltaTime)
 
     if currentState == ABGS.GAME_STATE_LOBBY then
         if remainingTime then
-            STATE_NAME_TEXT.text = "NEXT RACE STARTS IN"
+            STATE_NAME_TEXT.text = "RACE STARTS IN"
         else
-            STATE_NAME_TEXT.text = "WAITING FOR OTHER PLAYERS"
+            STATE_NAME_TEXT.text = "FINDING GAME"
         end
 
         UpdateTimeRemaining(remainingTime)

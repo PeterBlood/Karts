@@ -1,4 +1,22 @@
 Assets {
+  Id: 15136791066424950142
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 14756091894735419662
+  Name: "Baloo 2 Extra Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2ExtraBold_ref"
+  }
+}
+Assets {
   Id: 13815364550377813772
   Name: "Teko"
   PlatformAssetType: 28
@@ -14,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "OswaldRegular_ref"
+  }
+}
+Assets {
+  Id: 12518253335771259685
+  Name: "Checkered Flag"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Racing_Icon_002"
   }
 }
 Assets {
@@ -50,15 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameRing4x_004"
-  }
-}
-Assets {
-  Id: 6145963262670495219
-  Name: "Anton"
-  PlatformAssetType: 28
-  PrimaryAsset {
-    AssetType: "FontAssetRef"
-    AssetId: "AntonRegular_ref"
   }
 }
 Assets {
@@ -113,5 +131,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_020"
+  }
+}
+Assets {
+  Id: 1925231903772129967
+  Name: "Fantasy Coins 008"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_008"
   }
 }

@@ -21,6 +21,8 @@ local AAP = require(script:GetCustomProperty("APIActivePlayers"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local LINE_TEMPLATE = script:GetCustomProperty("LineTemplate")
+local propMinimapUIMy = script:GetCustomProperty("MinimapUIMy"):WaitForObject()
+
 
 local RESOURCE_NAME = "Race_Rank"
 
@@ -130,7 +132,10 @@ function Tick(deltaTime)
         PANEL.visibility = Visibility.FORCE_OFF
         return
     end
-
+    if passiveShowScoreboard and not bindingDown then
+        propMinimapUIMy.visibility = Visibility.FORCE_ON
+        return
+    end
     PANEL.visibility = Visibility.INHERIT
 
     local players = Game.GetPlayers()

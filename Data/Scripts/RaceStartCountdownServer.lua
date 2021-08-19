@@ -9,6 +9,7 @@ function StartRaceCountdown()
 
     for _, player in pairs(AAP.GetActivePlayers()) do
         player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+        Events.Broadcast("InputAfterCountdown")
     end
 end
 

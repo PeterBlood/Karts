@@ -1,4 +1,6 @@
 local AAP = require(script:GetCustomProperty("APIActivePlayers"))
+local ABGS = require(script:GetCustomProperty("ABGS"))
+
 
 local GROUP = script:GetCustomProperty("Group"):WaitForObject()
 local OFF_WHEN_ACTIVE = script:GetCustomProperty("OffWhenActive")
@@ -27,10 +29,16 @@ function OnPlayerActive(player)
     end
 end
 
+
+
 function OnPlayerNonActive(player)
     if player == LOCAL_PLAYER then
         HideUI()
     end
+end
+
+function Tick()
+   -- print(AAP.PLAYER_Q_EVENT)
 end
 
 Events.Connect(AAP.PLAYER_ACTIVE_EVENT, OnPlayerActive)
@@ -38,6 +46,8 @@ Events.Connect(AAP.PLAYER_NON_ACTIVE_EVENT, OnPlayerNonActive)
 
 if AAP.IsPlayerActive(LOCAL_PLAYER) then
     OnPlayerActive(LOCAL_PLAYER)
+-- elseif AAP.IsPlayerQ(LOCAL_PLAYER) then
+-- OnPlayerQ(LOCAL_PLAYER)
 else
     OnPlayerNonActive(LOCAL_PLAYER)
 end

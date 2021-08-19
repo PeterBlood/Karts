@@ -22,12 +22,17 @@ local API = require(script:GetCustomProperty("APIActivePlayers"))
 local RESOURCE_NAME = "IsParticipant"
 
 local PLAYER_ACTIVE_EVENT = API.PLAYER_ACTIVE_EVENT
+local PLAYER_Q_EVENT = API.PLAYER_Q_EVENT
 local PLAYER_NON_ACTIVE_EVENT = API.PLAYER_NON_ACTIVE_EVENT
 
 function OnPlayerResourceChanged(player, resource)
     if resource == RESOURCE_NAME then
         if API.IsPlayerActive(player) then
             Events.Broadcast(PLAYER_ACTIVE_EVENT, player)
+        elseif API.IsPlayerQ(player) then
+            Events.Broadcast(PLAYER_Q_EVENT, player)
+           -- print(PLAYER_Q_EVENT)
+            print(resource)
         else
             Events.Broadcast(PLAYER_NON_ACTIVE_EVENT, player)
         end
@@ -41,6 +46,14 @@ function OnPlayerJoined(player)
     end
 end
 
+function GotoLobby(player)
+    player.resourceChangedEvent:Connect(OnPlayerResourceChanged)
+    if API.IsPlayerQ(player) then
+         Events.Broadcast(PLAYER_Q_EVENT, player)
+     end
+
+ end
+
 function OnPlayerLeft(player)
 	if API.IsPlayerActive(player) then
         Events.Broadcast(PLAYER_NON_ACTIVE_EVENT, player)
@@ -49,7 +62,7 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-
+Events.Connect("EnterLobbyFromMenu",GotoLobby)
 -- Loop existing players
 --for _, player in ipairs(Game.GetPlayers()) do
 --    OnPlayerJoined(player)

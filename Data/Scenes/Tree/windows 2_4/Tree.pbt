@@ -35,4 +35,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "bushes_7"
   }
+  InstanceHistory {
+    SelfId: 11793542900164277862
+    SubobjectId: 15612871993482078234
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }

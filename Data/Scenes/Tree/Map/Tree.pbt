@@ -1,6 +1,44 @@
 Name: "Map"
 RootId: 15842083511012852698
 Objects {
+  Id: 18392974912703958727
+  Name: "Menu Area"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15842083511012852698
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Menu Area"
+  }
+  InstanceHistory {
+    SelfId: 18392974912703958727
+    SubobjectId: 9531866035471241403
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
   Id: 7401639009912796875
   Name: "Race Kill Zone"
   Transform {
@@ -37,8 +75,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7401639009912796875
-    SubobjectId: 4756921508876997153
-    InstanceId: 8971703626988002718
+    SubobjectId: 2139460396312783031
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -83,8 +121,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 4467612945515281656
-    SubobjectId: 1924228721705621522
-    InstanceId: 8971703626988002718
+    SubobjectId: 4973982651739546244
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -134,8 +172,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6810118190445472236
-    SubobjectId: 8806362425905138950
-    InstanceId: 8971703626988002718
+    SubobjectId: 2703675978316937104
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -172,8 +210,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 3088555438774805767
-    SubobjectId: 1038323052892652013
-    InstanceId: 8971703626988002718
+    SubobjectId: 5898524041320217467
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -216,8 +254,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 708623744406616352
-    SubobjectId: 3270057622233062858
-    InstanceId: 8971703626988002718
+    SubobjectId: 8273830605632350044
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -263,8 +301,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6144358595509102096
-    SubobjectId: 8210405206399238906
-    InstanceId: 8971703626988002718
+    SubobjectId: 3333262980661639276
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -310,8 +348,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 5983059794260585246
-    SubobjectId: 8627776142617808884
-    InstanceId: 8971703626988002718
+    SubobjectId: 2886558583928468834
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -357,8 +395,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 13204180602570450403
-    SubobjectId: 10631505389668090121
-    InstanceId: 8971703626988002718
+    SubobjectId: 14715978935270341535
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -404,8 +442,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 8747591428606808778
-    SubobjectId: 6760375352916031008
-    InstanceId: 8971703626988002718
+    SubobjectId: 171898323788598454
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }

@@ -1,18 +1,18 @@
 Assets {
-  Id: 16639234590025064689
-  Name: "VO Countdown Female Set 01 SFX"
+  Id: 14170076647790140934
+  Name: "Harp Plucked Notes Sampled Instrument 01"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
-    AssetId: "sfxabp_10_second_countdown_female_01_ref"
+    AssetId: "sfxabp_sampled_harp_notes_01_ref"
   }
 }
 Assets {
-  Id: 15389360778299114997
-  Name: "VO Meta Female \"Go\" 01 SFX"
+  Id: 5702522177138614521
+  Name: "UI Low Tonal Back Error Denied Lock 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
-    AssetId: "sfx_vo_meta_female_go_01_Cue_ref"
+    AssetId: "sfx_ui_low_tonal_back_error_denied_lock_01_Cue_ref"
   }
 }

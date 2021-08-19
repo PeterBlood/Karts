@@ -41,6 +41,7 @@ function Tick(deltaTime)
 		return
 	end
 
+	--print(ABGS.GetGameState())
 	if ABGS.GetGameState() == ABGS.GAME_STATE_LOBBY and ABGS.GetTimeRemainingInState() == nil then
 		local players = Game.GetPlayers()
 		if #players >= REQUIRED_PLAYERS then

@@ -1,194 +1,24 @@
 Name: "window_8"
-RootId: 8575489260210202252
+RootId: 12945177369770296638
 Objects {
-  Id: 6113100643909552736
-  Name: "Pipe"
+  Id: 9131184697991779684
+  Name: "Container - Rectangle"
   Transform {
     Location {
-      X: 1.34763241
-      Y: -32.5883636
-      Z: 81.5569763
+      X: 22.1655273
+      Z: 3.40145874
     }
     Rotation {
-      Pitch: 90
-      Yaw: -26.565033
-      Roll: 63.4348907
+      Yaw: 89.9999847
+      Roll: -85.6123352
     }
     Scale {
-      X: 0.199749142
-      Y: 1.6558311
-      Z: 0.695647657
+      X: 0.993462265
+      Y: 1.91787541
+      Z: 0.993463
     }
   }
-  ParentId: 8575489260210202252
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12446131267530965574
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 10436832389909892599
-  Name: "Pipe"
-  Transform {
-    Location {
-      X: 1.34763241
-      Y: -32.5883636
-      Z: 81.5569763
-    }
-    Rotation {
-      Roll: 89.9999542
-    }
-    Scale {
-      X: 0.199749142
-      Y: 1.6558311
-      Z: 0.695647657
-    }
-  }
-  ParentId: 8575489260210202252
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12446131267530965574
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 12425653477196759057
-  Name: "Pipe"
-  Transform {
-    Location {
-      X: 1.34760857
-      Y: -65.9247742
-      Z: 81.5569763
-    }
-    Rotation {
-      Roll: 89.9999542
-    }
-    Scale {
-      X: 1.74135065
-      Y: 1.74135029
-      Z: 0.695647597
-    }
-  }
-  ParentId: 8575489260210202252
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12446131267530965574
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3065043153909758577
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 14073884323516630151
-  Name: "Pipe"
-  Transform {
-    Location {
-      X: 1.34762645
-      Y: -41.0722504
-      Z: 81.5569763
-    }
-    Rotation {
-      Roll: 89.9999619
-    }
-    Scale {
-      X: 1.71924567
-      Y: 1.71924531
-      Z: 0.686817
-    }
-  }
-  ParentId: 8575489260210202252
+  ParentId: 12945177369770296638
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -211,7 +41,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 1137112816547272582
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -224,5 +54,72 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 9131184697991779684
+    SubobjectId: 414182222408682264
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 14947279584799013881
+  Name: "Container - Rectangle"
+  Transform {
+    Location {
+      X: -22.1652832
+    }
+    Rotation {
+      Yaw: 89.9999924
+      Roll: -85.6123276
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12945177369770296638
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10648447892682596769
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15425057636124181920
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 14947279584799013881
+    SubobjectId: 12999749199592383877
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

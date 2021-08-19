@@ -43,8 +43,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 6838441931890076870
-    SubobjectId: 8814418766855161900
-    InstanceId: 8971703626988002718
+    SubobjectId: 2729183742723257018
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -80,8 +80,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 7247991284356414520
-    SubobjectId: 4621278387979229394
-    InstanceId: 8971703626988002718
+    SubobjectId: 2274613821228917316
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -127,8 +127,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 321507760317960141
-    SubobjectId: 2360488757427792679
-    InstanceId: 8971703626988002718
+    SubobjectId: 9183188224702632369
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -178,8 +178,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 15975290486887213477
-    SubobjectId: 17944521869270388047
-    InstanceId: 8971703626988002718
+    SubobjectId: 12012409301460924377
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -227,8 +227,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 9777496470312158669
-    SubobjectId: 11746716738259411239
-    InstanceId: 8971703626988002718
+    SubobjectId: 18210201392917535665
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -277,8 +277,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 10331678025313379080
-    SubobjectId: 12381912645115217890
-    InstanceId: 8971703626988002718
+    SubobjectId: 17610898629725830516
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -297,12 +297,20 @@ Objects {
   ChildIds: 13979095953083334856
   UnregisteredParameters {
     Overrides {
+      Name: "cs:MenuHasDuration"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:MenuDuration"
+      Float: 3
+    }
+    Overrides {
       Name: "cs:LobbyHasDuration"
       Bool: false
     }
     Overrides {
       Name: "cs:LobbyDuration"
-      Float: 20
+      Float: 10
     }
     Overrides {
       Name: "cs:RoundHasDuration"
@@ -318,7 +326,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RoundEndDuration"
-      Float: 5
+      Float: 30
     }
     Overrides {
       Name: "cs:LobbyHasDuration:tooltip"
@@ -359,8 +367,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 4366038286755274756
-    SubobjectId: 1739327541334525166
-    InstanceId: 8971703626988002718
+    SubobjectId: 5156705288249048696
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -395,8 +403,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 13979095953083334856
-    SubobjectId: 16522480158370948130
-    InstanceId: 8971703626988002718
+    SubobjectId: 13472726262964936372
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -445,8 +453,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 18007925984680230165
-    SubobjectId: 15950937184805444095
-    InstanceId: 8971703626988002718
+    SubobjectId: 9434484686117135209
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
@@ -520,8 +528,8 @@ Objects {
   }
   InstanceHistory {
     SelfId: 17875654834748074502
-    SubobjectId: 15899686641257074412
-    InstanceId: 8971703626988002718
+    SubobjectId: 9445193899394790522
+    InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
 }
