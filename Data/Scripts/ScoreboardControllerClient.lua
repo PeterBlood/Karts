@@ -136,7 +136,7 @@ function Tick(deltaTime)
         propMinimapUIMy.visibility = Visibility.FORCE_ON
         return
     end
-    PANEL.visibility = Visibility.INHERIT
+    PANEL.visibility = Visibility.FORCE_ON
 
     local players = Game.GetPlayers()
     table.sort(players, ComparePlayers)

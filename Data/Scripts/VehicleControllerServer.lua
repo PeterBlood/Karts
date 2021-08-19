@@ -169,21 +169,28 @@ end
 
 function LeaveVehicle(vehicleEquipment, player)
 	
-	player:SetVisibility(oldVisiblity, true)
+	--player:SetVisibility(oldVisiblity, true)
 	
-	vehicleSet.visibility = Visibility.INHERIT
-	player:SetWorldPosition(vehicleSet:GetWorldRotation() * exitingPosition + vehicleSet:GetWorldPosition())
-	player:SetWorldRotation(vehicleSet:GetWorldRotation())
+	--vehicleSet.visibility = Visibility.INHERIT
+
+	--player:SetWorldPosition(vehicleSet:GetWorldRotation() * exitingPosition + vehicleSet:GetWorldPosition())
+	--player:SetWorldRotation(vehicleSet:GetWorldRotation())
 	
 	vehicleClientAnchor.parent = vehicleSet
 	vehicleClientAnchor:SetPosition(Vector3.ZERO)
 	vehicleClientAnchor:SetRotation(Rotation.New(0, 0, 0))
 	
-	driver.animationStance = "unarmed_stance"
-	defaultSettings:ApplyToPlayer(driver)
-	
+	player.animationStance = "unarmed_stance"
+	defaultSettings:ApplyToPlayer(player)
+	local objects = World.FindObjectsByName("MainSpawn")
+	for _, obj in pairs(objects) do
+        if obj.name=="MainSpawn" then
+			player:SetWorldPosition(Vector3.New(obj:GetWorldRotation()))
+
+        end
+	end
 	driver = nil
-	
+
 	pressedListener:Disconnect()
 	releasedListener:Disconnect()
 	
@@ -194,11 +201,11 @@ function LeaveVehicle(vehicleEquipment, player)
 	zRotation = 0
 	movingDirection = 0
 	
-	if not hazardToggle then
+	--if not hazardToggle then
 	
-		script:SetNetworkedCustomProperty("TurnSignals", 0)
+		--script:SetNetworkedCustomProperty("TurnSignals", 0)
 		
-	end
+	--end
 	
 	pressedBefore = false
 	leftToggle = false
@@ -206,11 +213,11 @@ function LeaveVehicle(vehicleEquipment, player)
 			
 	Task.Wait(1)
 		
-	if pickupTrigger:IsValid() then
+	-- if pickupTrigger:IsValid() then
 	
-		pickupTrigger.collision = Collision.INHERIT
+	-- 	pickupTrigger.collision = Collision.INHERIT
 		
-	end
+	-- end
 
 end
 
@@ -498,7 +505,8 @@ end
 
 Game.playerLeftEvent:Connect(DestroyVehicle)
 
-vehicleSet.unequippedEvent:Connect(LeaveVehicle)
+Events.Connect("LeaveVehicle",LeaveVehicle)
+--vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(StartVehicle)
 Hitbox.beginOverlapEvent:Connect(OnBeginOverlap)
 -- Events.Connect("PlayerSpawnedInKart", StartVehicle)

@@ -1441,7 +1441,7 @@ Objects {
       }
     }
     Text {
-      Label: "10"
+      Label: "00"
       Color {
         R: 1
         G: 1

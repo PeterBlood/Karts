@@ -67,11 +67,11 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
 	if newState == ABGS.GAME_STATE_MENU and oldState == ABGS.GAME_STATE_ROUND_END then
 		Events.Broadcast("ResetRace")
-        for _, player in ipairs(AAP.GetActivePlayers()) do
-			AAP.RemoveActivePlayer(player)
+        --for _, player in ipairs(AAP.GetActivePlayers()) do
+			--AAP.RemoveActivePlayer(player)
             --Events.Broadcast("EnterLobbyArea", player)
             Events.Broadcast("EnterMenu")
-		end
+		--end
 	end
 
 	if newState == ABGS.GAME_STATE_LOBBY and oldState ~= ABGS.GAME_STATE_LOBBY then

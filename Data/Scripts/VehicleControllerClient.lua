@@ -63,7 +63,7 @@ function LeaveVehicle(vehicleEquipment, player)
 	theVehicle:SetPosition(Vector3.UP * 100)
 	theVehicle:SetRotation(Rotation.New(0, 0, 0))
 	
-	driver:SetDefaultCamera(defaultCamera, 0.1)
+	player:SetDefaultCamera(defaultCamera, 0.1)
 
 	driver = nil
 	
@@ -170,5 +170,6 @@ end
 Game.playerJoinedEvent:Connect(Resync)
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(BindingReleased)
-vehicleSet.unequippedEvent:Connect(LeaveVehicle)
+--vehicleSet.unequippedEvent:Connect(LeaveVehicle)
+Events.Connect("LeaveVehicle",LeaveVehicle)
 vehicleSet.equippedEvent:Connect(EnterVehicle)

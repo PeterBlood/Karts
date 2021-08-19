@@ -32,6 +32,7 @@ function GetStartingPositions()
 end
 
 function OnPlayerLeft(player)
+    Events.Broadcast("LeaveVehicle",player)
     local vehicle = playerVehicles[player]
     if Object.IsValid(vehicle) then
         vehicle:Destroy()
@@ -40,10 +41,10 @@ end
 
 function OnPlayerNonActive(player)
     local vehicle = playerVehicles[player]
-
+    Events.Broadcast("LeaveVehicle")
     if Object.IsValid(vehicle) then
         playerVehicles[player] = nil
-        vehicle:RemoveDriver()
+--        vehicle:RemoveDriver()
         Task.Wait()
         vehicle:Destroy()
         --Events.Broadcast("EnterLobbyArea", player)

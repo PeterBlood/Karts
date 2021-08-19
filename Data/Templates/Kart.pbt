@@ -407,6 +407,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:MainSpawn"
+            ObjectReference {
+              SelfId: 16813558807825262224
+            }
+          }
+          Overrides {
             Name: "cs:zRotation:isrep"
             Bool: true
           }

@@ -58,7 +58,7 @@ function Tick()
     end
 
     if bestLapTime then
-        BEST_TIME_PANEL.visibility = Visibility.INHERIT
+     --   BEST_TIME_PANEL.visibility = Visibility.INHERIT
         BEST_TIMER.text = SecondsToCounterString(bestLapTime)
     else
         BEST_TIME_PANEL.visibility = Visibility.FORCE_OFF

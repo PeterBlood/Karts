@@ -106,7 +106,7 @@ Objects {
   ParentId: 5100778910632930640
   ChildIds: 3846676199555598706
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
