@@ -32,17 +32,12 @@ jobs:
   rest-api-static-security-testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: DevSkim
-        uses: microsoft/DevSkim-Action@v1
-        with:
-          # Please create free account at https://platform.42crunch.com/register
-          # Follow these steps to configure API_TOKEN https://docs.42crunch.com/latest/content/tasks/integrate_github_actions.htm
-          api-token: ${{ secrets.API_TOKEN }}
-          # Fail if any OpenAPI file scores lower than 75
-          min-score: 75
-          # Upload results to Github code scanning
-          upload-to-code-scanning: true
-          # Github token for uploading the results
-          github-token: ${{ github.token }}
+    - uses: actions/checkout@v2
+    - uses: microsoft/DevSkim-Action@v1
+    - uses: github/codeql-action/upload-sarif@v1
+      with:
+        sarif_file: devskim-results.sarif
+        directory-to-scan: path/to/scan
+        should-scan-archives: false
+        output-filename: devskim-results.sarif
+        output-directory: path/to/output (appended to $GITHUB_WORKSPACE)
