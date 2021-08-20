@@ -1,8 +1,8 @@
 -- local pelvisAnchor = script:GetCustomProperty("pelvisAnchor"):WaitForObject()
 -- local pelvisHIK = script:GetCustomProperty("pelvisHIK"):WaitForObject()
 -- local vehicleSet = script:GetCustomProperty("vehicleSet"):WaitForObject()
-local driver = nil
-print("vono robyt????")
+-- local driver = nil
+-- print("vono robyt????")
 
 
 

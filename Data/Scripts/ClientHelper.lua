@@ -384,6 +384,8 @@ function Tick(dt)
 end
 
 
+-- Events.Connect("LeaveVehicle",LeaveVehicle)
+-- Events.Connect("StartVehicle",EnterVehicle)
 vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(EnterVehicle)
 

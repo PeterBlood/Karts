@@ -16,7 +16,7 @@ end
 
 function API.AddQPlayer(player)
     if not Environment.IsServer() then
-        error("AddActivePlayer needs to be called from the server")
+        error("AddQPlayer needs to be called from the server")
     end
     player:SetResource(RESOURCE_NAME, 2)
     -- print("q")
@@ -25,7 +25,7 @@ end
 
 function API.RemoveQPlayer(player)
     if not Environment.IsServer() then
-        error("AddActivePlayer needs to be called from the server")
+        error("RemoveQPlayer needs to be called from the server")
     end
     player:SetResource(RESOURCE_NAME, 0)
 end

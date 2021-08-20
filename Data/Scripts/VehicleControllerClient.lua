@@ -170,6 +170,8 @@ end
 Game.playerJoinedEvent:Connect(Resync)
 LOCAL_PLAYER.bindingPressedEvent:Connect(BindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(BindingReleased)
---vehicleSet.unequippedEvent:Connect(LeaveVehicle)
-Events.Connect("LeaveVehicle",LeaveVehicle)
+vehicleSet.unequippedEvent:Connect(LeaveVehicle)
+--Events.Connect("LeaveVehicle",LeaveVehicle)
+--Events.Connect("StartVehicle",EnterVehicle)
+
 vehicleSet.equippedEvent:Connect(EnterVehicle)

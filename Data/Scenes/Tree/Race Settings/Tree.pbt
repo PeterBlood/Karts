@@ -817,6 +817,12 @@ Objects {
         SelfId: 1516481286162667726
       }
     }
+    Overrides {
+      Name: "cs:AfterMatchTrigger"
+      AssetReference {
+        Id: 9819136556530962153
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

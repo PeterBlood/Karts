@@ -129,7 +129,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RoundTime"
-      Float: 10
+      Float: 420
     }
     Overrides {
       Name: "cs:DefaultVehicle"

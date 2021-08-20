@@ -19,6 +19,7 @@ function StartRaceCountdown()
     Task.Wait(1)
     Events.Broadcast("BannerMessage", "GO!", 1)
     propGoSound:Play()
+    Events.BroadcastToServer("StartRaceCountdownGO")
 end
 
 function OnStartRace()

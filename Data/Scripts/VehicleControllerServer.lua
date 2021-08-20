@@ -43,6 +43,9 @@ local turnRight = "ability_extra_32"
 
 local horn = "ability_extra_35"
 
+local CountdownGO = 0
+local CountdownGOTick = 0
+
 --[[
 
 		Vehicle Controls
@@ -126,6 +129,8 @@ local Hitbox = script:GetCustomProperty("Hitbox"):WaitForObject()
 
 function StartVehicle(vehicleEquipment, player)
 	--print("srv entering")
+	--local AllPlayers = Game.GetPlayers()
+	--for _, player in pairs(AllPlayers) do
 	oldVisiblity = player:GetVisibility()
 	player.isVisible = true
 	player.movementControlMode = MovementControlMode.NONE
@@ -163,7 +168,6 @@ function StartVehicle(vehicleEquipment, player)
 	player.gravityScale = gravity
 	pressedListener = player.bindingPressedEvent:Connect(BindingPressed)
 	releasedListener = player.bindingReleasedEvent:Connect(BindingReleased)
-	
 	driver = player
 end
 
@@ -179,16 +183,11 @@ function LeaveVehicle(vehicleEquipment, player)
 	vehicleClientAnchor.parent = vehicleSet
 	vehicleClientAnchor:SetPosition(Vector3.ZERO)
 	vehicleClientAnchor:SetRotation(Rotation.New(0, 0, 0))
-	
+    -- local AllPlayers = Game.GetPlayers()
+	-- for _, player in pairs(AllPlayers) do
 	player.animationStance = "unarmed_stance"
 	defaultSettings:ApplyToPlayer(player)
-	local objects = World.FindObjectsByName("MainSpawn")
-	for _, obj in pairs(objects) do
-        if obj.name=="MainSpawn" then
-			player:SetWorldPosition(Vector3.New(obj:GetWorldRotation()))
 
-        end
-	end
 	driver = nil
 
 	pressedListener:Disconnect()
@@ -212,6 +211,14 @@ function LeaveVehicle(vehicleEquipment, player)
 	rightToggle = false
 			
 	Task.Wait(1)
+	vehicleSet:Destroy()
+	local objects = World.FindObjectsByName("MainSpawn")
+	for _, obj in pairs(objects) do
+        if obj.name=="MainSpawn" then
+			player:SetWorldPosition(Vector3.New(obj:GetWorldPosition()))
+
+        end
+	end
 		
 	-- if pickupTrigger:IsValid() then
 	
@@ -392,7 +399,9 @@ UpdatemilsecondTask.repeatCount = -1
 
 function OnBeginOverlap(theTrigger, player)
     local objects = Hitbox:GetOverlappingObjects()
-
+	-- if Hitbox:IsOverlapping(player) then
+	-- 	Events.Broadcast("StartVehicle",player)
+	-- end
     for _, obj in pairs(objects) do
         if obj.name=="TickDown" then
             print("TickDown")
@@ -400,10 +409,20 @@ function OnBeginOverlap(theTrigger, player)
 		elseif obj.name=="TickUp" then
 			TickControl = 1
 			print("TickUp")
-        end
+		elseif obj.name=="AfterMatchTrigger" then
+			vehicleSet:Unequip()
+		end
     end
 end
 
+function StartRaceCountdownGO()
+	if CountdownGO == 1 then
+		return
+	else
+		CountdownGO = 1
+	end
+	
+end
 
 function Tick(dt)
 
@@ -432,6 +451,9 @@ function Tick(dt)
 		return
 		
 		end
+	end
+	if CountdownGO ~= 1 then
+		driver:ResetVelocity()
 	end
 	mark = 0
 	--print(mark)
@@ -472,7 +494,9 @@ function Tick(dt)
 	end
 --debug ui
 ------------------------------------------
-
+if CountdownGO ~= 1 then 
+	return
+end
 	if movingDirection > 0 and movingOn == true and driver:GetVelocity().size < topSpeed then
 				if milseconds < 30 then
 				driver:SetVelocity(Vector3.New(milseconds*ServerVelo*10* 1.6 * math.cos(math.rad(driver:GetWorldRotation().z)),milseconds*ServerVelo*10*1.6 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
@@ -483,6 +507,8 @@ function Tick(dt)
 				driver:AddImpulse(Vector3.New(VeloSize*ServerVelo* 1.3 *  math.cos(math.rad(driver:GetWorldRotation().z)),VeloSize*ServerVelo*1.3 * math.sin(math.rad(driver:GetWorldRotation().z)),0)+driver:GetVelocity())
 					end
 			end
+
+		
 				--print("forward")
 	elseif movingDirection < 0 then
 				if milseconds < 30 then
@@ -505,8 +531,10 @@ end
 
 Game.playerLeftEvent:Connect(DestroyVehicle)
 
-Events.Connect("LeaveVehicle",LeaveVehicle)
---vehicleSet.unequippedEvent:Connect(LeaveVehicle)
+--Events.Connect("LeaveVehicle",LeaveVehicle)
+--Events.Connect("StartVehicle",StartVehicle)
+Events.Connect("StartRaceCountdownGO", StartRaceCountdownGO)
+vehicleSet.unequippedEvent:Connect(LeaveVehicle)
 vehicleSet.equippedEvent:Connect(StartVehicle)
 Hitbox.beginOverlapEvent:Connect(OnBeginOverlap)
 -- Events.Connect("PlayerSpawnedInKart", StartVehicle)

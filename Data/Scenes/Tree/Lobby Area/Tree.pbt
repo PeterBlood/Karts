@@ -682,7 +682,6 @@ Objects {
   ChildIds: 17026998855051584242
   ChildIds: 11403381233520719345
   ChildIds: 12365242996934833829
-  ChildIds: 12992027928867702351
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -701,48 +700,6 @@ Objects {
   InstanceHistory {
     SelfId: 5857347626194835161
     SubobjectId: 3048512751156185253
-    InstanceId: 16193781511362118803
-    TemplateId: 3185697312841042802
-  }
-}
-Objects {
-  Id: 12992027928867702351
-  Name: "Portal-Minimap"
-  Transform {
-    Location {
-      X: 75236.3047
-      Y: -60995.8828
-      Z: 45097.5586
-    }
-    Rotation {
-      Yaw: -1.00001025
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5857347626194835161
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Portal-Minimap"
-  }
-  InstanceHistory {
-    SelfId: 12992027928867702351
-    SubobjectId: 14937296484455340083
     InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
@@ -1069,6 +1026,7 @@ Objects {
   ParentId: 5857347626194835161
   ChildIds: 5015814070567063307
   ChildIds: 2754857009977133027
+  ChildIds: 10668995003784714507
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1086,6 +1044,409 @@ Objects {
   InstanceHistory {
     SelfId: 17565197232191130042
     SubobjectId: 9854748183473067974
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 10668995003784714507
+  Name: "Lobby"
+  Transform {
+    Location {
+      X: -30828
+      Y: -62537
+      Z: 2137
+    }
+    Rotation {
+      Yaw: -129.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17565197232191130042
+  ChildIds: 4392286387451926905
+  ChildIds: 12992027928867702351
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:dynamic"
+      }
+      Opacity: 1
+      IsHUD: true
+      CanvasWorldSize {
+        X: 1024
+        Y: 1024
+      }
+      TwoSided: true
+      TickWhenOffScreen: true
+      RedrawTime: 30
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13132117138379726905
+    SubobjectId: 14788029411446406725
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 12992027928867702351
+  Name: "Portal-Minimap"
+  Transform {
+    Location {
+      X: -69357.3438
+      Y: 80259.3906
+      Z: 42960.5586
+    }
+    Rotation {
+      Yaw: 128.999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10668995003784714507
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Portal-Minimap"
+  }
+  InstanceHistory {
+    SelfId: 12992027928867702351
+    SubobjectId: 14937296484455340083
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 4392286387451926905
+  Name: "CloseButt"
+  Transform {
+    Location {
+      X: -67721.9844
+      Y: -16582.3594
+      Z: -2137
+    }
+    Rotation {
+      Yaw: 129.999939
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10668995003784714507
+  ChildIds: 7938318840849944728
+  ChildIds: 7713006869221629511
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 383
+    Height: 145
+    UIX: -832.528442
+    UIY: -473.374634
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      FontSize: 65
+      ButtonColor {
+        G: 0.599999905
+        B: 1
+        A: 1
+      }
+      HoveredColor {
+        R: 0.745
+        G: 0.91075
+        B: 1
+        A: 1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 0.400000036
+        A: 1
+      }
+      DisabledColor {
+        R: 0.211764723
+        G: 0.105882362
+        B: 0.211764723
+        A: 1
+      }
+      Brush {
+        Id: 12401038489267598665
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+      Font {
+        Id: 14756091894735419662
+      }
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 18285457517022162457
+    SubobjectId: 9711443224708640869
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7713006869221629511
+  Name: "UI Text Box"
+  Transform {
+    Location {
+      X: -124461.281
+      Y: 179058.406
+      Z: -3674
+    }
+    Rotation {
+      Yaw: 1.99999928
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4392286387451926905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 400
+    Height: 50
+    UIX: 68.1
+    UIY: 46.3863068
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "Back"
+      Color {
+        G: 0.237999886
+        B: 0.238
+        A: 1
+      }
+      Size: 50
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 7480926071332614547
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:top"
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+      OutlineColor {
+        R: 0.305882365
+        B: 0.305882365
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10729752311273528286
+    SubobjectId: 17285018173939729826
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
+}
+Objects {
+  Id: 7938318840849944728
+  Name: "UI Image"
+  Transform {
+    Location {
+      X: -66412.7578
+      Y: 88077.8516
+      Z: -1935
+    }
+    Rotation {
+      Yaw: -44.9999428
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4392286387451926905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Control {
+    Width: 100
+    Height: 123
+    UIX: -73.1681
+    UIY: 0.959762573
+    RotationAngle: 180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 18041138028405362270
+      }
+      Color {
+        R: 0.343
+        G: 0.813849568
+        B: 1
+        A: 0.726
+      }
+      TeamSettings {
+      }
+      ShadowColor {
+        A: 1
+      }
+      ShadowOffset {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2455145078422500991
+    SubobjectId: 6419153268635609091
     InstanceId: 16193781511362118803
     TemplateId: 3185697312841042802
   }
@@ -1134,6 +1495,18 @@ Objects {
       Name: "cs:API"
       AssetReference {
         Id: 11974742996071064388
+      }
+    }
+    Overrides {
+      Name: "cs:LobbyCloseButt"
+      ObjectReference {
+        SelfId: 4392286387451926905
+      }
+    }
+    Overrides {
+      Name: "cs:APIActivePlayers"
+      AssetReference {
+        Id: 6537610196753662918
       }
     }
   }

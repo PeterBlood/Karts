@@ -11,5 +11,5 @@ PublishedState: Public
 AllowDirectJoinAsChild: true
 SceneNameToSceneIdMap {
   key: "Main"
-  value: "426a58c140f1ef7857255fa0763e3be4"
+  value: "0c22f22d457b3d77c493c0851cf68857"
 }

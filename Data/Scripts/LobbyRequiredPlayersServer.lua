@@ -40,7 +40,6 @@ function Tick(deltaTime)
 	if not ABGS.IsGameStateManagerRegistered() then
 		return
 	end
-
 	--print(ABGS.GetGameState())
 	if ABGS.GetGameState() == ABGS.GAME_STATE_LOBBY and ABGS.GetTimeRemainingInState() == nil then
 		local players = Game.GetPlayers()

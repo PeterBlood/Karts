@@ -23,7 +23,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:RoundEndCountdownTime"
-      Float: 15
+      Float: 10
     }
   }
   Collidable_v2 {
@@ -202,7 +202,7 @@ Objects {
     }
     Overrides {
       Name: "cs:CountdownTime"
-      Float: 3
+      Float: 10
     }
     Overrides {
       Name: "cs:RequiredPlayers:tooltip"
@@ -326,7 +326,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RoundEndDuration"
-      Float: 30
+      Float: 10
     }
     Overrides {
       Name: "cs:LobbyHasDuration:tooltip"

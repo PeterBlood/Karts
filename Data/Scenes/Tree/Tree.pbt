@@ -18,6 +18,7 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
+  ChildIds: 10095311410436980772
   ChildIds: 9312441164189026142
   ChildIds: 2351561820974907999
   ChildIds: 6006659116537616263
@@ -1191,6 +1192,49 @@ Objects {
     }
     TemplateAsset {
       Id: 15291278418653916146
+    }
+  }
+}
+Objects {
+  Id: 10095311410436980772
+  Name: "AfterMatchTrigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6912623060306585780
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AfterMatchTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9819136556530962153
     }
   }
 }

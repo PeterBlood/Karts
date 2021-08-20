@@ -135,16 +135,16 @@ function OnEnterMenu()
     -- if currentSpawnIndex > #SPAWN_POINTS then
     --     currentSpawnIndex = 1
     -- end
+	print("menu")
     Menu.visibility = Visibility.FORCE_ON
     MenuPortal.visibility = Visibility.FORCE_ON
     propPost.visibility = Visibility.FORCE_OFF
 	UI.SetCursorVisible(true)
 UI.SetCursorLockedToViewport(false)
 UI.SetCanCursorInteractWithUI(true)
-print("menu")
 end
 
-Events.Connect("EnterMenu", OnEnterMenu)
+Events.Connect("EnterMenuUI", OnEnterMenu)
 PlayButt.clickedEvent:Connect(PlayClick)
 TutorButt.clickedEvent:Connect(TutorClick)
 CloseTutorButt.clickedEvent:Connect(CloseTutorClick)

@@ -27,12 +27,21 @@ local DEFAULT_VEHICLE = COMPONENT_ROOT:GetCustomProperty("DefaultVehicle")
 local startingPlaceIndex = 1
 local playerVehicles = {}
 
+local AfterMatchTrigger = script:GetCustomProperty("AfterMatchTrigger")
+
+
 function GetStartingPositions()
     return API_RACE_TRACK.GetStartingPositions(API_RACE_TRACK.GetCurrentRaceTrackId())
 end
 
 function OnPlayerLeft(player)
-    Events.Broadcast("LeaveVehicle",player)
+    if player ~= nil then
+    local playerPos = player:GetWorldPosition()
+    local AMTrigger = World.SpawnAsset(AfterMatchTrigger, {position = playerPos})
+    AMTrigger:Follow(player, player.maxWalkSpeed * 5)
+    Task.Wait()
+    AMTrigger:Destroy()
+    end
     local vehicle = playerVehicles[player]
     if Object.IsValid(vehicle) then
         vehicle:Destroy()
@@ -40,15 +49,22 @@ function OnPlayerLeft(player)
 end
 
 function OnPlayerNonActive(player)
+    if player ~= nil then
+    local playerPos = player:GetWorldPosition()
+    local AMTrigger = World.SpawnAsset(AfterMatchTrigger, {position = playerPos})
+    AMTrigger:Follow(player, player.maxWalkSpeed * 5)
+    --Events.Broadcast("LeaveVehicle",player)
+    Task.Wait()
+    AMTrigger:Destroy()
+end
     local vehicle = playerVehicles[player]
-    Events.Broadcast("LeaveVehicle")
     if Object.IsValid(vehicle) then
         playerVehicles[player] = nil
 --        vehicle:RemoveDriver()
         Task.Wait()
         vehicle:Destroy()
         --Events.Broadcast("EnterLobbyArea", player)
-        Events.Broadcast("EnterMenu")
+        Events.Broadcast("EnterMenu",player)
     end
 end
 

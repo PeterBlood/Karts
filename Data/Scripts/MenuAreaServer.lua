@@ -17,6 +17,15 @@ function OnPlayerQ(player)
     print(player)
    end
 
+--    function LobbyClose()
+
+--     local allPlayers = API_ACTIVE_PLAYERS.GetQPlayers()
+--     for _, p in ipairs(allPlayers) do
+--         API_ACTIVE_PLAYERS.RemoveQPlayer(p)
+--         Events.Broadcast("EnterMenu",p)
+--         AfterMatch(p)
+-- end
+-- end
 -- -- function Tick(deltaTime)
 -- -- 	for _, player in pairs(Game.GetPlayers()) do
 -- -- 				-- Check player's Q
@@ -26,6 +35,13 @@ function OnPlayerQ(player)
 -- -- 			end
 -- -- end
 
+function AfterMatch(player)
+    --ABGS.SetGameState(ABGS.GAME_STATE_MENU)
+    Events.Broadcast(API_ACTIVE_PLAYERS.PLAYER_NON_ACTIVE_EVENT, player) 
+    Events.BroadcastToPlayer(player,"EnterMenuUI")
+end
 
 Events.Connect(API_ACTIVE_PLAYERS.PLAYER_Q_EVENT, OnPlayerQ)
 Events.Connect("MenuToServer",GotoLobby)
+Events.Connect("EnterMenu", AfterMatch)
+--Events.Connect("LobbyClose", LobbyClose)

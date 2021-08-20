@@ -55,7 +55,7 @@ function Tick(deltaTime)
     -- Hide things by default, let specific logic show it when needed
     STATE_NAME_TEXT.text = ""
     STATE_TIME_TEXT.visibility = Visibility.FORCE_OFF
-    PANEL.visibility = Visibility.INHERIT
+    PANEL.visibility = Visibility.FORCE_OFF
 
     local currentState = ABGS.GetGameState()
     local remainingTime = ABGS.GetTimeRemainingInState()
@@ -71,8 +71,10 @@ function Tick(deltaTime)
 
     if currentState == ABGS.GAME_STATE_LOBBY then
         if remainingTime then
+            PANEL.visibility = Visibility.FORCE_ON
             STATE_NAME_TEXT.text = "RACE STARTS IN"
         else
+            PANEL.visibility = Visibility.FORCE_ON
             STATE_NAME_TEXT.text = "FINDING GAME"
         end
 
@@ -84,6 +86,7 @@ function Tick(deltaTime)
             PANEL.visibility = Visibility.FORCE_OFF
             return
         end
+        PANEL.visibility = Visibility.FORCE_ON
         if remainingTime then
             if activePlayer then
                 STATE_NAME_TEXT.text = "RACE ENDS IN"

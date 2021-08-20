@@ -163,6 +163,7 @@ Assets {
         ChildIds: 3070704753677720218
         ChildIds: 13289744291482549169
         ChildIds: 15755058365741298130
+        ChildIds: 14515989174911841857
         UnregisteredParameters {
           Overrides {
             Name: "cs:AllowExitingVehicle"
@@ -10041,6 +10042,80 @@ Assets {
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 14515989174911841857
+        Name: "ServerTriggers"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17164896749810771429
+        ChildIds: 10653258437430267561
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+      }
+      Objects {
+        Id: 10653258437430267561
+        Name: "ServerTriggers"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14515989174911841857
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Hitbox"
+            ObjectReference {
+              SubObjectId: 11046373729995318156
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16387020495422276530
+          }
         }
       }
     }

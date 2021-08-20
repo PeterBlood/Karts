@@ -132,10 +132,7 @@ function Tick(deltaTime)
         PANEL.visibility = Visibility.FORCE_OFF
         return
     end
-    if passiveShowScoreboard and not bindingDown then
-        propMinimapUIMy.visibility = Visibility.FORCE_ON
-        return
-    end
+    propMinimapUIMy.visibility = Visibility.FORCE_OFF
     PANEL.visibility = Visibility.FORCE_ON
 
     local players = Game.GetPlayers()
@@ -157,20 +154,20 @@ function Tick(deltaTime)
             line.opacity = 0.5
         end
         
-        if vehicle then
-            line:GetCustomProperty("CarText"):WaitForObject().text = vehicle.name
-        else
-            line:GetCustomProperty("CarText"):WaitForObject().text = "-"
-        end
+        -- if vehicle then
+        --     line:GetCustomProperty("CarText"):WaitForObject().text = vehicle.name
+        -- else
+        --     line:GetCustomProperty("CarText"):WaitForObject().text = "-"
+        -- end
 
-        local totalRaceTimeSeconds = API.GetPlayerTotalRaceTimeSeconds(player)
+        -- local totalRaceTimeSeconds = API.GetPlayerTotalRaceTimeSeconds(player)
 
-        local raceTimeText = "--:--:---"
-        if totalRaceTimeSeconds > 0 then
-            raceTimeText = SecondsToCounterString(totalRaceTimeSeconds)
-        end
+        -- local raceTimeText = "--:--:---"
+        -- if totalRaceTimeSeconds > 0 then
+        --     raceTimeText = SecondsToCounterString(totalRaceTimeSeconds)
+        -- end
 
-        line:GetCustomProperty("TimeText"):WaitForObject().text = raceTimeText
+        -- line:GetCustomProperty("TimeText"):WaitForObject().text = raceTimeText
     end
 end
 
@@ -193,8 +190,8 @@ headerLine = World.SpawnAsset(LINE_TEMPLATE, {parent = PANEL})
 headerLine:GetCustomProperty("Icon"):WaitForObject().visibility = Visibility.FORCE_OFF
 headerLine:GetCustomProperty("Name"):WaitForObject().text = "Players"
 headerLine:GetCustomProperty("RankText"):WaitForObject().text = "Rank"
-headerLine:GetCustomProperty("CarText"):WaitForObject().text = "Car"
-headerLine:GetCustomProperty("TimeText"):WaitForObject().text = "Total Time"
+--headerLine:GetCustomProperty("CarText"):WaitForObject().text = "Car"
+--headerLine:GetCustomProperty("TimeText"):WaitForObject().text = "Total Time"
 
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

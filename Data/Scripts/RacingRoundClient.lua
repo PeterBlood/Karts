@@ -38,7 +38,8 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 
         local raceTrackState = API.GetRaceTrackState(currentRaceTrackId)
         local laps = raceTrackState.laps
- 
+        print("GameStateChanged")
+       -- print(ABGS.GetGameState())
         Events.Broadcast("StartRace", laps)
 	end
 
