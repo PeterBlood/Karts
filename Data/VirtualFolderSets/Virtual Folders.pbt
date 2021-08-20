@@ -1,5 +1,5 @@
 Assets {
-  Id: 10952455506061864930
+  Id: 15911890202492868098
   Name: "Virtual Folders"
   PlatformAssetType: 30
   SerializationVersion: 95
@@ -42,6 +42,10 @@ Assets {
       VirtualFolderPath: "Components"
       VirtualFolderPath: "Template"
       PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "Cars"
+      PlatformAssetType: 5
     }
   }
 }

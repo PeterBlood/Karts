@@ -58,6 +58,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 7505544466041054478
+    SubobjectId: 1382051476682931058
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 10125258663437288567
@@ -115,6 +121,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 10125258663437288567
+    SubobjectId: 17835135817947519499
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -175,6 +187,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 16753647675146476798
+    SubobjectId: 10630726408208138882
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 10609422282531880612
@@ -233,6 +251,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 10609422282531880612
+    SubobjectId: 16734032376796471512
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -293,6 +317,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 1092185784427368644
+    SubobjectId: 8371978113411550904
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12627198802590632140
@@ -351,6 +381,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 12627198802590632140
+    SubobjectId: 15293053333730547376
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -411,6 +447,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 3702261598721274140
+    SubobjectId: 5216883455805239136
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 16639346322015725546
@@ -469,5 +511,11 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 16639346322015725546
+    SubobjectId: 11379982463561955734
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

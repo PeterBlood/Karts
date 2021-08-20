@@ -34,6 +34,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch"
   }
+  InstanceHistory {
+    SelfId: 7162577150572671114
+    SubobjectId: 1756845221897662198
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12227979550327153184
@@ -68,6 +74,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "torch_1"
+  }
+  InstanceHistory {
+    SelfId: 12227979550327153184
+    SubobjectId: 15183189116277128284
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -104,6 +116,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch_2"
   }
+  InstanceHistory {
+    SelfId: 10754865963540402248
+    SubobjectId: 17169957152500485684
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 14102224929837192756
@@ -138,6 +156,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "torch_3"
+  }
+  InstanceHistory {
+    SelfId: 14102224929837192756
+    SubobjectId: 13308750738778835016
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -174,6 +198,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch_4"
   }
+  InstanceHistory {
+    SelfId: 5211353075080931698
+    SubobjectId: 3698993034766939918
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 15495509667336829481
@@ -208,6 +238,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "torch_5"
+  }
+  InstanceHistory {
+    SelfId: 15495509667336829481
+    SubobjectId: 12397318382016652373
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -244,6 +280,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch_6"
   }
+  InstanceHistory {
+    SelfId: 10098025206306665536
+    SubobjectId: 17808465477184432700
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 15246670601191448699
@@ -278,6 +320,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "torch_7"
+  }
+  InstanceHistory {
+    SelfId: 15246670601191448699
+    SubobjectId: 12146219955843743239
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -314,6 +362,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch_8"
   }
+  InstanceHistory {
+    SelfId: 4110773985239642281
+    SubobjectId: 4759007086167977685
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 11676450509293317140
@@ -349,6 +403,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "torch_9"
   }
+  InstanceHistory {
+    SelfId: 11676450509293317140
+    SubobjectId: 15639894625330705000
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 14805831337760364014
@@ -383,6 +443,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "torch_10"
+  }
+  InstanceHistory {
+    SelfId: 14805831337760364014
+    SubobjectId: 13150482031810333586
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -444,6 +510,12 @@ Objects {
     }
     TeamSettings {
     }
+  }
+  InstanceHistory {
+    SelfId: 14348740696030548903
+    SubobjectId: 13558072590734216667
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -511,6 +583,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 6426679558908660771
+    SubobjectId: 2465478429415838303
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -580,6 +658,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 17205941865580380269
+    SubobjectId: 10790849440727637521
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 542949202030882129
@@ -647,6 +731,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 542949202030882129
+    SubobjectId: 8975663061404365613
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -716,6 +806,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 3432211812607881687
+    SubobjectId: 6099755050817531819
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 13792731071944049047
@@ -784,6 +880,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 13792731071944049047
+    SubobjectId: 14154421407463514091
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 15066605498395049589
@@ -818,5 +920,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "rock"
+  }
+  InstanceHistory {
+    SelfId: 15066605498395049589
+    SubobjectId: 12254383973982232585
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

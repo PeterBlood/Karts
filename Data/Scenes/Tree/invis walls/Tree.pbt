@@ -1,6 +1,65 @@
 Name: "invis walls"
 RootId: 13799355637836345176
 Objects {
+  Id: 5881871240657805310
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 19226.1504
+      Y: -18653.1328
+      Z: 883.364807
+    }
+    Rotation {
+      Yaw: -22.446991
+    }
+    Scale {
+      X: 13.2339773
+      Y: 0.398967892
+      Z: 38.8889236
+    }
+  }
+  ParentId: 13799355637836345176
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.143004984
+        B: 0.385417
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 11882948881655237628
   Name: "Cube"
   Transform {
@@ -15606,7 +15665,7 @@ Objects {
       Z: 883.364807
     }
     Rotation {
-      Yaw: 0.0300112087
+      Yaw: 3
     }
     Scale {
       X: 76.6111221

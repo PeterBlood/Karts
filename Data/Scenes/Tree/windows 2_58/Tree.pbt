@@ -55,6 +55,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 14032657725085505155
+    SubobjectId: 13382735780756523263
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 14849385187891148863
@@ -113,6 +119,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 14849385187891148863
+    SubobjectId: 13048223022153541187
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 16090783582853441511
@@ -169,6 +181,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 16090783582853441511
+    SubobjectId: 11838546122439227803
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 4795623564277528676
@@ -224,6 +242,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 4795623564277528676
+    SubobjectId: 4146265679080384024
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -283,6 +307,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 6667596084015398984
+    SubobjectId: 2850510129696988724
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 1781375919052026729
@@ -340,6 +370,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 1781375919052026729
+    SubobjectId: 7187660781817441557
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -399,6 +435,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 10982180821805075302
+    SubobjectId: 16388475720834700570
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12709890747212791522
@@ -455,6 +497,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 12709890747212791522
+    SubobjectId: 14656295215332040862
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 9677383655208975599
@@ -490,5 +538,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "bushes_97"
+  }
+  InstanceHistory {
+    SelfId: 9677383655208975599
+    SubobjectId: 18251960893164036755
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

@@ -54,6 +54,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 16087544881354144906
+    SubobjectId: 11836995041388110582
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 3022536699157433066
@@ -108,6 +114,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 3022536699157433066
+    SubobjectId: 5977738569604109462
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -164,6 +176,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 16356269432121073900
+    SubobjectId: 11095216848362536592
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 7999241751734961775
@@ -218,6 +236,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 7999241751734961775
+    SubobjectId: 1442285950433040403
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -274,6 +298,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 2999539852093098597
+    SubobjectId: 5955875308289184793
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 438343624435238125
@@ -310,6 +340,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "pillar"
   }
+  InstanceHistory {
+    SelfId: 438343624435238125
+    SubobjectId: 9012348988589791889
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 6809736368911650146
@@ -345,6 +381,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "pillar_1"
   }
+  InstanceHistory {
+    SelfId: 6809736368911650146
+    SubobjectId: 2703865900703044382
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 10914259988883737783
@@ -379,5 +421,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "pillar_2"
+  }
+  InstanceHistory {
+    SelfId: 10914259988883737783
+    SubobjectId: 17037180276567397067
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

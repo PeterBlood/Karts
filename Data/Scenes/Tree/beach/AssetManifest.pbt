@@ -17,12 +17,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17485881147669499682
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
   Id: 17245269453414917849
   Name: "Fern 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_003"
+  }
+}
+Assets {
+  Id: 16597748210082952853
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
   }
 }
 Assets {
@@ -44,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12787719701606405475
+  Name: "Sphere - Half Slice Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_wedge_002"
+  }
+}
+Assets {
   Id: 12470058371571788915
   Name: "Terrain - Desert"
   PlatformAssetType: 2
@@ -53,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11381813784558504980
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
+  }
+}
+Assets {
   Id: 11323250848998938125
   Name: "Plastic Shiny"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_shiny_001"
+  }
+}
+Assets {
+  Id: 11018056399039953148
+  Name: "Sphere - Half Slice Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_wedge_002"
   }
 }
 Assets {
@@ -98,6 +143,33 @@ Assets {
   }
 }
 Assets {
+  Id: 8264236312157117638
+  Name: "Pipe - 90-Degree Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_curve90_002"
+  }
+}
+Assets {
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 5782610547261769000
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
   Id: 5396870447119187319
   Name: "Ball - Volleyball 01"
   PlatformAssetType: 1
@@ -125,12 +197,39 @@ Assets {
   }
 }
 Assets {
+  Id: 3593597783924766211
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
+  }
+}
+Assets {
+  Id: 2091112334953492344
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
   Id: 1551081636820824001
   Name: "Sphere"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 1166276861665345190
+  Name: "Snow 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_snow_001_uv"
   }
 }
 Assets {
@@ -149,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_curve45_004"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }
 Assets {

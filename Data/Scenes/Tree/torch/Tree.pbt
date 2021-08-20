@@ -61,6 +61,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 4158912466632127735
+    SubobjectId: 4805455466777209483
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 11471190079493773084
@@ -112,6 +118,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 11471190079493773084
+    SubobjectId: 16444575225255676256
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -169,6 +181,12 @@ Objects {
       MaxDistanceFadeRange: 500
     }
   }
+  InstanceHistory {
+    SelfId: 14530696836304518301
+    SubobjectId: 12871396976484770529
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 17616872426684871997
@@ -217,6 +235,12 @@ Objects {
     Vfx {
       AutoPlay: true
     }
+  }
+  InstanceHistory {
+    SelfId: 17616872426684871997
+    SubobjectId: 10339333121565469505
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"

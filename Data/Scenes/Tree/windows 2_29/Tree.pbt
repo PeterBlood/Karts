@@ -57,6 +57,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 18357518844158117972
+    SubobjectId: 9638836471556101672
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 3662401959588949751
@@ -112,6 +118,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 3662401959588949751
+    SubobjectId: 5320004321612771467
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -169,6 +181,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 2003670065674761221
+    SubobjectId: 6974232890701474425
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 8551448593071809745
@@ -224,6 +242,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 8551448593071809745
+    SubobjectId: 985124639849380525
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -283,6 +307,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 3377184434998156027
+    SubobjectId: 6186028109371851911
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 3225307561007662330
@@ -341,6 +371,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 3225307561007662330
+    SubobjectId: 6324633533747141254
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 11808936563576545370
@@ -397,6 +433,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 11808936563576545370
+    SubobjectId: 15629392514595814950
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 17013071745823096153
@@ -432,5 +474,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "bushes_49"
+  }
+  InstanceHistory {
+    SelfId: 17013071745823096153
+    SubobjectId: 10889024465165804325
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

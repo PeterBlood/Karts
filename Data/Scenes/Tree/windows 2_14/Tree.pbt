@@ -55,6 +55,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 14108902279547369436
+    SubobjectId: 13315991041680435616
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 5881010429057528785
@@ -111,6 +117,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 5881010429057528785
+    SubobjectId: 3069923602807434669
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12293232691530695470
@@ -165,6 +177,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 12293232691530695470
+    SubobjectId: 15104319519928343890
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -221,6 +239,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 13904772302349158341
+    SubobjectId: 13542508998859528633
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 8962317901366695317
@@ -275,6 +299,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 8962317901366695317
+    SubobjectId: 533544848451292137
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -332,6 +362,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 7247870976358925525
+    SubobjectId: 2275048795576670889
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 2672908259933075013
@@ -387,6 +423,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 2672908259933075013
+    SubobjectId: 6782165357105735737
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -444,6 +486,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 13609846218608613869
+    SubobjectId: 14400514435576219537
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 13067253821370457990
@@ -499,6 +547,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 13067253821370457990
+    SubobjectId: 14870660079599550970
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -556,6 +610,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 13177324702341014983
+    SubobjectId: 14832684073553492923
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -615,6 +675,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 10217607118182472162
+    SubobjectId: 17783376934730663838
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 2262431575630979191
@@ -673,6 +739,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 2262431575630979191
+    SubobjectId: 7233556243601128971
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 7877129016360137203
@@ -728,6 +800,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 7877129016360137203
+    SubobjectId: 1609521783817023375
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -787,6 +865,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 5323233256758460626
+    SubobjectId: 3663934356861853358
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 668989961973514635
@@ -842,6 +926,12 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 668989961973514635
+    SubobjectId: 8237011428003815415
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -899,6 +989,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 10317846693374727199
+    SubobjectId: 17597637927141231203
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 7397660536745067145
@@ -935,6 +1031,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "bushes_23"
   }
+  InstanceHistory {
+    SelfId: 7397660536745067145
+    SubobjectId: 2138859644337413365
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 13164979040331133423
@@ -970,5 +1072,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "bushes_24"
+  }
+  InstanceHistory {
+    SelfId: 13164979040331133423
+    SubobjectId: 14822580284609638291
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

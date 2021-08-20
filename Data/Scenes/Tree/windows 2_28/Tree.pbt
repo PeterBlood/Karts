@@ -35,6 +35,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "bushes_47"
   }
+  InstanceHistory {
+    SelfId: 11560927741664368819
+    SubobjectId: 15814300020467222223
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 3020038460186051132
@@ -70,5 +76,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "bushes_48"
+  }
+  InstanceHistory {
+    SelfId: 3020038460186051132
+    SubobjectId: 5975802169278045248
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

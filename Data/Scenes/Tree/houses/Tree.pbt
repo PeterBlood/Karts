@@ -37,6 +37,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 1 yw"
   }
+  InstanceHistory {
+    SelfId: 5015200806636565799
+    SubobjectId: 4512208924688575323
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 9639767306634376846
@@ -74,6 +80,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 3 rw"
   }
+  InstanceHistory {
+    SelfId: 9639767306634376846
+    SubobjectId: 18356762074918840562
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 8955087376593614042
@@ -109,6 +121,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 2 yw"
+  }
+  InstanceHistory {
+    SelfId: 8955087376593614042
+    SubobjectId: 522936621805972134
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -146,6 +164,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 1 ow"
   }
+  InstanceHistory {
+    SelfId: 2448405685489673267
+    SubobjectId: 6556536735647627855
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 11648997962346615475
@@ -181,6 +205,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 3 yw"
+  }
+  InstanceHistory {
+    SelfId: 11648997962346615475
+    SubobjectId: 15757683323130907855
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -218,6 +248,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 3 ppy"
   }
+  InstanceHistory {
+    SelfId: 5339460863138110962
+    SubobjectId: 3539433269920088974
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 9260870618968252791
@@ -253,6 +289,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 3 py"
+  }
+  InstanceHistory {
+    SelfId: 9260870618968252791
+    SubobjectId: 18123114168592613131
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -290,6 +332,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 3 ry"
   }
+  InstanceHistory {
+    SelfId: 18409520972130584154
+    SubobjectId: 9546722303346825254
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 15494401417990110358
@@ -325,6 +373,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 3 ow"
+  }
+  InstanceHistory {
+    SelfId: 15494401417990110358
+    SubobjectId: 12393958318884791018
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -362,6 +416,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 3 yw_1"
   }
+  InstanceHistory {
+    SelfId: 5123933944299111878
+    SubobjectId: 4331577003086453690
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 10821442707136650464
@@ -397,6 +457,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 3 rw_1"
+  }
+  InstanceHistory {
+    SelfId: 10821442707136650464
+    SubobjectId: 17089604077452837532
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -434,6 +500,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 2 ppy"
   }
+  InstanceHistory {
+    SelfId: 16702495646072655173
+    SubobjectId: 11298453771980411705
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 12067302549847888023
@@ -469,6 +541,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 2 py"
+  }
+  InstanceHistory {
+    SelfId: 12067302549847888023
+    SubobjectId: 15884388473015275243
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -506,6 +584,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 2 ry"
   }
+  InstanceHistory {
+    SelfId: 14778998607999097932
+    SubobjectId: 13123076437164458544
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 9732838501800177004
@@ -541,6 +625,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 2 ow"
+  }
+  InstanceHistory {
+    SelfId: 9732838501800177004
+    SubobjectId: 18164980608687715088
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -578,6 +668,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 2 yw_1"
   }
+  InstanceHistory {
+    SelfId: 5566766865901534439
+    SubobjectId: 3910853370910499483
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 6569420264886247222
@@ -613,6 +709,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 2 rw"
+  }
+  InstanceHistory {
+    SelfId: 6569420264886247222
+    SubobjectId: 2318298823811121482
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -650,6 +752,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 1 ppy"
   }
+  InstanceHistory {
+    SelfId: 8879259680502422978
+    SubobjectId: 17578104800166846
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 5157497199897040407
@@ -685,6 +793,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 1 py"
+  }
+  InstanceHistory {
+    SelfId: 5157497199897040407
+    SubobjectId: 4365141372149467243
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -722,6 +836,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 1 ry"
   }
+  InstanceHistory {
+    SelfId: 14639767726386099731
+    SubobjectId: 12695053326820272239
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 1939807410015224078
@@ -757,6 +877,12 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 1 ow_1"
+  }
+  InstanceHistory {
+    SelfId: 1939807410015224078
+    SubobjectId: 7056173167023955826
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -794,6 +920,12 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "house 1 yw_1"
   }
+  InstanceHistory {
+    SelfId: 12839257530197743151
+    SubobjectId: 14495169794691156051
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 18234479999781175103
@@ -829,5 +961,11 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "house 1 rw"
+  }
+  InstanceHistory {
+    SelfId: 18234479999781175103
+    SubobjectId: 9658785654771818819
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }

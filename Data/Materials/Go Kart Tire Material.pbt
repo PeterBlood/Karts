@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 95
   CustomMaterialAsset {
-    BaseMaterialId: 12542223800925587202
+    BaseMaterialId: 10248053243854205466
     ParameterOverrides {
       Overrides {
         Name: "index"
@@ -21,7 +21,7 @@ Assets {
       }
     }
     Assets {
-      Id: 12542223800925587202
+      Id: 10248053243854205466
       Name: "Urban Car Tire Sidewall 01"
       PlatformAssetType: 2
       PrimaryAsset {

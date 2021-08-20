@@ -109,6 +109,5 @@ VEHICLE.driverEnteredEvent:Connect(OnDriverEntered)
 VEHICLE.driverExitedEvent:Connect(OnDriverExited)
 
 -- Set up light if there is a driver
-if Object.IsValid(VEHICLE.driver) then
-    OnDriverEntered(VEHICLE, VEHICLE.driver) 
-end
+if not Object.IsValid(VEHICLE.driver) then return end
+OnDriverEntered(VEHICLE, VEHICLE.driver)

@@ -54,6 +54,12 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 18156131028216954657
+    SubobjectId: 9291080420054163805
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 421360847615467309
@@ -109,21 +115,27 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 421360847615467309
+    SubobjectId: 9142304936038187345
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 11932607723888855746
   Name: "ocean1"
   Transform {
     Location {
-      X: 176712.547
-      Y: -67951.8047
+      X: 117759.18
+      Y: -35534.0156
       Z: 88352.0703
     }
     Rotation {
     }
     Scale {
-      X: 1586.29578
-      Y: 828.415344
+      X: 390.176636
+      Y: 121.886826
       Z: 1586.29578
     }
   }
@@ -164,69 +176,11 @@ Objects {
       BoundsScale: 1
     }
   }
-}
-Objects {
-  Id: 6179043118018070732
-  Name: "ocean1"
-  Transform {
-    Location {
-      X: -432095.719
-      Y: 81256.1641
-    }
-    Rotation {
-      Pitch: 4.99999857
-    }
-    Scale {
-      X: 4788.49219
-      Y: 24575.4355
-      Z: 4788.49219
-    }
-  }
-  ParentId: 2171434017144120144
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8057146558961745871
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.23823531
-        G: 0.243000016
-        B: 0.093388252
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1628145178056
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
+  InstanceHistory {
+    SelfId: 11932607723888855746
+    SubobjectId: 16041301886149694654
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
 Objects {
@@ -239,7 +193,7 @@ Objects {
       Z: 88352.0703
     }
     Rotation {
-      Yaw: -32.0000191
+      Yaw: -32.0000305
     }
     Scale {
       X: 231.639465
@@ -284,21 +238,27 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 17070180278397657601
+    SubobjectId: 10944435484914269309
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
+  }
 }
 Objects {
   Id: 5997017841766719037
   Name: "ocean1"
   Transform {
     Location {
-      X: 19796.3906
-      Y: -30339.4551
+      X: 87385
+      Y: -12273.9346
       Z: 88352.0703
     }
     Rotation {
     }
     Scale {
-      X: 1586.29578
-      Y: 1586.29578
+      X: 234.54483
+      Y: 585.766846
       Z: 1586.29578
     }
   }
@@ -338,5 +298,11 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 5997017841766719037
+    SubobjectId: 2899943673147195457
+    InstanceId: 16193781511362118803
+    TemplateId: 3185697312841042802
   }
 }
